@@ -1,10 +1,10 @@
-var JadePluginsPath = './../../node_modules/';
+var JadePluginsPath = './../node_modules/';
 
 var webpack = require( JadePluginsPath + 'webpack'),
     path = require( JadePluginsPath + 'path'),
     CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin"),
     ExtractTextPlugin = require('extract-text-webpack-plugin');
-    aliasConfig = require('./../actpublic/alias.config');
+    aliasConfig = require('./../config/alias.config');
 
 console.log("*******************xxMod Components Alias Config*******************Start");
 console.log(aliasConfig());
@@ -19,7 +19,7 @@ module.exports = {
         publicPath: 'dist/',
         filename: '[name].js'
     },
-    module: 
+    module:
 {        loaders: [{
             test: /\.vue$/,
             loader: 'vue'

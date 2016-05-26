@@ -46,7 +46,7 @@ export default {
             this.isShowDlgFlag = false;
         },
 
-        /*-----------------Callback Function--------------------Private Func*/ 
+        /*-----------------Callback Function--------------------Private Func*/
         onShowDialog: function(dlgMsgObj){
             this.showStrongDialog(dlgMsgObj);
         },

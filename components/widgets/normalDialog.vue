@@ -1,29 +1,28 @@
 <template>
 <div id="modal-template"  class="dialog wrap" v-if="isShowDlgFlag">
-    <div class="nromal-dlg-shadow"></div>
-    <div id="nromal-dlg-body">
+    <div class="normal-dlg-shadow"></div>
+    <div id="normal-dlg-body">
         <h1 v-if="isShowTitleFlag">{{{ titleText }}}</h1>
-        <a href="javascript:;" class="nromal-dlg-close" v-if="isShowCloseXFlag" @click="onCloseClick"></a>
+        <a href="javascript:;" class="normal-dlg-close" v-if="isShowCloseXFlag" @click="onCloseClick"></a>
         <section> {{{ bodyText }}} </section>
         <a class="confirm" @click="onConfirmClick">{{ confirmText }}</a>
     </div>
 </div>
 </template>
 
-
 <style>
-.dialog.wrap, .nromal-dlg-shadow{
+.dialog.wrap, .normal-dlg-shadow{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
-.nromal-dlg-shadow{
+.normal-dlg-shadow{
     background: rgba(0,0,0,.6);
     z-index: 11;
 }
-#nromal-dlg-body{
+#normal-dlg-body{
     position: absolute;
     top: 20%;
     left: 52%;
@@ -39,7 +38,7 @@
     -moz-box-sizing: border-box;
     color: #4B2B1C;
 }
-#nromal-dlg-body > h1{
+#normal-dlg-body > h1{
     font-size: 1.24em;
     line-height: 2;
     padding: 0;
@@ -48,7 +47,7 @@
     background-size: 100% 100%;
     position: relative;
 }
-.nromal-dlg-close{
+.normal-dlg-close{
     position: absolute;
     right: -1%;
     top: -3%;
@@ -56,7 +55,7 @@
     width: 2.38em;
     height: 2.38em;
 }
-#nromal-dlg-body > section {
+#normal-dlg-body > section {
     background-color: #E0AB75;
     text-align: left;
     padding: 4% 2%;
@@ -68,7 +67,7 @@
     text-align: center;
     margin-top: 4%;
 }
-#nromal-dlg-body .confirm{
+#normal-dlg-body .confirm{
     font: 1.2em Microsoft YaHei, sans-serif;
     line-height: 1.69;
     font-weight: bold;
@@ -86,7 +85,6 @@
     background-size: 100% 100%;
 }
 </style>
-
 
 <script type="text/javascript">
 export default {
@@ -124,7 +122,7 @@ export default {
         },
 
 
-        /*-----------------Callback Function--------------------Private Func*/ 
+        /*-----------------Callback Function--------------------Private Func*/
         onShowDialog: function(dlgMsgObj){
             this.showNormalDialog(dlgMsgObj);
         },

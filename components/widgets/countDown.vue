@@ -34,6 +34,10 @@ export default {
             type: Boolean,
             default: false
         },
+        isCompleteShowHms: {
+            type: Boolean,
+            default: false
+        },
         timeUnitObj:{
             type: Object,
             default: function(){
@@ -84,7 +88,7 @@ export default {
 
         convertToHms: function( secondTime ){
             let hour, minute
-            let HOUR=3600, MINUTE=60;
+            let HOUR=3600, MINUTE=60, ZERO=0;
             let hourUnit = this.timeUnitObj['hour'],
                 minuteUnit = this.timeUnitObj['minute'],
                 secondUnit = this.timeUnitObj['second'];
@@ -95,11 +99,15 @@ export default {
                 secondTime -= minute*MINUTE
                 this.contDownText = (hour + hourUnit + minute + minuteUnit + secondTime + secondUnit)
             }else if(secondTime <= 60){
-                this.contDownText =  (secondTime + secondUnit )
+                this.contDownText = (secondTime + secondUnit )
+                if( this.isCompleteShowHms == true){
+                    this.contDownText = (ZERO + hourUnit + ZERO + minuteUnit + this.contDownText)
+                }
             }else{
                 minute = Math.floor( secondTime/MINUTE )
                 secondTime -= minute*MINUTE
                 this.contDownText = (minute + minuteUnit + secondTime + secondUnit)
+                this.contDownText = (this.isCompleteShowHms == true) ? (ZERO+hourUnit+this.contDownText) : this.contDownText
             }
         },
 

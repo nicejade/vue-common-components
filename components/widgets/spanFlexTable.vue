@@ -2,7 +2,7 @@
 	Date: 16-04-14~15
 	Author: Nicejade
  -->
- 
+
 <template>
 	<div id="span-flex-table" v-if="isShowTableFlag">
 		<ul>
@@ -34,14 +34,8 @@ export default {
     methods: {
     	updateTable: function(tableInfo){
     		var tableListLen = this.getObjLength( tableInfo )
-        	var cssHeight = "calc(100% / #)"
-        	cssHeight = cssHeight.replace('#', tableListLen)
+        	var cssHeight = 100/tableListLen + "%";
         	$('.span-flex-table-li').css( {'height': cssHeight} )
-
-        	var subTableListLen = this.getObjLength( tableInfo[ tableListLen-1 ] )
-        	var cssWidth = "calc(100% / #)"
-        	cssWidth = cssWidth.replace('#', subTableListLen)
-        	$('.span-flex-table-span').css({'width': cssWidth})
     	},
     	getObjLength: function(obj){
     		if(null === obj || undefined === obj){
@@ -116,7 +110,6 @@ $tc    : center;
 			&>span{
 				/* 子元素设置为表格单元块，方便居中设置 */
 				display:table-cell;
-				width: calc(100% / 2);
 				height: $h100;
 				vertical-align:middle;
 				&:not(:last-child){

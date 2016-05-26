@@ -70,6 +70,7 @@ export default {
     border-radius: .6em;
 }
 .common-table-li{
+	width: 100%;
     display: table;
 }
 .common-table-li:first-child{
@@ -88,5 +89,5 @@ export default {
 }
 .common-table-span:not(:last-child){
     border-right: 2px solid #9555ec;
-}	
+}
 </style>

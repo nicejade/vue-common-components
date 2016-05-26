@@ -1,0 +1,77 @@
+<template lang='jade'>
+    h1#comp-title {{ compTitle }}
+    h2#hinting-title {{ hintingTitle }}
+    <pre-code :code-string="codeString"></pre-code>
+    h2#hinting-title {{ btnText }}
+    <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
+    div.content
+        section {{ tabList[0] }}
+        section(style="display:none;") {{ tabList[1] }}
+        section(style="display:none;") {{ tabList[2] }}
+        section(style="display:none;") {{ tabList[3] }}
+</template>
+
+<script type="text/javascript">
+import tabBarWithJq from 'tabBarWithJq'
+import preCode from './preCode.vue'
+
+export default {
+    data () {
+        return {
+            btnText: "Using Demonstrate",
+            compTitle : "Component Name",
+            hintingTitle: "Using Sample Code:",
+            tabList: {
+                "0": "赵钱孙李",
+                "1": "周吴郑王",
+                "2": "冯陈诸卫",
+                "3": "蒋沈韩杨",
+            },
+            codeString: `
+    import tabBarWithJq from 'tabBarWithJq'; //引入组件
+
+    //在模板(jade)中如下注入组件and标签页即可(定义tabList数组/Object)：
+    <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
+    div.content
+        section {{ tabList[1] }}
+        section(style="display:none;") {{ tabList[2] }}
+        section(style="display:none;") {{ tabList[3] }}
+        section(style="display:none;") {{ tabList[4] }}`
+        }
+    },
+    route:{
+		data(transition){
+            this.compTitle = transition.to.name
+		}
+	},
+    components: {
+        tabBarWithJq,
+        preCode,
+    },
+    methods: {
+    }
+}
+</script>
+
+<style media="screen">
+.content{
+    margin-top: 2%;
+    height: 3em;
+    line-height: 3;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-color: #2F2F2F;
+    color: purple;
+    font-size: 2em;
+}
+.tab-bar-li{
+    float: right;
+    margin: 2% 0 1% 2%;
+    padding: 1%;
+    background-color: rgba(11,11,11,.6);
+}
+.tab-bar-li.active{
+    background-color: #523B76;
+}
+</style>
