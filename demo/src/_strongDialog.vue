@@ -2,10 +2,12 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
+    h2#hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a ahead') {{ showStrongDlgText }}
     br
     a(href='javascript:;' @click="onCloseDemoClick" class='demonstrate-a ahead') {{ hideStrongDlgText }}
-    strong-dialog
+    div.comp-area
+        strong-dialog
 </template>
 
 <script type="text/javascript">
@@ -17,7 +19,8 @@ export default {
         return {
             showStrongDlgText: "show StrongDialog",
             hideStrongDlgText: "hide StrongDialog",
-            hintingTitle: "Using Sample Code:",
+            hintingTitle: "使用示例:",
+            hintingTitle2: "表现示例:",
             compTitle : "Component Name",
             codeString: `
     import strongDialog from 'strongDialog';  //引入组件

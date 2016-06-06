@@ -22,7 +22,7 @@ export default {
             type: String,
             default: ""
         },
-         lastTimeText:{
+        lastTimeText:{
             type: String,
             default: ""
         },

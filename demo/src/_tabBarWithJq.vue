@@ -2,13 +2,14 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
-    h2#hinting-title {{ btnText }}
-    <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
-    div.content
-        section {{ tabList[0] }}
-        section(style="display:none;") {{ tabList[1] }}
-        section(style="display:none;") {{ tabList[2] }}
-        section(style="display:none;") {{ tabList[3] }}
+    h2#hinting-title {{ hintingTitle2 }}
+    div.comp-area
+        <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
+        div.content
+            section {{ tabList[0] }}
+            section(style="display:none;") {{ tabList[1] }}
+            section(style="display:none;") {{ tabList[2] }}
+            section(style="display:none;") {{ tabList[3] }}
 </template>
 
 <script type="text/javascript">
@@ -18,9 +19,9 @@ import preCode from './preCode.vue'
 export default {
     data () {
         return {
-            btnText: "Using Demonstrate",
+            hintingTitle2: "表现示例:",
             compTitle : "Component Name",
-            hintingTitle: "Using Sample Code:",
+            hintingTitle: "使用示例:",
             tabList: {
                 "0": "赵钱孙李",
                 "1": "周吴郑王",

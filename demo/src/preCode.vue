@@ -6,8 +6,6 @@
 <script type="text/javascript">
 export default {
     data () {
-        console.log(1)
-        // highlightCode()
     },
     props: {
         codeString:{

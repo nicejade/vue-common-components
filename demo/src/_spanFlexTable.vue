@@ -2,10 +2,11 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
-    h2#hinting-title {{ btnText }}
-    <span-flex-table :table-list.sync='tableList'></span-flex-table>
+    h2#hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
+    div.comp-area
+        <span-flex-table :table-list.sync='tableList'></span-flex-table>
 </template>
 
 <script type="text/javascript">
@@ -15,13 +16,13 @@ import preCode from './preCode.vue'
 export default {
     data () {
         return {
-            btnText: "Using Demonstrate",
             compTitle : "Component Name",
             xLimitControl:3,
             yLimitControl:4,
             addLine: "Add Line",
             addColumn: "Add Column",
-            hintingTitle: "Using Sample Code:",
+            hintingTitle: "使用示例:",
+            hintingTitle2: "表现示例:",
             tableList: [],
             codeString: `
     import spanFlexTable from 'spanFlexTable'; //引入组件
@@ -70,8 +71,7 @@ export default {
 <style media="screen">
 #components-wraper #span-flex-table{
     width: 77%;
-    top: 33%;
-    margin: auto;
+    margin: 3% auto;
     background-color: #222222;
     color: #f2f2f2;
 }

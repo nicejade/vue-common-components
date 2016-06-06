@@ -2,12 +2,16 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
+    h2#hinting-title {{ btnText }}
     a(href='javascript:;' @click="onStartCountClick" class='demonstrate-a') {{ btnText }}
-    <count-down :time.sync="time" :is-complete-show-hms="isCompleteShowHms" :fore-time-text="foreTimeText" :last-time-text="lastTimeText" :start.sync="isStartCount"></count-down>
+    div.comp-area
+        <count-down :time.sync="time" :is-complete-show-hms="isCompleteShowHms" :fore-time-text="foreTimeText" :last-time-text="lastTimeText" :start.sync="isStartCount"></count-down>
+        popup-toast
 </template>
 
 <script type="text/javascript">
 import countDown from 'countDown'
+import popupToast from 'popupToast'
 import preCode from './preCode.vue'
 
 export default {
@@ -15,9 +19,9 @@ export default {
         return {
             btnText: "StartCountDown",
             compTitle : "Component Name",
-            hintingTitle: "Using Sample Code:",
-            foreTimeText: "倒计时fore",
-            lastTimeText: "倒计时end",
+            hintingTitle: "使用示例:",
+            foreTimeText: "(倒计时fore)",
+            lastTimeText: "(倒计时end)",
             isCompleteShowHms: true,
             time: 0,
             isStartCount: false,
@@ -60,18 +64,28 @@ export default {
 	},
     components: {
         countDown,
+        popupToast,
         preCode,
     },
     methods: {
         onStartCountClick: function(){
             this.time = 9;
             this.isStartCount = true;
+        },
+
+        showPopupToast: function( text ){
+            var toastMsg = {
+                bodyText: text,
+                timer: 2222,           //可不传；默认2000ms
+                callBackFunc: null     // 可不传，默认null；
+            }
+            this.$broadcast('show-popup-toast', toastMsg);
         }
     },
     events: {
         'on-countdown-finish': function (countNum) {
             // countNum 统计调用此 countDown 次数;
-            alert("countdown had down; num = " + countNum )
+            this.showPopupToast( "countdown had down; countNum = " + countNum )
         }
     }
 }

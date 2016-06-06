@@ -1,14 +1,14 @@
 <template id="index" lang='jade'>
-    div#app
-        div#left-sidebar
-            p(class='sidebar-title') {{ widgetsTitle }}
-            ul#sidebar-widgets
-                li(v-for='item in widgetsComp' class='sidebar-widgets-li')
-                    a(class='sidebar-widgets-span' @click="onEntryDemoClick(item)") {{ item }}
-            p(class='sidebar-title') {{ modulesTitle }}
-            ul#sidebar-modules
-                li(v-for='item in modulesComp' class='sidebar-modules-li')
-                    a(class='sidebar-modules-span' @click="onEntryDemoClick(item)" ) {{ item }}
+div#app
+    div#left-sidebar
+        p(class='sidebar-title') {{ widgetsTitle }}
+        ul#sidebar-widgets
+            li(v-for='item in widgetsComp' class='sidebar-widgets-li')
+                a(class='sidebar-widgets-span' id='{{ item }}' @click="onEntryDemoClick(item)") {{ item }}
+        p(class='sidebar-title') {{ modulesTitle }}
+        ul#sidebar-modules
+            li(v-for='item in modulesComp' class='sidebar-modules-li')
+                a(class='sidebar-modules-span' @click="onEntryDemoClick(item)" ) {{ item }}
     div#components-wraper
         div#components-cont
             <router-view></router-view>
@@ -21,7 +21,7 @@ export default {
         return {
             widgetsComp: componentsConfig.widgets,
             modulesComp: componentsConfig.modules,
-            widgetsTitle: "widgetsComponents",
+            widgetsTitle: "WidgetsComponents",
             modulesTitle: "ModulesComponents",
         }
     },
@@ -30,19 +30,15 @@ export default {
 		}
 	},
     components: {
-        // tvStrongDialog,
-        // commonTable,
-        // turnTable,
-        // countDown,
-        // jadeDealKeys,
-        // popupToast,
-        // fillPhoneDialog,
     },
     methods: {
         onEntryDemoClick: function( param ){
             console.log( param );
             // this.$route.router.go({name: param ,params: { actId: id }})
             this.$route.router.go({name: param})
+            var activeId = '#' + param;
+            $('#left-sidebar').find('.active').removeClass('active')
+            $(activeId).parent().addClass('active')
         }
     }
 }
@@ -51,55 +47,126 @@ export default {
 <style media="screen">
 *{margin: 0;padding: 0}
 li{list-style: none}
-body{background-color: #E6E6E6}
-#left-sidebar{
-    position: fixed;
-    left: 0;
-    top: 0;
+html, body{
     height: 100%;
-    width: 16%;
-    text-align: center;
-    background-color: #222222;
+    background-color: #1C1F2B;
+    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));
 }
-.sidebar-title{
-    font-size: 1.3em;
-    color: #ed1941;
-    height: 2em;
-    line-height: 2;
-    background-color: #65c294;
+#app{
+    height: 100%;
+    width: 100%;
+    min-width: 800px;
+    position: relative;
+}
+#left-sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    color: #ffffff;
+    /*background-color: #2D3143;*/
+    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));
+    z-index: 1;
 }
 #sidebar-widgets, #sidebar-modules{
     width: 100%;
     font-size: 1.1em;
-    color: #009ad6;
+    color: #f2f2f2;
+    border-top: 1px solid #221D1D;
 }
 .sidebar-widgets-li, .sidebar-modules-li{
     width: 100%;
     height: 2em;
     line-height: 2;
     display: table;
-    border-bottom: 1px dashed rgba(99,99,99,.6);
+    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/
+    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;
+}
+.sidebar-widgets-li.active, .sidebar-modules-li.active,
+.sidebar-widgets-li:hover, .sidebar-modules-li:hover{
+    background-color: #130c0e;
+}
+.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{
+    background: transparent;
+    font-weight: 600;
+    display: inline-block;
+    width: 90%;
+    text-indent: 15%;
+    margin: 0 5%;
+    text-align: left;
+}
+.sidebar-title{
+    text-indent: 0%;
+    font-size: 1.3em;
+    height: 2em;
+    line-height: 2;
 }
 /*-----components-cont-----*/
 #components-wraper{
-    position: absolute;
-    top:0;
-    left:16%;
-    width: 60%;
+    display: table;
+    width: calc(100% - 300px);
     height: 100%;
-    background-color: #d3d7d4;
+    border-collapse: collapse;
+    border-spacing: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 #components-cont{
-    margin: 0 9.9%;
+    position: relative;
+    left: 0px;
+    transition: 300ms ease left;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 100px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+}
+#components-cont::-webkit-scrollbar {
+    background: transparent;
+}
+@media (max-width: 1240px) {
+    #components-wraper{
+        -webkit-transition:-webkit-transform 250ms ease;
+        -moz-transition: -moz-transform 250ms ease;
+        -o-transition: -o-transform 250ms ease;
+        transition: transform 250ms ease;
+        padding-bottom: 20px
+    }
+}
+
+@media (min-width: 600px) {
+    #components-wraper{
+        left:300px
+    }
 }
 #comp-title{
     text-align: center;
-    color: #000;
-    text-shadow: 0 1px 1px #fff
+    color: #f2f2f2;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #000;
+    margin: 2% 0 5% 0;
+}
+#comp-title:hover{
+    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
+    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
 }
 #hinting-title{
     margin: 2% 0;
-    color: #130c0e;
+    color: #130C0E;
 }
 .demonstrate-a{
     margin: 2% 0;
@@ -131,5 +198,8 @@ body{background-color: #E6E6E6}
     line-height: 2;
     text-align: center;
     color: #f2f2f2;
+}
+.comp-area{
+    position: relative;
 }
 </style>

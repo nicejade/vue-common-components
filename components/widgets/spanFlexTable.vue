@@ -2,7 +2,6 @@
 	Date: 16-04-14~15
 	Author: Nicejade
  -->
-
 <template>
 	<div id="span-flex-table" v-if="isShowTableFlag">
 		<ul>
@@ -58,7 +57,6 @@ export default {
 }
 </script>
 
-
 <style lang="sass">
 *{padding:0;margin:0;box-sizing:border-box;}
 $h30   : 30%;
@@ -82,9 +80,7 @@ $tc    : center;
 }
 
 #span-flex-table{
-	position:$pa;
-	left: 10%;
-	top: 10%;
+	position: $pr;
 	width: $h60;
 	padding-top: $h30;
 	background-color: #999;

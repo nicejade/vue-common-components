@@ -6,8 +6,8 @@ module.exports = function() {
             "2": "strongDialog",
             "3": "tabBarWithJq",
             "4": "spanFlexTable",
-            "5": "countDown",
-            "6": "commonTable",
+            "5": "commonTable",
+			"6": "countDown",
         },
         "modules":{
             "0": "turnTable",

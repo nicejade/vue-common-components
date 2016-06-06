@@ -90,7 +90,7 @@ export default {
 			var zhReg = /^1[3-8][0-9]{9}$/,  //简体
                 thReg = /^08[0-9]{9,10}$/;   //繁体
 
-            var Reg = (vars.lang=="zh") ? zhReg : thReg; 
+            var Reg = zhReg;   //默认简体
             if( null !== this.verifyPhoneNumReg ){
                 Reg = this.verifyPhoneNumReg
             }

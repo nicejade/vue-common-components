@@ -2,8 +2,10 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
+    h2#hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
-    normal-dialog
+    div.comp-area
+        normal-dialog
 </template>
 
 <script type="text/javascript">
@@ -13,9 +15,10 @@ import preCode from './preCode.vue'
 export default {
     data () {
         return {
-            btnText: "Using Demonstrate",
+            hintingTitle2: "表现示例:",
             compTitle : "Component Name",
-            hintingTitle: "Using Sample Code:",
+            hintingTitle: "使用示例:",
+            btnText: "Call NormalDialog",
             codeString: `
     import normalDialog from 'normalDialog'; //引入组件
 

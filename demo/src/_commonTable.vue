@@ -2,10 +2,11 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
-    h2#hinting-title {{ btnText }}
+    h2#hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
-    <common-table :table-list.sync='tableList'></common-table>
+    div.comp-area
+        <common-table :table-list.sync='tableList'></common-table>
 </template>
 
 <script type="text/javascript">
@@ -15,13 +16,13 @@ import preCode from './preCode.vue'
 export default {
     data () {
         return {
-            btnText: "Using Demonstrate",
+            hintingTitle2: "表现示例:",
             compTitle : "Component Name",
             xLimitControl:3,
             yLimitControl:4,
             addLine: "Add Line",
             addColumn: "Add Column",
-            hintingTitle: "Using Sample Code:",
+            hintingTitle: "使用示例:",
             tableList: [],
             codeString: `
     import commonTable from 'commonTable'; //引入组件

@@ -57,7 +57,7 @@
 	router.map({
 		"/": {
 		    name: 'index',
-		    component: __webpack_require__(92)
+		    component: __webpack_require__(12)
 		},
 		'/index':{
 			name: 'index',
@@ -65,41 +65,41 @@
 		},
 	    '/popupToast':{
 	        name: 'popupToast',
-			component: __webpack_require__(21)
+			component: __webpack_require__(17)
 	    },
 	    '/normalDialog':{
 	        name: 'normalDialog',
-			component: __webpack_require__(29)
+			component: __webpack_require__(30)
 	    },
 	    '/strongDialog':{
 	        name: 'strongDialog',
-			component: __webpack_require__(32)
+			component: __webpack_require__(40)
 	    },
 	    '/tabBarWithJq':{
 	        name: 'tabBarWithJq',
-			component: __webpack_require__(33)
+			component: __webpack_require__(48)
 	    },
 	    '/spanFlexTable':{
 	        name: 'spanFlexTable',
-			component: __webpack_require__(34)
+			component: __webpack_require__(56)
 	    },
 	    '/countDown':{
 	        name: 'countDown',
-			component: __webpack_require__(35)
+			component: __webpack_require__(66)
 	    },
 	    '/commonTable':{
 	        name: 'commonTable',
-			component: __webpack_require__(36)
+			component: __webpack_require__(74)
 	    },
 	
 	
 	    '/turnTable':{
 	        name: 'turnTable',
-			component: __webpack_require__(37)
+			component: __webpack_require__(84)
 	    },
 	    '/formDialog':{
 	        name: 'formDialog',
-			component: __webpack_require__(38)
+			component: __webpack_require__(87)
 	    }
 	});
 	
@@ -12519,7 +12519,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\r\n*{margin: 0;padding: 0}\r\nli{list-style: none}\r\nbody{background-color: #E6E6E6}\r\n#left-sidebar{\r\n    position: fixed;\r\n    left: 0;\r\n    top: 0;\r\n    height: 100%;\r\n    width: 16%;\r\n    text-align: center;\r\n    background-color: #222222;\r\n}\r\n.sidebar-title{\r\n    font-size: 1.3em;\r\n    color: #ed1941;\r\n    height: 2em;\r\n    line-height: 2;\r\n    background-color: #65c294;\r\n}\r\n#sidebar-widgets, #sidebar-modules{\r\n    width: 100%;\r\n    font-size: 1.1em;\r\n    color: #009ad6;\r\n}\r\n.sidebar-widgets-li, .sidebar-modules-li{\r\n    width: 100%;\r\n    height: 2em;\r\n    line-height: 2;\r\n    display: table;\r\n    border-bottom: 1px dashed rgba(99,99,99,.6);\r\n}\r\n/*-----components-cont-----*/\r\n#components-wraper{\r\n    position: absolute;\r\n    top:0;\r\n    left:16%;\r\n    width: 60%;\r\n    height: 100%;\r\n    background-color: #d3d7d4;\r\n}\r\n#components-cont{\r\n    margin: 0 9.9%;\r\n}\r\n#comp-title{\r\n    text-align: center;\r\n    color: #000;\r\n    text-shadow: 0 1px 1px #fff\r\n}\r\n#hinting-title{\r\n    margin: 2% 0;\r\n    color: #130c0e;\r\n}\r\n.demonstrate-a{\r\n    margin: 2% 0;\r\n    color: #009ad6;\r\n    font-size: 1.3em;\r\n    line-height: 1.3;\r\n    display: inline-block;\r\n}\r\n.ahead{\r\n    position: relative;\r\n    z-index: 12;\r\n}\r\n\r\n.common-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: relative;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n.noComplete{\r\n    margin: 2% 0;\r\n    background-color: #222222;\r\n    font-size: 2em;\r\n    line-height: 2;\r\n    text-align: center;\r\n    color: #f2f2f2;\r\n}\r\n", "", {"version":3,"sources":["/./src/index.vue?0efc4232"],"names":[],"mappings":";AAmDA,EAAA,UAAA,UAAA,CAAA;AACA,GAAA,gBAAA,CAAA;AACA,KAAA,yBAAA,CAAA;AACA;IACA,gBAAA;IACA,QAAA;IACA,OAAA;IACA,aAAA;IACA,WAAA;IACA,mBAAA;IACA,0BAAA;CACA;AACA;IACA,iBAAA;IACA,eAAA;IACA,YAAA;IACA,eAAA;IACA,0BAAA;CACA;AACA;IACA,YAAA;IACA,iBAAA;IACA,eAAA;CACA;AACA;IACA,YAAA;IACA,YAAA;IACA,eAAA;IACA,eAAA;IACA,4CAAA;CACA;AACA,6BAAA;AACA;IACA,mBAAA;IACA,MAAA;IACA,SAAA;IACA,WAAA;IACA,aAAA;IACA,0BAAA;CACA;AACA;IACA,eAAA;CACA;AACA;IACA,mBAAA;IACA,YAAA;IACA,2BAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;IACA,iBAAA;IACA,iBAAA;IACA,sBAAA;CACA;AACA;IACA,mBAAA;IACA,YAAA;CACA;;AAEA;IACA,mBAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;IACA,eAAA;IACA,eAAA;IACA,0BAAA;IACA,mBAAA;IACA,sBAAA;CACA;AACA;IACA,aAAA;IACA,0BAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;CACA","file":"index.vue","sourcesContent":["<template id=\"index\" lang='jade'>\r\n    div#app\r\n        div#left-sidebar\r\n            p(class='sidebar-title') {{ widgetsTitle }}\r\n            ul#sidebar-widgets\r\n                li(v-for='item in widgetsComp' class='sidebar-widgets-li')\r\n                    a(class='sidebar-widgets-span' @click=\"onEntryDemoClick(item)\") {{ item }}\r\n            p(class='sidebar-title') {{ modulesTitle }}\r\n            ul#sidebar-modules\r\n                li(v-for='item in modulesComp' class='sidebar-modules-li')\r\n                    a(class='sidebar-modules-span' @click=\"onEntryDemoClick(item)\" ) {{ item }}\r\n    div#components-wraper\r\n        div#components-cont\r\n            <router-view></router-view>\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nvar componentsConfig = require('./../../config/componentsConfig.js')();\r\nexport default {\r\n    data () {\r\n        return {\r\n            widgetsComp: componentsConfig.widgets,\r\n            modulesComp: componentsConfig.modules,\r\n            widgetsTitle: \"widgetsComponents\",\r\n            modulesTitle: \"ModulesComponents\",\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n\t\t}\r\n\t},\r\n    components: {\r\n        // tvStrongDialog,\r\n        // commonTable,\r\n        // turnTable,\r\n        // countDown,\r\n        // jadeDealKeys,\r\n        // popupToast,\r\n        // fillPhoneDialog,\r\n    },\r\n    methods: {\r\n        onEntryDemoClick: function( param ){\r\n            console.log( param );\r\n            // this.$route.router.go({name: param ,params: { actId: id }})\r\n            this.$route.router.go({name: param})\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n*{margin: 0;padding: 0}\r\nli{list-style: none}\r\nbody{background-color: #E6E6E6}\r\n#left-sidebar{\r\n    position: fixed;\r\n    left: 0;\r\n    top: 0;\r\n    height: 100%;\r\n    width: 16%;\r\n    text-align: center;\r\n    background-color: #222222;\r\n}\r\n.sidebar-title{\r\n    font-size: 1.3em;\r\n    color: #ed1941;\r\n    height: 2em;\r\n    line-height: 2;\r\n    background-color: #65c294;\r\n}\r\n#sidebar-widgets, #sidebar-modules{\r\n    width: 100%;\r\n    font-size: 1.1em;\r\n    color: #009ad6;\r\n}\r\n.sidebar-widgets-li, .sidebar-modules-li{\r\n    width: 100%;\r\n    height: 2em;\r\n    line-height: 2;\r\n    display: table;\r\n    border-bottom: 1px dashed rgba(99,99,99,.6);\r\n}\r\n/*-----components-cont-----*/\r\n#components-wraper{\r\n    position: absolute;\r\n    top:0;\r\n    left:16%;\r\n    width: 60%;\r\n    height: 100%;\r\n    background-color: #d3d7d4;\r\n}\r\n#components-cont{\r\n    margin: 0 9.9%;\r\n}\r\n#comp-title{\r\n    text-align: center;\r\n    color: #000;\r\n    text-shadow: 0 1px 1px #fff\r\n}\r\n#hinting-title{\r\n    margin: 2% 0;\r\n    color: #130c0e;\r\n}\r\n.demonstrate-a{\r\n    margin: 2% 0;\r\n    color: #009ad6;\r\n    font-size: 1.3em;\r\n    line-height: 1.3;\r\n    display: inline-block;\r\n}\r\n.ahead{\r\n    position: relative;\r\n    z-index: 12;\r\n}\r\n\r\n.common-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: relative;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n.noComplete{\r\n    margin: 2% 0;\r\n    background-color: #222222;\r\n    font-size: 2em;\r\n    line-height: 2;\r\n    text-align: center;\r\n    color: #f2f2f2;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\r\n*{margin: 0;padding: 0}\r\nli{list-style: none}\r\nhtml, body{\r\n    height: 100%;\r\n    background-color: #1C1F2B;\r\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));\r\n}\r\n#app{\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 800px;\r\n    position: relative;\r\n}\r\n#left-sidebar{\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    overflow-y: auto;\r\n    height: 100%;\r\n    width: 300px;\r\n    text-align: center;\r\n    color: #ffffff;\r\n    /*background-color: #2D3143;*/\r\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));\r\n    z-index: 1;\r\n}\r\n#sidebar-widgets, #sidebar-modules{\r\n    width: 100%;\r\n    font-size: 1.1em;\r\n    color: #f2f2f2;\r\n    border-top: 1px solid #221D1D;\r\n}\r\n.sidebar-widgets-li, .sidebar-modules-li{\r\n    width: 100%;\r\n    height: 2em;\r\n    line-height: 2;\r\n    display: table;\r\n    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/\r\n    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;\r\n}\r\n.sidebar-widgets-li.active, .sidebar-modules-li.active,\r\n.sidebar-widgets-li:hover, .sidebar-modules-li:hover{\r\n    background-color: #130c0e;\r\n}\r\n.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{\r\n    background: transparent;\r\n    font-weight: 600;\r\n    display: inline-block;\r\n    width: 90%;\r\n    text-indent: 15%;\r\n    margin: 0 5%;\r\n    text-align: left;\r\n}\r\n.sidebar-title{\r\n    text-indent: 0%;\r\n    font-size: 1.3em;\r\n    height: 2em;\r\n    line-height: 2;\r\n}\r\n/*-----components-cont-----*/\r\n#components-wraper{\r\n    display: table;\r\n    width: calc(100% - 300px);\r\n    height: 100%;\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n}\r\n#components-cont{\r\n    position: relative;\r\n    left: 0px;\r\n    -webkit-transition: 300ms ease left;\r\n    transition: 300ms ease left;\r\n    max-width: 1000px;\r\n    margin: 0 auto;\r\n    padding: 20px 100px;\r\n    z-index: 1;\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    left: 0;\r\n    overflow-y: auto;\r\n}\r\n#components-cont::-webkit-scrollbar {\r\n    background: transparent;\r\n}\r\n@media (max-width: 1240px) {\r\n    #components-wraper{\r\n        -webkit-transition:-webkit-transform 250ms ease;\r\n        transition: -webkit-transform 250ms ease;\r\n        transition: transform 250ms ease;\r\n        transition: transform 250ms ease, -webkit-transform 250ms ease;\r\n        padding-bottom: 20px\r\n    }\r\n}\r\n\r\n@media (min-width: 600px) {\r\n    #components-wraper{\r\n        left:300px\r\n    }\r\n}\r\n#comp-title{\r\n    text-align: center;\r\n    color: #f2f2f2;\r\n    font-weight: 500;\r\n    text-shadow: 1px 1px 1px #000;\r\n    margin: 2% 0 5% 0;\r\n}\r\n#comp-title:hover{\r\n    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\r\n    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\r\n    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\r\n}\r\n#hinting-title{\r\n    margin: 2% 0;\r\n    color: #130C0E;\r\n}\r\n.demonstrate-a{\r\n    margin: 2% 0;\r\n    color: #009ad6;\r\n    font-size: 1.3em;\r\n    line-height: 1.3;\r\n    display: inline-block;\r\n}\r\n.ahead{\r\n    position: relative;\r\n    z-index: 12;\r\n}\r\n\r\n.common-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: relative;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n.noComplete{\r\n    margin: 2% 0;\r\n    background-color: #222222;\r\n    font-size: 2em;\r\n    line-height: 2;\r\n    text-align: center;\r\n    color: #f2f2f2;\r\n}\r\n.comp-area{\r\n    position: relative;\r\n}\r\n", "", {"version":3,"sources":["/./src/index.vue?3ed5034b"],"names":[],"mappings":";AA+CA,EAAA,UAAA,UAAA,CAAA;AACA,GAAA,gBAAA,CAAA;AACA;IACA,aAAA;IACA,0BAAA;IACA,wEAAA;CACA;AACA;IACA,aAAA;IACA,YAAA;IACA,iBAAA;IACA,mBAAA;CACA;AACA;IACA,mBAAA;IACA,OAAA;IACA,QAAA;IACA,SAAA;IACA,UAAA;IACA,iBAAA;IACA,aAAA;IACA,aAAA;IACA,mBAAA;IACA,eAAA;IACA,8BAAA;IACA,wEAAA;IACA,WAAA;CACA;AACA;IACA,YAAA;IACA,iBAAA;IACA,eAAA;IACA,8BAAA;CACA;AACA;IACA,YAAA;IACA,YAAA;IACA,eAAA;IACA,eAAA;IACA,gDAAA;IACA,2CAAA;CACA;AACA;;IAEA,0BAAA;CACA;AACA;IACA,wBAAA;IACA,iBAAA;IACA,sBAAA;IACA,WAAA;IACA,iBAAA;IACA,aAAA;IACA,iBAAA;CACA;AACA;IACA,gBAAA;IACA,iBAAA;IACA,YAAA;IACA,eAAA;CACA;AACA,6BAAA;AACA;IACA,eAAA;IACA,0BAAA;IACA,aAAA;IACA,0BAAA;IACA,kBAAA;IACA,mBAAA;IACA,OAAA;IACA,QAAA;IACA,UAAA;IACA,SAAA;CACA;AACA;IACA,mBAAA;IACA,UAAA;IACA,oCAAA;IAAA,4BAAA;IACA,kBAAA;IACA,eAAA;IACA,oBAAA;IACA,WAAA;IACA,mBAAA;IACA,OAAA;IACA,UAAA;IACA,SAAA;IACA,QAAA;IACA,iBAAA;CACA;AACA;IACA,wBAAA;CACA;AACA;IACA;QACA,gDAAA;QAGA,yCAAA;QAAA,iCAAA;QAAA,+DAAA;QACA,oBAAA;KACA;CACA;;AAEA;IACA;QACA,UAAA;KACA;CACA;AACA;IACA,mBAAA;IACA,eAAA;IACA,iBAAA;IACA,8BAAA;IACA,kBAAA;CACA;AACA;IACA,yFAAA;IACA,iGAAA;IACA,8FAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;IACA,iBAAA;IACA,iBAAA;IACA,sBAAA;CACA;AACA;IACA,mBAAA;IACA,YAAA;CACA;;AAEA;IACA,mBAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;IACA,eAAA;IACA,eAAA;IACA,0BAAA;IACA,mBAAA;IACA,sBAAA;CACA;AACA;IACA,aAAA;IACA,0BAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;CACA;AACA;IACA,mBAAA;CACA","file":"index.vue","sourcesContent":["<template id=\"index\" lang='jade'>\r\ndiv#app\r\n    div#left-sidebar\r\n        p(class='sidebar-title') {{ widgetsTitle }}\r\n        ul#sidebar-widgets\r\n            li(v-for='item in widgetsComp' class='sidebar-widgets-li')\r\n                a(class='sidebar-widgets-span' id='{{ item }}' @click=\"onEntryDemoClick(item)\") {{ item }}\r\n        p(class='sidebar-title') {{ modulesTitle }}\r\n        ul#sidebar-modules\r\n            li(v-for='item in modulesComp' class='sidebar-modules-li')\r\n                a(class='sidebar-modules-span' @click=\"onEntryDemoClick(item)\" ) {{ item }}\r\n    div#components-wraper\r\n        div#components-cont\r\n            <router-view></router-view>\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nvar componentsConfig = require('./../../config/componentsConfig.js')();\r\nexport default {\r\n    data () {\r\n        return {\r\n            widgetsComp: componentsConfig.widgets,\r\n            modulesComp: componentsConfig.modules,\r\n            widgetsTitle: \"WidgetsComponents\",\r\n            modulesTitle: \"ModulesComponents\",\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n\t\t}\r\n\t},\r\n    components: {\r\n    },\r\n    methods: {\r\n        onEntryDemoClick: function( param ){\r\n            console.log( param );\r\n            // this.$route.router.go({name: param ,params: { actId: id }})\r\n            this.$route.router.go({name: param})\r\n            var activeId = '#' + param;\r\n            $('#left-sidebar').find('.active').removeClass('active')\r\n            $(activeId).parent().addClass('active')\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n*{margin: 0;padding: 0}\r\nli{list-style: none}\r\nhtml, body{\r\n    height: 100%;\r\n    background-color: #1C1F2B;\r\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));\r\n}\r\n#app{\r\n    height: 100%;\r\n    width: 100%;\r\n    min-width: 800px;\r\n    position: relative;\r\n}\r\n#left-sidebar{\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    overflow-y: auto;\r\n    height: 100%;\r\n    width: 300px;\r\n    text-align: center;\r\n    color: #ffffff;\r\n    /*background-color: #2D3143;*/\r\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));\r\n    z-index: 1;\r\n}\r\n#sidebar-widgets, #sidebar-modules{\r\n    width: 100%;\r\n    font-size: 1.1em;\r\n    color: #f2f2f2;\r\n    border-top: 1px solid #221D1D;\r\n}\r\n.sidebar-widgets-li, .sidebar-modules-li{\r\n    width: 100%;\r\n    height: 2em;\r\n    line-height: 2;\r\n    display: table;\r\n    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/\r\n    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;\r\n}\r\n.sidebar-widgets-li.active, .sidebar-modules-li.active,\r\n.sidebar-widgets-li:hover, .sidebar-modules-li:hover{\r\n    background-color: #130c0e;\r\n}\r\n.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{\r\n    background: transparent;\r\n    font-weight: 600;\r\n    display: inline-block;\r\n    width: 90%;\r\n    text-indent: 15%;\r\n    margin: 0 5%;\r\n    text-align: left;\r\n}\r\n.sidebar-title{\r\n    text-indent: 0%;\r\n    font-size: 1.3em;\r\n    height: 2em;\r\n    line-height: 2;\r\n}\r\n/*-----components-cont-----*/\r\n#components-wraper{\r\n    display: table;\r\n    width: calc(100% - 300px);\r\n    height: 100%;\r\n    border-collapse: collapse;\r\n    border-spacing: 0;\r\n    position: absolute;\r\n    top: 0;\r\n    left: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n}\r\n#components-cont{\r\n    position: relative;\r\n    left: 0px;\r\n    transition: 300ms ease left;\r\n    max-width: 1000px;\r\n    margin: 0 auto;\r\n    padding: 20px 100px;\r\n    z-index: 1;\r\n    position: absolute;\r\n    top: 0;\r\n    bottom: 0;\r\n    right: 0;\r\n    left: 0;\r\n    overflow-y: auto;\r\n}\r\n#components-cont::-webkit-scrollbar {\r\n    background: transparent;\r\n}\r\n@media (max-width: 1240px) {\r\n    #components-wraper{\r\n        -webkit-transition:-webkit-transform 250ms ease;\r\n        -moz-transition: -moz-transform 250ms ease;\r\n        -o-transition: -o-transform 250ms ease;\r\n        transition: transform 250ms ease;\r\n        padding-bottom: 20px\r\n    }\r\n}\r\n\r\n@media (min-width: 600px) {\r\n    #components-wraper{\r\n        left:300px\r\n    }\r\n}\r\n#comp-title{\r\n    text-align: center;\r\n    color: #f2f2f2;\r\n    font-weight: 500;\r\n    text-shadow: 1px 1px 1px #000;\r\n    margin: 2% 0 5% 0;\r\n}\r\n#comp-title:hover{\r\n    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\r\n    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\r\n    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\r\n}\r\n#hinting-title{\r\n    margin: 2% 0;\r\n    color: #130C0E;\r\n}\r\n.demonstrate-a{\r\n    margin: 2% 0;\r\n    color: #009ad6;\r\n    font-size: 1.3em;\r\n    line-height: 1.3;\r\n    display: inline-block;\r\n}\r\n.ahead{\r\n    position: relative;\r\n    z-index: 12;\r\n}\r\n\r\n.common-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: relative;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n.noComplete{\r\n    margin: 2% 0;\r\n    background-color: #222222;\r\n    font-size: 2em;\r\n    line-height: 2;\r\n    text-align: center;\r\n    color: #f2f2f2;\r\n}\r\n.comp-area{\r\n    position: relative;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -12812,16 +12812,16 @@
 	    value: true
 	});
 	// <template id="index" lang='jade'>
-	//     div#app
-	//         div#left-sidebar
-	//             p(class='sidebar-title') {{ widgetsTitle }}
-	//             ul#sidebar-widgets
-	//                 li(v-for='item in widgetsComp' class='sidebar-widgets-li')
-	//                     a(class='sidebar-widgets-span' @click="onEntryDemoClick(item)") {{ item }}
-	//             p(class='sidebar-title') {{ modulesTitle }}
-	//             ul#sidebar-modules
-	//                 li(v-for='item in modulesComp' class='sidebar-modules-li')
-	//                     a(class='sidebar-modules-span' @click="onEntryDemoClick(item)" ) {{ item }}
+	// div#app
+	//     div#left-sidebar
+	//         p(class='sidebar-title') {{ widgetsTitle }}
+	//         ul#sidebar-widgets
+	//             li(v-for='item in widgetsComp' class='sidebar-widgets-li')
+	//                 a(class='sidebar-widgets-span' id='{{ item }}' @click="onEntryDemoClick(item)") {{ item }}
+	//         p(class='sidebar-title') {{ modulesTitle }}
+	//         ul#sidebar-modules
+	//             li(v-for='item in modulesComp' class='sidebar-modules-li')
+	//                 a(class='sidebar-modules-span' @click="onEntryDemoClick(item)" ) {{ item }}
 	//     div#components-wraper
 	//         div#components-cont
 	//             <router-view></router-view>
@@ -12834,7 +12834,7 @@
 	        return {
 	            widgetsComp: componentsConfig.widgets,
 	            modulesComp: componentsConfig.modules,
-	            widgetsTitle: "widgetsComponents",
+	            widgetsTitle: "WidgetsComponents",
 	            modulesTitle: "ModulesComponents"
 	        };
 	    },
@@ -12842,20 +12842,15 @@
 	    route: {
 	        data: function data(transition) {}
 	    },
-	    components: {
-	        // tvStrongDialog,
-	        // commonTable,
-	        // turnTable,
-	        // countDown,
-	        // jadeDealKeys,
-	        // popupToast,
-	        // fillPhoneDialog,
-	    },
+	    components: {},
 	    methods: {
 	        onEntryDemoClick: function onEntryDemoClick(param) {
 	            console.log(param);
 	            // this.$route.router.go({name: param ,params: { actId: id }})
 	            this.$route.router.go({ name: param });
+	            var activeId = '#' + param;
+	            $('#left-sidebar').find('.active').removeClass('active');
+	            $(activeId).parent().addClass('active');
 	        }
 	    }
 	};
@@ -12864,55 +12859,126 @@
 	// <style media="screen">
 	// *{margin: 0;padding: 0}
 	// li{list-style: none}
-	// body{background-color: #E6E6E6}
-	// #left-sidebar{
-	//     position: fixed;
-	//     left: 0;
-	//     top: 0;
+	// html, body{
 	//     height: 100%;
-	//     width: 16%;
-	//     text-align: center;
-	//     background-color: #222222;
+	//     background-color: #1C1F2B;
+	//     background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));
 	// }
-	// .sidebar-title{
-	//     font-size: 1.3em;
-	//     color: #ed1941;
-	//     height: 2em;
-	//     line-height: 2;
-	//     background-color: #65c294;
+	// #app{
+	//     height: 100%;
+	//     width: 100%;
+	//     min-width: 800px;
+	//     position: relative;
+	// }
+	// #left-sidebar{
+	//     position: absolute;
+	//     top: 0;
+	//     left: 0;
+	//     right: 0;
+	//     bottom: 0;
+	//     overflow-y: auto;
+	//     height: 100%;
+	//     width: 300px;
+	//     text-align: center;
+	//     color: #ffffff;
+	//     /*background-color: #2D3143;*/
+	//     background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));
+	//     z-index: 1;
 	// }
 	// #sidebar-widgets, #sidebar-modules{
 	//     width: 100%;
 	//     font-size: 1.1em;
-	//     color: #009ad6;
+	//     color: #f2f2f2;
+	//     border-top: 1px solid #221D1D;
 	// }
 	// .sidebar-widgets-li, .sidebar-modules-li{
 	//     width: 100%;
 	//     height: 2em;
 	//     line-height: 2;
 	//     display: table;
-	//     border-bottom: 1px dashed rgba(99,99,99,.6);
+	//     /*border-bottom: 1px dashed rgba(99,99,99,.6);*/
+	//     box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;
+	// }
+	// .sidebar-widgets-li.active, .sidebar-modules-li.active,
+	// .sidebar-widgets-li:hover, .sidebar-modules-li:hover{
+	//     background-color: #130c0e;
+	// }
+	// .sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{
+	//     background: transparent;
+	//     font-weight: 600;
+	//     display: inline-block;
+	//     width: 90%;
+	//     text-indent: 15%;
+	//     margin: 0 5%;
+	//     text-align: left;
+	// }
+	// .sidebar-title{
+	//     text-indent: 0%;
+	//     font-size: 1.3em;
+	//     height: 2em;
+	//     line-height: 2;
 	// }
 	// /*-----components-cont-----*/
 	// #components-wraper{
-	//     position: absolute;
-	//     top:0;
-	//     left:16%;
-	//     width: 60%;
+	//     display: table;
+	//     width: calc(100% - 300px);
 	//     height: 100%;
-	//     background-color: #d3d7d4;
+	//     border-collapse: collapse;
+	//     border-spacing: 0;
+	//     position: absolute;
+	//     top: 0;
+	//     left: 0;
+	//     bottom: 0;
+	//     right: 0;
 	// }
 	// #components-cont{
-	//     margin: 0 9.9%;
+	//     position: relative;
+	//     left: 0px;
+	//     transition: 300ms ease left;
+	//     max-width: 1000px;
+	//     margin: 0 auto;
+	//     padding: 20px 100px;
+	//     z-index: 1;
+	//     position: absolute;
+	//     top: 0;
+	//     bottom: 0;
+	//     right: 0;
+	//     left: 0;
+	//     overflow-y: auto;
+	// }
+	// #components-cont::-webkit-scrollbar {
+	//     background: transparent;
+	// }
+	// @media (max-width: 1240px) {
+	//     #components-wraper{
+	//         -webkit-transition:-webkit-transform 250ms ease;
+	//         -moz-transition: -moz-transform 250ms ease;
+	//         -o-transition: -o-transform 250ms ease;
+	//         transition: transform 250ms ease;
+	//         padding-bottom: 20px
+	//     }
+	// }
+	//
+	// @media (min-width: 600px) {
+	//     #components-wraper{
+	//         left:300px
+	//     }
 	// }
 	// #comp-title{
 	//     text-align: center;
-	//     color: #000;
-	//     text-shadow: 0 1px 1px #fff
+	//     color: #f2f2f2;
+	//     font-weight: 500;
+	//     text-shadow: 1px 1px 1px #000;
+	//     margin: 2% 0 5% 0;
+	// }
+	// #comp-title:hover{
+	//     box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
+	//     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
+	//     -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
 	// }
 	// #hinting-title{
 	//     margin: 2% 0;
-	//     color: #130c0e;
+	//     color: #130C0E;
 	// }
 	// .demonstrate-a{
 	//     margin: 2% 0;
@@ -12945,6 +13011,9 @@
 	//     text-align: center;
 	//     color: #f2f2f2;
 	// }
+	// .comp-area{
+	//     position: relative;
+	// }
 	// </style>
 
 	/* generated by vue-loader */
@@ -12961,8 +13030,8 @@
 	            "2": "strongDialog",
 	            "3": "tabBarWithJq",
 	            "4": "spanFlexTable",
-	            "5": "countDown",
-	            "6": "commonTable",
+	            "5": "commonTable",
+				"6": "countDown",
 	        },
 	        "modules":{
 	            "0": "turnTable",
@@ -12976,24 +13045,238 @@
 /* 11 */
 /***/ function(module, exports) {
 
-	module.exports = "<div id=\"app\"><div id=\"left-sidebar\"><p class=\"sidebar-title\">{{ widgetsTitle }}</p><ul id=\"sidebar-widgets\"><li v-for=\"item in widgetsComp\" class=\"sidebar-widgets-li\"><a @click=\"onEntryDemoClick(item)\" class=\"sidebar-widgets-span\">{{ item }}</a></li></ul><p class=\"sidebar-title\">{{ modulesTitle }}</p><ul id=\"sidebar-modules\"><li v-for=\"item in modulesComp\" class=\"sidebar-modules-li\"><a @click=\"onEntryDemoClick(item)\" class=\"sidebar-modules-span\">{{ item }}</a></li></ul></div></div><div id=\"components-wraper\"><div id=\"components-cont\"><router-view></router-view></div></div>";
+	module.exports = "<div id=\"app\"><div id=\"left-sidebar\"><p class=\"sidebar-title\">{{ widgetsTitle }}</p><ul id=\"sidebar-widgets\"><li v-for=\"item in widgetsComp\" class=\"sidebar-widgets-li\"><a id=\"{{ item }}\" @click=\"onEntryDemoClick(item)\" class=\"sidebar-widgets-span\">{{ item }}</a></li></ul><p class=\"sidebar-title\">{{ modulesTitle }}</p><ul id=\"sidebar-modules\"><li v-for=\"item in modulesComp\" class=\"sidebar-modules-li\"><a @click=\"onEntryDemoClick(item)\" class=\"sidebar-modules-span\">{{ item }}</a></li></ul></div><div id=\"components-wraper\"><div id=\"components-cont\"><router-view></router-view></div></div></div>";
 
 /***/ },
-/* 12 */,
-/* 13 */,
-/* 14 */,
-/* 15 */,
-/* 16 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(17)
-	__vue_script__ = __webpack_require__(19)
+	__webpack_require__(13)
+	__vue_script__ = __webpack_require__(15)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\desc.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(16)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\desc.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(14);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./desc.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./desc.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\r\n.welcome{\r\n    text-align: center;\r\n    color: #000;\r\n    text-shadow: 0 1px 1px #fff;\r\n}\r\n.desc-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: absolute;\r\n    right: 10%;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 1.2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n", "", {"version":3,"sources":["/./src/desc.vue?39302f76"],"names":[],"mappings":";AAiBA;IACA,mBAAA;IACA,YAAA;IACA,4BAAA;CACA;AACA;IACA,mBAAA;IACA,eAAA;IACA,mBAAA;IACA,WAAA;IACA,eAAA;IACA,eAAA;IACA,iBAAA;IACA,0BAAA;IACA,mBAAA;IACA,sBAAA;CACA","file":"desc.vue","sourcesContent":["<template lang=\"jade\">\r\n    h1.welcome {{ welcome }}\r\n    a(class=\"desc-a\" href=\"https://nicejade.gitbooks.io/vue-components-doc/content/index.html\") {{ vueDoc }}\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nexport default {\r\n    data () {\r\n        return {\r\n            welcome: \"Welcome To Vue Component Desc And Example\",\r\n            vueDoc: \"Vue Component Doc\"\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n.welcome{\r\n    text-align: center;\r\n    color: #000;\r\n    text-shadow: 0 1px 1px #fff;\r\n}\r\n.desc-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: absolute;\r\n    right: 10%;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 1.2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	// <template lang="jade">
+	//     h1.welcome {{ welcome }}
+	//     a(class="desc-a" href="https://nicejade.gitbooks.io/vue-components-doc/content/index.html") {{ vueDoc }}
+	// </template>
+	//
+	// <script type="text/javascript">
+	exports.default = {
+	    data: function data() {
+	        return {
+	            welcome: "Welcome To Vue Component Desc And Example",
+	            vueDoc: "Vue Component Doc"
+	        };
+	    }
+	};
+	// </script>
+	//
+	// <style media="screen">
+	// .welcome{
+	//     text-align: center;
+	//     color: #000;
+	//     text-shadow: 0 1px 1px #fff;
+	// }
+	// .desc-a{
+	//     margin: 2% 2% 2% 0;
+	//     padding: 1% 3%;
+	//     position: absolute;
+	//     right: 10%;
+	//     color: #24B3D3;
+	//     font-size: 1em;
+	//     line-height: 1.2;
+	//     background-color: #222222;
+	//     border-radius: 1em;
+	//     text-decoration: none;
+	// }
+	// </style>
+
+	/* generated by vue-loader */
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 class=\"welcome\">{{ welcome }}</h1><a href=\"https://nicejade.gitbooks.io/vue-components-doc/content/index.html\" class=\"desc-a\">{{ vueDoc }}</a>";
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(18)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_popupToast.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(29)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_popupToast.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _popupToast = __webpack_require__(19);
+	
+	var _popupToast2 = _interopRequireDefault(_popupToast);
+	
+	var _preCode = __webpack_require__(24);
+	
+	var _preCode2 = _interopRequireDefault(_preCode);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template lang='jade'>
+	//     h1#comp-title {{ compTitle }}
+	//     h2#hinting-title {{ hintingTitle }}
+	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2#hinting-title {{ hintingTitle2 }}
+	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
+	//     div.comp-area
+	//         popup-toast
+	// </template>
+	//
+	// <script type="text/javascript">
+	exports.default = {
+	    data: function data() {
+	        return {
+	            compTitle: "Component Name",
+	            hintingTitle: "使用示例:",
+	            hintingTitle2: "表现示例:",
+	            btnText: "Call PopupToast",
+	            codeString: '\n    import popupToast from \'popupToast\';  //引入组件\n\n    var toastMsg = {\n        bodyText: text,\n        timer: 2222,           //可不传；默认2000ms\n        callBackFunc: function(){ alert(\'test\')}  // 可不传，默认null；\n    }\n    this.$broadcast(\'show-popup-toast\', toastMsg);'
+	        };
+	    },
+	
+	    route: {
+	        data: function data(transition) {
+	            this.compTitle = transition.to.name;
+	        }
+	    },
+	    components: {
+	        popupToast: _popupToast2.default,
+	        preCode: _preCode2.default
+	    },
+	    methods: {
+	        onCallDemoClick: function onCallDemoClick() {
+	            var toastMsg = {
+	                bodyText: "www.jeffjade.com",
+	                timer: 2222, //可不传；默认2000ms
+	                callBackFunc: function callBackFunc() {
+	                    console.log('callback down!');
+	                }
+	            };
+	            this.$broadcast('show-popup-toast', toastMsg);
+	        }
+	    }
+	};
+	// </script>
+
+	/* generated by vue-loader */
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(20)
+	__vue_script__ = __webpack_require__(22)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\popupToast.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(20)
+	__vue_template__ = __webpack_require__(23)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -13012,13 +13295,13 @@
 	})()}
 
 /***/ },
-/* 17 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(18);
+	var content = __webpack_require__(21);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -13038,7 +13321,7 @@
 	}
 
 /***/ },
-/* 18 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -13052,7 +13335,7 @@
 
 
 /***/ },
-/* 19 */
+/* 22 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13120,122 +13403,23 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 20 */
-/***/ function(module, exports) {
-
-	module.exports = "<div id=\"modal-template\" v-if=\"isShowToastFlag\" class=\"popup-toast\"> <section><p>{{ bodyText }}</p></section></div>";
-
-/***/ },
-/* 21 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(22)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_popupToast.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(23)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_popupToast.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _popupToast = __webpack_require__(16);
-	
-	var _popupToast2 = _interopRequireDefault(_popupToast);
-	
-	var _preCode = __webpack_require__(24);
-	
-	var _preCode2 = _interopRequireDefault(_preCode);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// <template lang='jade'>
-	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
-	//     <pre-code :code-string="codeString"></pre-code>
-	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
-	//     popup-toast
-	// </template>
-	//
-	// <script type="text/javascript">
-	exports.default = {
-	    data: function data() {
-	        return {
-	            btnText: "Using Demonstrate",
-	            compTitle: "Component Name",
-	            hintingTitle: "Using Sample Code:",
-	            codeString: '\n    import popupToast from \'popupToast\';  //引入组件\n\n    var toastMsg = {\n        bodyText: text,\n        timer: 2222,           //可不传；默认2000ms\n        callBackFunc: function(){ alert(\'test\')}  // 可不传，默认null；\n    }\n    this.$broadcast(\'show-popup-toast\', toastMsg);'
-	        };
-	    },
-	
-	    route: {
-	        data: function data(transition) {
-	            this.compTitle = transition.to.name;
-	        }
-	    },
-	    components: {
-	        popupToast: _popupToast2.default,
-	        preCode: _preCode2.default
-	    },
-	    methods: {
-	        onCallDemoClick: function onCallDemoClick() {
-	            var toastMsg = {
-	                bodyText: "www.jeffjade.com",
-	                timer: 2222, //可不传；默认2000ms
-	                callBackFunc: function callBackFunc() {
-	                    console.log('callback down!');
-	                }
-	            };
-	            this.$broadcast('show-popup-toast', toastMsg);
-	        }
-	    }
-	};
-	// </script>
-
-	/* generated by vue-loader */
-
-/***/ },
 /* 23 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><popup-toast></popup-toast>";
+	module.exports = "<div id=\"modal-template\" v-if=\"isShowToastFlag\" class=\"popup-toast\"> <section><p>{{ bodyText }}</p></section></div>";
 
 /***/ },
 /* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(27)
-	__vue_script__ = __webpack_require__(25)
+	__webpack_require__(25)
+	__vue_script__ = __webpack_require__(27)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\preCode.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(26)
+	__vue_template__ = __webpack_require__(28)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -13255,6 +13439,46 @@
 
 /***/ },
 /* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(26);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./preCode.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./preCode.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\r\n#pre-wrapper{\r\n    background-color: #2D2D2D;\r\n    border-left: 2px solid #fe0;\r\n}\r\n", "", {"version":3,"sources":["/./src/preCode.vue?19cf4991"],"names":[],"mappings":";AAuBA;IACA,0BAAA;IACA,4BAAA;CACA","file":"preCode.vue","sourcesContent":["<template lang='jade'>\r\n    pre#pre-wrapper(class=\"brush: js\") {{ codeString }}\r\n    hr\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nexport default {\r\n    data () {\r\n    },\r\n    props: {\r\n        codeString:{\r\n            type: String,\r\n            default: \"\"\r\n        }\r\n    },\r\n    ready(){\r\n    },\r\n    methods: {\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#pre-wrapper{\r\n    background-color: #2D2D2D;\r\n    border-left: 2px solid #fe0;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 27 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13269,10 +13493,7 @@
 	//
 	// <script type="text/javascript">
 	exports.default = {
-	    data: function data() {
-	        console.log(1);
-	        // highlightCode()
-	    },
+	    data: function data() {},
 	
 	    props: {
 	        codeString: {
@@ -13296,63 +13517,29 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports) {
 
 	module.exports = "<pre id=\"pre-wrapper\" class=\"brush: js\">{{ codeString }}</pre><hr/>";
 
 /***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(28);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./preCode.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./preCode.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\r\n#pre-wrapper{\r\n    background-color: #2D2D2D;\r\n    border-left: 2px solid #fe0;\r\n}\r\n", "", {"version":3,"sources":["/./src/preCode.vue?660bc000"],"names":[],"mappings":";AAyBA;IACA,0BAAA;IACA,4BAAA;CACA","file":"preCode.vue","sourcesContent":["<template lang='jade'>\r\n    pre#pre-wrapper(class=\"brush: js\") {{ codeString }}\r\n    hr\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nexport default {\r\n    data () {\r\n        console.log(1)\r\n        // highlightCode()\r\n    },\r\n    props: {\r\n        codeString:{\r\n            type: String,\r\n            default: \"\"\r\n        }\r\n    },\r\n    ready(){\r\n    },\r\n    methods: {\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#pre-wrapper{\r\n    background-color: #2D2D2D;\r\n    border-left: 2px solid #fe0;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
 /* 29 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><popup-toast></popup-toast></div>";
+
+/***/ },
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(45)
-	__vue_script__ = __webpack_require__(30)
+	__webpack_require__(31)
+	__vue_script__ = __webpack_require__(33)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src\\_normalDialog.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(31)
+	__vue_template__ = __webpack_require__(39)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -13371,7 +13558,47 @@
 	})()}
 
 /***/ },
-/* 30 */
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(32);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./_normalDialog.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./_normalDialog.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n", "", {"version":3,"sources":["/./src/_normalDialog.vue?4cdeb79b"],"names":[],"mappings":";AAgEA;IACA,oBAAA;CACA","file":"_normalDialog.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ hintingTitle2 }}\r\n    a(href='javascript:;' @click=\"onCallDemoClick\" class='demonstrate-a') {{ btnText }}\r\n    div.comp-area\r\n        normal-dialog\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport normalDialog from 'normalDialog'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            hintingTitle2: \"表现示例:\",\r\n            compTitle : \"Component Name\",\r\n            hintingTitle: \"使用示例:\",\r\n            btnText: \"Call NormalDialog\",\r\n            codeString: `\r\n    import normalDialog from 'normalDialog'; //引入组件\r\n\r\n    var dlgMsgObj = {\r\n        titleText: \"&温馨提示&\",            //可不传，默认 “温馨提示”\r\n        bodyText: text,\r\n        confirmText: \"确认\",                //可不传，默认 “确认”\r\n        callBackFunc: null,                 //可不传，默认null\r\n        isShowCloseXFlag: true       //可不传，默认 true\r\n    }\r\n    // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\r\n    this.$broadcast('show-normal-dlg', dlgMsgObj);`\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        normalDialog,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        onCallDemoClick: function(){\r\n            var dlgMsgObj = {\r\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\r\n                bodyText: \"www.jeffjade.com\",\r\n                confirmText: \"确认\",             //可不传，默认 “确认”\r\n                callBackFunc: ()=>{\r\n                    alert('Execute Button CallBackFunc')\r\n                },      //可不传，默认null\r\n                isShowCloseXFlag: true       //可不传，默认 true\r\n            }\r\n\r\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\r\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13380,7 +13607,7 @@
 	    value: true
 	});
 	
-	var _normalDialog = __webpack_require__(39);
+	var _normalDialog = __webpack_require__(34);
 	
 	var _normalDialog2 = _interopRequireDefault(_normalDialog);
 	
@@ -13394,17 +13621,20 @@
 	//     h1#comp-title {{ compTitle }}
 	//     h2#hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2#hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
-	//     normal-dialog
+	//     div.comp-area
+	//         normal-dialog
 	// </template>
 	//
 	// <script type="text/javascript">
 	exports.default = {
 	    data: function data() {
 	        return {
-	            btnText: "Using Demonstrate",
+	            hintingTitle2: "表现示例:",
 	            compTitle: "Component Name",
-	            hintingTitle: "Using Sample Code:",
+	            hintingTitle: "使用示例:",
+	            btnText: "Call NormalDialog",
 	            codeString: '\n    import normalDialog from \'normalDialog\'; //引入组件\n\n    var dlgMsgObj = {\n        titleText: "&温馨提示&",            //可不传，默认 “温馨提示”\n        bodyText: text,\n        confirmText: "确认",                //可不传，默认 “确认”\n        callBackFunc: null,                 //可不传，默认null\n        isShowCloseXFlag: true       //可不传，默认 true\n    }\n    // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n    this.$broadcast(\'show-normal-dlg\', dlgMsgObj);'
 	        };
 	    },
@@ -13446,223 +13676,17 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 31 */
-/***/ function(module, exports) {
-
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><normal-dialog></normal-dialog>";
-
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(47)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_strongDialog.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(53)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_strongDialog.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(56)
-	__vue_script__ = __webpack_require__(58)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_tabBarWithJq.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(62)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_tabBarWithJq.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
 /* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(63)
-	__vue_script__ = __webpack_require__(65)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_spanFlexTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(71)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_spanFlexTable.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(72)
-	__vue_script__ = __webpack_require__(74)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_countDown.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(75)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_countDown.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 36 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(79)
-	__vue_script__ = __webpack_require__(81)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_commonTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(82)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_commonTable.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 37 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(91)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_turnTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(88)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_turnTable.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(90)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\_formDialog.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(89)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\_formDialog.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 39 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(40)
-	__vue_script__ = __webpack_require__(42)
+	__webpack_require__(35)
+	__vue_script__ = __webpack_require__(37)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\normalDialog.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(43)
+	__vue_template__ = __webpack_require__(38)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -13681,13 +13705,13 @@
 	})()}
 
 /***/ },
-/* 40 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(41);
+	var content = __webpack_require__(36);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -13707,7 +13731,7 @@
 	}
 
 /***/ },
-/* 41 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -13721,7 +13745,7 @@
 
 
 /***/ },
-/* 42 */
+/* 37 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13881,54 +13905,47 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 43 */
+/* 38 */
 /***/ function(module, exports) {
 
 	module.exports = "\r\n<div id=\"modal-template\"  class=\"dialog wrap\" v-if=\"isShowDlgFlag\">\r\n    <div class=\"normal-dlg-shadow\"></div>\r\n    <div id=\"normal-dlg-body\">\r\n        <h1 v-if=\"isShowTitleFlag\">{{{ titleText }}}</h1>\r\n        <a href=\"javascript:;\" class=\"normal-dlg-close\" v-if=\"isShowCloseXFlag\" @click=\"onCloseClick\"></a>\r\n        <section> {{{ bodyText }}} </section>\r\n        <a class=\"confirm\" @click=\"onConfirmClick\">{{ confirmText }}</a>\r\n    </div>\r\n</div>\r\n";
 
 /***/ },
-/* 44 */,
-/* 45 */
+/* 39 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><normal-dialog></normal-dialog></div>";
+
+/***/ },
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(46);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./_normalDialog.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./_normalDialog.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(41)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_strongDialog.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(47)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
 	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_strongDialog.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n", "", {"version":3,"sources":["/./src/_normalDialog.vue?2da88510"],"names":[],"mappings":";AA6DA;IACA,oBAAA;CACA","file":"_normalDialog.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    a(href='javascript:;' @click=\"onCallDemoClick\" class='demonstrate-a') {{ btnText }}\r\n    normal-dialog\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport normalDialog from 'normalDialog'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            btnText: \"Using Demonstrate\",\r\n            compTitle : \"Component Name\",\r\n            hintingTitle: \"Using Sample Code:\",\r\n            codeString: `\r\n    import normalDialog from 'normalDialog'; //引入组件\r\n\r\n    var dlgMsgObj = {\r\n        titleText: \"&温馨提示&\",            //可不传，默认 “温馨提示”\r\n        bodyText: text,\r\n        confirmText: \"确认\",                //可不传，默认 “确认”\r\n        callBackFunc: null,                 //可不传，默认null\r\n        isShowCloseXFlag: true       //可不传，默认 true\r\n    }\r\n    // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\r\n    this.$broadcast('show-normal-dlg', dlgMsgObj);`\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        normalDialog,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        onCallDemoClick: function(){\r\n            var dlgMsgObj = {\r\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\r\n                bodyText: \"www.jeffjade.com\",\r\n                confirmText: \"确认\",             //可不传，默认 “确认”\r\n                callBackFunc: ()=>{\r\n                    alert('Execute Button CallBackFunc')\r\n                },      //可不传，默认null\r\n                isShowCloseXFlag: true       //可不传，默认 true\r\n            }\r\n\r\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\r\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 47 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -13937,7 +13954,7 @@
 	    value: true
 	});
 	
-	var _strongDialog = __webpack_require__(48);
+	var _strongDialog = __webpack_require__(42);
 	
 	var _strongDialog2 = _interopRequireDefault(_strongDialog);
 	
@@ -13951,10 +13968,12 @@
 	//     h1#comp-title {{ compTitle }}
 	//     h2#hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2#hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a ahead') {{ showStrongDlgText }}
 	//     br
 	//     a(href='javascript:;' @click="onCloseDemoClick" class='demonstrate-a ahead') {{ hideStrongDlgText }}
-	//     strong-dialog
+	//     div.comp-area
+	//         strong-dialog
 	// </template>
 	//
 	// <script type="text/javascript">
@@ -13963,7 +13982,8 @@
 	        return {
 	            showStrongDlgText: "show StrongDialog",
 	            hideStrongDlgText: "hide StrongDialog",
-	            hintingTitle: "Using Sample Code:",
+	            hintingTitle: "使用示例:",
+	            hintingTitle2: "表现示例:",
 	            compTitle: "Component Name",
 	            codeString: '\n    import strongDialog from \'strongDialog\';  //引入组件\n\n    function leftCallback(){\n        console.log(\'leftCallback To Here\');\n    }\n\n    function rightCallback(){\n        console.log(\'rightCallback To Here\');\n    }\n\n    var dlgMsgObj = {\n        titleText: "&温馨提示&",\n        bodyText: text+\'<b>JeffJade|www.jeffjade.com</b>\',\n        closeXCallBack: null, //关掉顶部 X 按钮执行的回调;\n        btnsObj: {\n            0: {\n                btnText: "取消",\n                callBackFunc: leftCallback\n            },\n            1: {\n                btnText: "确认",\n                callBackFunc: rightCallback\n            }\n        },\n        isShowCloseXFlag: true\n    }\n    this.$broadcast(\'show-strong-dlg\', dlgMsgObj);\n\n    this.$broadcast(\'hide-strong-dlg\');  //主动关闭 StrongDlg；'
 	        };
@@ -14016,17 +14036,17 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 48 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(49)
-	__vue_script__ = __webpack_require__(51)
+	__webpack_require__(43)
+	__vue_script__ = __webpack_require__(45)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\strongDialog.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(52)
+	__vue_template__ = __webpack_require__(46)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -14045,13 +14065,13 @@
 	})()}
 
 /***/ },
-/* 49 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(50);
+	var content = __webpack_require__(44);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -14071,7 +14091,7 @@
 	}
 
 /***/ },
-/* 50 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -14085,7 +14105,7 @@
 
 
 /***/ },
-/* 51 */
+/* 45 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14267,27 +14287,54 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 52 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = "\r\n<div id='modal-template'  class='dialog wrap' v-if='isShowDlgFlag'>\r\n    <div class='strong-dlg-shadow'></div>\r\n    <div id='strong-dlg-body' class=\"dlg-body\">\r\n        <h1 v-if='isShowTitleFlag'>{{{ titleText }}}</h1>\r\n        <a href='javascript:;' class='strong-dlg-close' v-if='isShowCloseXFlag' @click='onCloseClick'></a>\r\n        <section> {{{ bodyText }}} </section>\r\n        <ul class='strong-dlg-ul'>\r\n            <li v-for='btnItem in btnsObj' class='strong-dlg-li'>\r\n                <a class='strong-dlg-a dlg-submit-btn' @click='onBtnClick($index)'>\r\n                    {{ btnItem.btnText }}\r\n                </a>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n</div>\r\n";
 
 /***/ },
-/* 53 */
+/* 47 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a ahead\">{{ showStrongDlgText }}</a><br/><a href=\"javascript:;\" @click=\"onCloseDemoClick\" class=\"demonstrate-a ahead\">{{ hideStrongDlgText }}</a><strong-dialog></strong-dialog>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a ahead\">{{ showStrongDlgText }}</a><br/><a href=\"javascript:;\" @click=\"onCloseDemoClick\" class=\"demonstrate-a ahead\">{{ hideStrongDlgText }}</a><div class=\"comp-area\"><strong-dialog></strong-dialog></div>";
 
 /***/ },
-/* 54 */,
-/* 55 */,
-/* 56 */
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(49)
+	__vue_script__ = __webpack_require__(51)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_tabBarWithJq.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(55)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_tabBarWithJq.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(57);
+	var content = __webpack_require__(50);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -14307,7 +14354,7 @@
 	}
 
 /***/ },
-/* 57 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -14315,13 +14362,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\r\n.content{\r\n    margin-top: 2%;\r\n    height: 3em;\r\n    line-height: 3;\r\n    width: 100%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    background-color: #2F2F2F;\r\n    color: purple;\r\n    font-size: 2em;\r\n}\r\n.tab-bar-li{\r\n    float: right;\r\n    margin: 2% 0 1% 2%;\r\n    padding: 1%;\r\n    background-color: rgba(11,11,11,.6);\r\n}\r\n.tab-bar-li.active{\r\n    background-color: #523B76;\r\n}\r\n", "", {"version":3,"sources":["/./src/_tabBarWithJq.vue?49036c92"],"names":[],"mappings":";AAwDA;IACA,eAAA;IACA,YAAA;IACA,eAAA;IACA,YAAA;IACA,sBAAA;IACA,mBAAA;IACA,0BAAA;IACA,cAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,mBAAA;IACA,YAAA;IACA,oCAAA;CACA;AACA;IACA,0BAAA;CACA","file":"_tabBarWithJq.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ btnText }}\r\n    <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\r\n    div.content\r\n        section {{ tabList[0] }}\r\n        section(style=\"display:none;\") {{ tabList[1] }}\r\n        section(style=\"display:none;\") {{ tabList[2] }}\r\n        section(style=\"display:none;\") {{ tabList[3] }}\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport tabBarWithJq from 'tabBarWithJq'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            btnText: \"Using Demonstrate\",\r\n            compTitle : \"Component Name\",\r\n            hintingTitle: \"Using Sample Code:\",\r\n            tabList: {\r\n                \"0\": \"赵钱孙李\",\r\n                \"1\": \"周吴郑王\",\r\n                \"2\": \"冯陈诸卫\",\r\n                \"3\": \"蒋沈韩杨\",\r\n            },\r\n            codeString: `\r\n    import tabBarWithJq from 'tabBarWithJq'; //引入组件\r\n\r\n    //在模板(jade)中如下注入组件and标签页即可(定义tabList数组/Object)：\r\n    <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\r\n    div.content\r\n        section {{ tabList[1] }}\r\n        section(style=\"display:none;\") {{ tabList[2] }}\r\n        section(style=\"display:none;\") {{ tabList[3] }}\r\n        section(style=\"display:none;\") {{ tabList[4] }}`\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        tabBarWithJq,\r\n        preCode,\r\n    },\r\n    methods: {\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n.content{\r\n    margin-top: 2%;\r\n    height: 3em;\r\n    line-height: 3;\r\n    width: 100%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    background-color: #2F2F2F;\r\n    color: purple;\r\n    font-size: 2em;\r\n}\r\n.tab-bar-li{\r\n    float: right;\r\n    margin: 2% 0 1% 2%;\r\n    padding: 1%;\r\n    background-color: rgba(11,11,11,.6);\r\n}\r\n.tab-bar-li.active{\r\n    background-color: #523B76;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\r\n.content{\r\n    margin-top: 2%;\r\n    height: 3em;\r\n    line-height: 3;\r\n    width: 100%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    background-color: #2F2F2F;\r\n    color: purple;\r\n    font-size: 2em;\r\n}\r\n.tab-bar-li{\r\n    float: right;\r\n    margin: 2% 0 1% 2%;\r\n    padding: 1%;\r\n    background-color: rgba(11,11,11,.6);\r\n}\r\n.tab-bar-li.active{\r\n    background-color: #523B76;\r\n}\r\n", "", {"version":3,"sources":["/./src/_tabBarWithJq.vue?3c9ef9a2"],"names":[],"mappings":";AAyDA;IACA,eAAA;IACA,YAAA;IACA,eAAA;IACA,YAAA;IACA,sBAAA;IACA,mBAAA;IACA,0BAAA;IACA,cAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,mBAAA;IACA,YAAA;IACA,oCAAA;CACA;AACA;IACA,0BAAA;CACA","file":"_tabBarWithJq.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ hintingTitle2 }}\r\n    div.comp-area\r\n        <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\r\n        div.content\r\n            section {{ tabList[0] }}\r\n            section(style=\"display:none;\") {{ tabList[1] }}\r\n            section(style=\"display:none;\") {{ tabList[2] }}\r\n            section(style=\"display:none;\") {{ tabList[3] }}\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport tabBarWithJq from 'tabBarWithJq'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            hintingTitle2: \"表现示例:\",\r\n            compTitle : \"Component Name\",\r\n            hintingTitle: \"使用示例:\",\r\n            tabList: {\r\n                \"0\": \"赵钱孙李\",\r\n                \"1\": \"周吴郑王\",\r\n                \"2\": \"冯陈诸卫\",\r\n                \"3\": \"蒋沈韩杨\",\r\n            },\r\n            codeString: `\r\n    import tabBarWithJq from 'tabBarWithJq'; //引入组件\r\n\r\n    //在模板(jade)中如下注入组件and标签页即可(定义tabList数组/Object)：\r\n    <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\r\n    div.content\r\n        section {{ tabList[1] }}\r\n        section(style=\"display:none;\") {{ tabList[2] }}\r\n        section(style=\"display:none;\") {{ tabList[3] }}\r\n        section(style=\"display:none;\") {{ tabList[4] }}`\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        tabBarWithJq,\r\n        preCode,\r\n    },\r\n    methods: {\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n.content{\r\n    margin-top: 2%;\r\n    height: 3em;\r\n    line-height: 3;\r\n    width: 100%;\r\n    display: inline-block;\r\n    text-align: center;\r\n    background-color: #2F2F2F;\r\n    color: purple;\r\n    font-size: 2em;\r\n}\r\n.tab-bar-li{\r\n    float: right;\r\n    margin: 2% 0 1% 2%;\r\n    padding: 1%;\r\n    background-color: rgba(11,11,11,.6);\r\n}\r\n.tab-bar-li.active{\r\n    background-color: #523B76;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 58 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14330,7 +14377,7 @@
 	    value: true
 	});
 	
-	var _tabBarWithJq = __webpack_require__(59);
+	var _tabBarWithJq = __webpack_require__(52);
 	
 	var _tabBarWithJq2 = _interopRequireDefault(_tabBarWithJq);
 	
@@ -14344,22 +14391,23 @@
 	//     h1#comp-title {{ compTitle }}
 	//     h2#hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ btnText }}
-	//     <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
-	//     div.content
-	//         section {{ tabList[0] }}
-	//         section(style="display:none;") {{ tabList[1] }}
-	//         section(style="display:none;") {{ tabList[2] }}
-	//         section(style="display:none;") {{ tabList[3] }}
+	//     h2#hinting-title {{ hintingTitle2 }}
+	//     div.comp-area
+	//         <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
+	//         div.content
+	//             section {{ tabList[0] }}
+	//             section(style="display:none;") {{ tabList[1] }}
+	//             section(style="display:none;") {{ tabList[2] }}
+	//             section(style="display:none;") {{ tabList[3] }}
 	// </template>
 	//
 	// <script type="text/javascript">
 	exports.default = {
 	    data: function data() {
 	        return {
-	            btnText: "Using Demonstrate",
+	            hintingTitle2: "表现示例:",
 	            compTitle: "Component Name",
-	            hintingTitle: "Using Sample Code:",
+	            hintingTitle: "使用示例:",
 	            tabList: {
 	                "0": "赵钱孙李",
 	                "1": "周吴郑王",
@@ -14409,16 +14457,16 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 59 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(60)
+	__vue_script__ = __webpack_require__(53)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\tabBarWithJq.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(61)
+	__vue_template__ = __webpack_require__(54)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -14437,7 +14485,7 @@
 	})()}
 
 /***/ },
-/* 60 */
+/* 53 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14486,25 +14534,54 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 61 */
+/* 54 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<header>\n      <a href=\"javascript:;\" id=\"tab-bar-back\" @click=\"onBackToIndexClick\" v-if=\"isShowBackBtnFlag\"></a>\n      <nav>\n          <ul id=\"tab-bar-ul\">\n              <li v-for=\"(index,liItem) in tabList\" @click=\"onSwitchSectionClick\" class=\"tab-bar-li\" :class=\"{active:index=='0'}\">\n                  {{ liItem }}\n              </li>\n          </ul>\n      </nav>\n  </header>\n";
 
 /***/ },
-/* 62 */
+/* 55 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ btnText }}</h2><tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq><div class=\"content\"><section>{{ tabList[0] }}</section><section style=\"display:none;\">{{ tabList[1] }}</section><section style=\"display:none;\">{{ tabList[2] }}</section><section style=\"display:none;\">{{ tabList[3] }}</section></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><div class=\"comp-area\"><tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq><div class=\"content\"><section>{{ tabList[0] }}</section><section style=\"display:none;\">{{ tabList[1] }}</section><section style=\"display:none;\">{{ tabList[2] }}</section><section style=\"display:none;\">{{ tabList[3] }}</section></div></div>";
 
 /***/ },
-/* 63 */
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(57)
+	__vue_script__ = __webpack_require__(59)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_spanFlexTable.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(65)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_spanFlexTable.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(64);
+	var content = __webpack_require__(58);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -14524,7 +14601,7 @@
 	}
 
 /***/ },
-/* 64 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -14532,13 +14609,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\r\n#components-wraper #span-flex-table{\r\n    width: 77%;\r\n    top: 33%;\r\n    margin: auto;\r\n    background-color: #222222;\r\n    color: #f2f2f2;\r\n}\r\n", "", {"version":3,"sources":["/./src/_spanFlexTable.vue?912c8b4c"],"names":[],"mappings":";AAsEA;IACA,WAAA;IACA,SAAA;IACA,aAAA;IACA,0BAAA;IACA,eAAA;CACA","file":"_spanFlexTable.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ btnText }}\r\n    <span-flex-table :table-list.sync='tableList'></span-flex-table>\r\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\r\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport spanFlexTable from 'spanFlexTable'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            btnText: \"Using Demonstrate\",\r\n            compTitle : \"Component Name\",\r\n            xLimitControl:3,\r\n            yLimitControl:4,\r\n            addLine: \"Add Line\",\r\n            addColumn: \"Add Column\",\r\n            hintingTitle: \"Using Sample Code:\",\r\n            tableList: [],\r\n            codeString: `\r\n    import spanFlexTable from 'spanFlexTable'; //引入组件\r\n\r\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\r\n    <span-flex-table :table-list.sync='tableList'></span-flex-table>`\r\n        }\r\n    },\r\n    ready(){\r\n        this.setTableList()\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        spanFlexTable,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        setTableList: function(){\r\n            let tempArr = [];\r\n            for(let i=0; i<= this.xLimitControl; i++){\r\n                tempArr[i] = []\r\n                for(let j=0; j<=this.yLimitControl; j++){\r\n                    tempArr[i][j] = 'iLoveU' + j;\r\n                }\r\n            }\r\n            this.tableList = tempArr\r\n        },\r\n        onAddLineClick: function(){\r\n            this.xLimitControl += 1\r\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\r\n            this.setTableList()\r\n        },\r\n        onAddColumnClick: function(){\r\n            this.yLimitControl += 1\r\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\r\n            this.setTableList()\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#components-wraper #span-flex-table{\r\n    width: 77%;\r\n    top: 33%;\r\n    margin: auto;\r\n    background-color: #222222;\r\n    color: #f2f2f2;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\r\n#components-wraper #span-flex-table{\r\n    width: 77%;\r\n    margin: 3% auto;\r\n    background-color: #222222;\r\n    color: #f2f2f2;\r\n}\r\n", "", {"version":3,"sources":["/./src/_spanFlexTable.vue?0e927b5d"],"names":[],"mappings":";AAuEA;IACA,WAAA;IACA,gBAAA;IACA,0BAAA;IACA,eAAA;CACA","file":"_spanFlexTable.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ hintingTitle2 }}\r\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\r\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\r\n    div.comp-area\r\n        <span-flex-table :table-list.sync='tableList'></span-flex-table>\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport spanFlexTable from 'spanFlexTable'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            compTitle : \"Component Name\",\r\n            xLimitControl:3,\r\n            yLimitControl:4,\r\n            addLine: \"Add Line\",\r\n            addColumn: \"Add Column\",\r\n            hintingTitle: \"使用示例:\",\r\n            hintingTitle2: \"表现示例:\",\r\n            tableList: [],\r\n            codeString: `\r\n    import spanFlexTable from 'spanFlexTable'; //引入组件\r\n\r\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\r\n    <span-flex-table :table-list.sync='tableList'></span-flex-table>`\r\n        }\r\n    },\r\n    ready(){\r\n        this.setTableList()\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        spanFlexTable,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        setTableList: function(){\r\n            let tempArr = [];\r\n            for(let i=0; i<= this.xLimitControl; i++){\r\n                tempArr[i] = []\r\n                for(let j=0; j<=this.yLimitControl; j++){\r\n                    tempArr[i][j] = 'iLoveU' + j;\r\n                }\r\n            }\r\n            this.tableList = tempArr\r\n        },\r\n        onAddLineClick: function(){\r\n            this.xLimitControl += 1\r\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\r\n            this.setTableList()\r\n        },\r\n        onAddColumnClick: function(){\r\n            this.yLimitControl += 1\r\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\r\n            this.setTableList()\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#components-wraper #span-flex-table{\r\n    width: 77%;\r\n    margin: 3% auto;\r\n    background-color: #222222;\r\n    color: #f2f2f2;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 65 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14547,7 +14624,7 @@
 	    value: true
 	});
 	
-	var _spanFlexTable = __webpack_require__(66);
+	var _spanFlexTable = __webpack_require__(60);
 	
 	var _spanFlexTable2 = _interopRequireDefault(_spanFlexTable);
 	
@@ -14561,23 +14638,24 @@
 	//     h1#comp-title {{ compTitle }}
 	//     h2#hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ btnText }}
-	//     <span-flex-table :table-list.sync='tableList'></span-flex-table>
+	//     h2#hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
 	//     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
+	//     div.comp-area
+	//         <span-flex-table :table-list.sync='tableList'></span-flex-table>
 	// </template>
 	//
 	// <script type="text/javascript">
 	exports.default = {
 	    data: function data() {
 	        return {
-	            btnText: "Using Demonstrate",
 	            compTitle: "Component Name",
 	            xLimitControl: 3,
 	            yLimitControl: 4,
 	            addLine: "Add Line",
 	            addColumn: "Add Column",
-	            hintingTitle: "Using Sample Code:",
+	            hintingTitle: "使用示例:",
+	            hintingTitle2: "表现示例:",
 	            tableList: [],
 	            codeString: '\n    import spanFlexTable from \'spanFlexTable\'; //引入组件\n\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\n    <span-flex-table :table-list.sync=\'tableList\'></span-flex-table>'
 	        };
@@ -14623,8 +14701,7 @@
 	// <style media="screen">
 	// #components-wraper #span-flex-table{
 	//     width: 77%;
-	//     top: 33%;
-	//     margin: auto;
+	//     margin: 3% auto;
 	//     background-color: #222222;
 	//     color: #f2f2f2;
 	// }
@@ -14633,17 +14710,17 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 66 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(67)
-	__vue_script__ = __webpack_require__(69)
+	__webpack_require__(61)
+	__vue_script__ = __webpack_require__(63)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\spanFlexTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(70)
+	__vue_template__ = __webpack_require__(64)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -14662,13 +14739,13 @@
 	})()}
 
 /***/ },
-/* 67 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(68);
+	var content = __webpack_require__(62);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -14688,7 +14765,7 @@
 	}
 
 /***/ },
-/* 68 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -14696,13 +14773,13 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\n#span-flex-table {\n  position: absolute;\n  left: 10%;\n  top: 10%;\n  width: 60%;\n  padding-top: 30%;\n  background-color: #999;\n  color: #333;\n  text-align: center; }\n  #span-flex-table > ul {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    text-align: center;\n    position: absolute;\n    top: 0%;\n    left: 0%;\n    width: 100%;\n    height: 100%;\n    border: 2px solid #000; }\n    #span-flex-table > ul > li {\n      list-style: none;\n      width: 100%;\n      height: calc(100% / 2);\n      display: table; }\n      #span-flex-table > ul > li:not(:last-child) {\n        border-bottom: 1px solid #000; }\n      #span-flex-table > ul > li > span {\n        /* 子元素设置为表格单元块，方便居中设置 */\n        display: table-cell;\n        height: 100%;\n        vertical-align: middle; }\n        #span-flex-table > ul > li > span:not(:last-child) {\n          border-right: 1px solid #000; }\n", "", {"version":3,"sources":["/../components/widgets/spanFlexTable.vue"],"names":[],"mappings":"AAAA,iBAAiB;AACjB;EACE,WAAW;EACX,UAAU;EACV,uBAAuB,EAAE;;AAE3B;EACE,mBAAmB;EACnB,UAAU;EACV,SAAS;EACT,WAAW;EACX,iBAAiB;EACjB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB,EAAE;EACrB;IACE,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,sBAAsB;IACtB,wBAAgB;QAAhB,oBAAgB;YAAhB,gBAAgB;IAChB,yBAAwB;IAAxB,gCAAwB;QAAxB,sBAAwB;YAAxB,wBAAwB;IACxB,0BAAoB;IAApB,4BAAoB;QAApB,uBAAoB;YAApB,oBAAoB;IACpB,mBAAmB;IACnB,mBAAmB;IACnB,QAAQ;IACR,SAAS;IACT,YAAY;IACZ,aAAa;IACb,uBAAuB,EAAE;IACzB;MACE,iBAAiB;MACjB,YAAY;MACZ,uBAAuB;MACvB,eAAe,EAAE;MACjB;QACE,8BAA8B,EAAE;MAClC;QACE,wBAAwB;QACxB,oBAAoB;QACpB,aAAa;QACb,uBAAuB,EAAE;QACzB;UACE,6BAA6B,EAAE","file":"spanFlexTable.vue","sourcesContent":["@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\n#span-flex-table {\n  position: absolute;\n  left: 10%;\n  top: 10%;\n  width: 60%;\n  padding-top: 30%;\n  background-color: #999;\n  color: #333;\n  text-align: center; }\n  #span-flex-table > ul {\n    display: flex;\n    display: -webkit-flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: center;\n    text-align: center;\n    position: absolute;\n    top: 0%;\n    left: 0%;\n    width: 100%;\n    height: 100%;\n    border: 2px solid #000; }\n    #span-flex-table > ul > li {\n      list-style: none;\n      width: 100%;\n      height: calc(100% / 2);\n      display: table; }\n      #span-flex-table > ul > li:not(:last-child) {\n        border-bottom: 1px solid #000; }\n      #span-flex-table > ul > li > span {\n        /* 子元素设置为表格单元块，方便居中设置 */\n        display: table-cell;\n        height: 100%;\n        vertical-align: middle; }\n        #span-flex-table > ul > li > span:not(:last-child) {\n          border-right: 1px solid #000; }\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\n#span-flex-table {\n  position: relative;\n  width: 60%;\n  padding-top: 30%;\n  background-color: #999;\n  color: #333;\n  text-align: center; }\n  #span-flex-table > ul {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    display: -webkit-flex;\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n    -webkit-box-pack: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    text-align: center;\n    position: absolute;\n    top: 0%;\n    left: 0%;\n    width: 100%;\n    height: 100%;\n    border: 2px solid #000; }\n    #span-flex-table > ul > li {\n      list-style: none;\n      width: 100%;\n      height: calc(100% / 2);\n      display: table; }\n      #span-flex-table > ul > li:not(:last-child) {\n        border-bottom: 1px solid #000; }\n      #span-flex-table > ul > li > span {\n        /* 子元素设置为表格单元块，方便居中设置 */\n        display: table-cell;\n        height: 100%;\n        vertical-align: middle; }\n        #span-flex-table > ul > li > span:not(:last-child) {\n          border-right: 1px solid #000; }\n", "", {"version":3,"sources":["/../components/widgets/spanFlexTable.vue"],"names":[],"mappings":"AAAA,iBAAiB;AACjB;EACE,WAAW;EACX,UAAU;EACV,uBAAuB,EAAE;;AAE3B;EACE,mBAAmB;EACnB,WAAW;EACX,iBAAiB;EACjB,uBAAuB;EACvB,YAAY;EACZ,mBAAmB,EAAE;EACrB;IACE,qBAAc;IAAd,qBAAc;IAAd,cAAc;IACd,sBAAsB;IACtB,wBAAgB;QAAhB,oBAAgB;YAAhB,gBAAgB;IAChB,yBAAwB;IAAxB,gCAAwB;QAAxB,sBAAwB;YAAxB,wBAAwB;IACxB,0BAAoB;IAApB,4BAAoB;QAApB,uBAAoB;YAApB,oBAAoB;IACpB,mBAAmB;IACnB,mBAAmB;IACnB,QAAQ;IACR,SAAS;IACT,YAAY;IACZ,aAAa;IACb,uBAAuB,EAAE;IACzB;MACE,iBAAiB;MACjB,YAAY;MACZ,uBAAuB;MACvB,eAAe,EAAE;MACjB;QACE,8BAA8B,EAAE;MAClC;QACE,wBAAwB;QACxB,oBAAoB;QACpB,aAAa;QACb,uBAAuB,EAAE;QACzB;UACE,6BAA6B,EAAE","file":"spanFlexTable.vue","sourcesContent":["@charset \"UTF-8\";\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box; }\n\n#span-flex-table {\n  position: relative;\n  width: 60%;\n  padding-top: 30%;\n  background-color: #999;\n  color: #333;\n  text-align: center; }\n  #span-flex-table > ul {\n    display: flex;\n    display: -webkit-flex;\n    flex-wrap: wrap;\n    justify-content: center;\n    align-items: center;\n    text-align: center;\n    position: absolute;\n    top: 0%;\n    left: 0%;\n    width: 100%;\n    height: 100%;\n    border: 2px solid #000; }\n    #span-flex-table > ul > li {\n      list-style: none;\n      width: 100%;\n      height: calc(100% / 2);\n      display: table; }\n      #span-flex-table > ul > li:not(:last-child) {\n        border-bottom: 1px solid #000; }\n      #span-flex-table > ul > li > span {\n        /* 子元素设置为表格单元块，方便居中设置 */\n        display: table-cell;\n        height: 100%;\n        vertical-align: middle; }\n        #span-flex-table > ul > li > span:not(:last-child) {\n          border-right: 1px solid #000; }\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 69 */
+/* 63 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14714,7 +14791,6 @@
 	// 	Date: 16-04-14~15
 	// 	Author: Nicejade
 	//  -->
-	//
 	// <template>
 	// 	<div id="span-flex-table" v-if="isShowTableFlag">
 	// 		<ul>
@@ -14770,7 +14846,6 @@
 	};
 	// </script>
 	//
-	//
 	// <style lang="sass">
 	// *{padding:0;margin:0;box-sizing:border-box;}
 	// $h30   : 30%;
@@ -14794,9 +14869,7 @@
 	// }
 	//
 	// #span-flex-table{
-	// 	position:$pa;
-	// 	left: 10%;
-	// 	top: 10%;
+	// 	position: $pr;
 	// 	width: $h60;
 	// 	padding-top: $h30;
 	// 	background-color: #999;
@@ -14836,25 +14909,54 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 70 */
+/* 64 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div id=\"span-flex-table\" v-if=\"isShowTableFlag\">\n\t<ul>\n\t\t<li v-for='liItem in tableList'  class=\"span-flex-table-li\">\n\t\t\t<span v-for='spanList in liItem' class=\"span-flex-table-span\"> {{ spanList }} </span>\n\t\t</li>\n\t</ul>\n</div>\n";
 
 /***/ },
-/* 71 */
+/* 65 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ btnText }}</h2><span-flex-table :table-list.sync='tableList'></span-flex-table><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><div class=\"comp-area\"><span-flex-table :table-list.sync='tableList'></span-flex-table></div>";
 
 /***/ },
-/* 72 */
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(67)
+	__vue_script__ = __webpack_require__(69)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_countDown.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(73)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_countDown.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(73);
+	var content = __webpack_require__(68);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -14874,7 +14976,7 @@
 	}
 
 /***/ },
-/* 73 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -14882,13 +14984,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n", "", {"version":3,"sources":["/./src/_countDown.vue?d04da310"],"names":[],"mappings":";AAgFA;IACA,oBAAA;CACA","file":"_countDown.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    a(href='javascript:;' @click=\"onStartCountClick\" class='demonstrate-a') {{ btnText }}\r\n    <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down>\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport countDown from 'countDown'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            btnText: \"StartCountDown\",\r\n            compTitle : \"Component Name\",\r\n            hintingTitle: \"Using Sample Code:\",\r\n            foreTimeText: \"倒计时fore\",\r\n            lastTimeText: \"倒计时end\",\r\n            isCompleteShowHms: true,\r\n            time: 0,\r\n            isStartCount: false,\r\n            codeString: `\r\n    import countDown from 'countDown'; //引入组件\r\n\r\n    //模板中可以按需传递参数;\r\n    <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :start.sync=\"isStartCount\"\r\n                :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" ></count-down>\r\n\r\n    // vue逻辑处理代码\r\n    methods: {\r\n        onStartCountClick: function(){\r\n            this.time = 2113;\r\n            this.isStartCount = true;\r\n        }\r\n    },\r\n    events: {\r\n        'on-countdown-finish': function (countNum) {\r\n            // countNum 统计调用此 countDown 次数;\r\n            alert(\"countdown had down; num = \" + countNum )\r\n        }\r\n    }\r\n\r\n    /*\r\n    time: 倒计时时间(type: Number;单位：秒s)；值小于0，则不显示；默认值：60；\r\n        超过60s会将显示对应转换为默认是xx时yy分zz秒;可从 timeUnitObj 传参改变时间单位；\r\n    start: 是否立即开始(type：Boolean)；默认值：false\r\n    isCompleteShowHms: 是否完整显示“xx时yy分zz秒”，默认false。\r\n    foreTimeText： 承载倒计时数字span之前标签内容；不传不显示此span；默认值：\"\"\r\n    lastTimeText： 承载倒计时数字span之后标签内容；不传不显示此span；默认值：\"\"\r\n    /*\r\n    `\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        countDown,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        onStartCountClick: function(){\r\n            this.time = 9;\r\n            this.isStartCount = true;\r\n        }\r\n    },\r\n    events: {\r\n        'on-countdown-finish': function (countNum) {\r\n            // countNum 统计调用此 countDown 次数;\r\n            alert(\"countdown had down; num = \" + countNum )\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n", "", {"version":3,"sources":["/./src/_countDown.vue?34385985"],"names":[],"mappings":";AA8FA;IACA,oBAAA;CACA","file":"_countDown.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ btnText }}\r\n    a(href='javascript:;' @click=\"onStartCountClick\" class='demonstrate-a') {{ btnText }}\r\n    div.comp-area\r\n        <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down>\r\n        popup-toast\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport countDown from 'countDown'\r\nimport popupToast from 'popupToast'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            btnText: \"StartCountDown\",\r\n            compTitle : \"Component Name\",\r\n            hintingTitle: \"使用示例:\",\r\n            foreTimeText: \"(倒计时fore)\",\r\n            lastTimeText: \"(倒计时end)\",\r\n            isCompleteShowHms: true,\r\n            time: 0,\r\n            isStartCount: false,\r\n            codeString: `\r\n    import countDown from 'countDown'; //引入组件\r\n\r\n    //模板中可以按需传递参数;\r\n    <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :start.sync=\"isStartCount\"\r\n                :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" ></count-down>\r\n\r\n    // vue逻辑处理代码\r\n    methods: {\r\n        onStartCountClick: function(){\r\n            this.time = 2113;\r\n            this.isStartCount = true;\r\n        }\r\n    },\r\n    events: {\r\n        'on-countdown-finish': function (countNum) {\r\n            // countNum 统计调用此 countDown 次数;\r\n            alert(\"countdown had down; num = \" + countNum )\r\n        }\r\n    }\r\n\r\n    /*\r\n    time: 倒计时时间(type: Number;单位：秒s)；值小于0，则不显示；默认值：60；\r\n        超过60s会将显示对应转换为默认是xx时yy分zz秒;可从 timeUnitObj 传参改变时间单位；\r\n    start: 是否立即开始(type：Boolean)；默认值：false\r\n    isCompleteShowHms: 是否完整显示“xx时yy分zz秒”，默认false。\r\n    foreTimeText： 承载倒计时数字span之前标签内容；不传不显示此span；默认值：\"\"\r\n    lastTimeText： 承载倒计时数字span之后标签内容；不传不显示此span；默认值：\"\"\r\n    /*\r\n    `\r\n        }\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        countDown,\r\n        popupToast,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        onStartCountClick: function(){\r\n            this.time = 9;\r\n            this.isStartCount = true;\r\n        },\r\n\r\n        showPopupToast: function( text ){\r\n            var toastMsg = {\r\n                bodyText: text,\r\n                timer: 2222,           //可不传；默认2000ms\r\n                callBackFunc: null     // 可不传，默认null；\r\n            }\r\n            this.$broadcast('show-popup-toast', toastMsg);\r\n        }\r\n    },\r\n    events: {\r\n        'on-countdown-finish': function (countNum) {\r\n            // countNum 统计调用此 countDown 次数;\r\n            this.showPopupToast( \"countdown had down; countNum = \" + countNum )\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#normal-dlg-body{\r\n    top: 39% !important;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 74 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -14897,9 +14999,13 @@
 	    value: true
 	});
 	
-	var _countDown = __webpack_require__(76);
+	var _countDown = __webpack_require__(70);
 	
 	var _countDown2 = _interopRequireDefault(_countDown);
+	
+	var _popupToast = __webpack_require__(19);
+	
+	var _popupToast2 = _interopRequireDefault(_popupToast);
 	
 	var _preCode = __webpack_require__(24);
 	
@@ -14907,23 +15013,14 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template lang='jade'>
-	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
-	//     <pre-code :code-string="codeString"></pre-code>
-	//     a(href='javascript:;' @click="onStartCountClick" class='demonstrate-a') {{ btnText }}
-	//     <count-down :time.sync="time" :is-complete-show-hms="isCompleteShowHms" :fore-time-text="foreTimeText" :last-time-text="lastTimeText" :start.sync="isStartCount"></count-down>
-	// </template>
-	//
-	// <script type="text/javascript">
 	exports.default = {
 	    data: function data() {
 	        return {
 	            btnText: "StartCountDown",
 	            compTitle: "Component Name",
-	            hintingTitle: "Using Sample Code:",
-	            foreTimeText: "倒计时fore",
-	            lastTimeText: "倒计时end",
+	            hintingTitle: "使用示例:",
+	            foreTimeText: "(倒计时fore)",
+	            lastTimeText: "(倒计时end)",
 	            isCompleteShowHms: true,
 	            time: 0,
 	            isStartCount: false,
@@ -14938,18 +15035,28 @@
 	    },
 	    components: {
 	        countDown: _countDown2.default,
+	        popupToast: _popupToast2.default,
 	        preCode: _preCode2.default
 	    },
 	    methods: {
 	        onStartCountClick: function onStartCountClick() {
 	            this.time = 9;
 	            this.isStartCount = true;
+	        },
+	
+	        showPopupToast: function showPopupToast(text) {
+	            var toastMsg = {
+	                bodyText: text,
+	                timer: 2222, //可不传；默认2000ms
+	                callBackFunc: null // 可不传，默认null；
+	            };
+	            this.$broadcast('show-popup-toast', toastMsg);
 	        }
 	    },
 	    events: {
 	        'on-countdown-finish': function onCountdownFinish(countNum) {
 	            // countNum 统计调用此 countDown 次数;
-	            alert("countdown had down; num = " + countNum);
+	            this.showPopupToast("countdown had down; countNum = " + countNum);
 	        }
 	    }
 	};
@@ -14962,24 +15069,30 @@
 	// </style>
 
 	/* generated by vue-loader */
+	// <template lang='jade'>
+	//     h1#comp-title {{ compTitle }}
+	//     h2#hinting-title {{ hintingTitle }}
+	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2#hinting-title {{ btnText }}
+	//     a(href='javascript:;' @click="onStartCountClick" class='demonstrate-a') {{ btnText }}
+	//     div.comp-area
+	//         <count-down :time.sync="time" :is-complete-show-hms="isCompleteShowHms" :fore-time-text="foreTimeText" :last-time-text="lastTimeText" :start.sync="isStartCount"></count-down>
+	//         popup-toast
+	// </template>
+	//
+	// <script type="text/javascript">
 
 /***/ },
-/* 75 */
-/***/ function(module, exports) {
-
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><a href=\"javascript:;\" @click=\"onStartCountClick\" class=\"demonstrate-a\">{{ btnText }}</a><count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down>";
-
-/***/ },
-/* 76 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(77)
+	__vue_script__ = __webpack_require__(71)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\countDown.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(78)
+	__vue_template__ = __webpack_require__(72)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -14998,7 +15111,7 @@
 	})()}
 
 /***/ },
-/* 77 */
+/* 71 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -15156,19 +15269,54 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 78 */
+/* 72 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<span class=\"count-down-fore\" v-if='isShowForeTextFlag'>{{ foreTimeText }}</span>\n<span class=\"count-down-time\" v-if='isShowCountDownFlag'>{{ contDownText }}</span>\n<span class=\"count-down-last\" v-if='isShowLastTextFlag'>{{ lastTimeText }}</span>\n";
 
 /***/ },
-/* 79 */
+/* 73 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ btnText }}</h2><a href=\"javascript:;\" @click=\"onStartCountClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down><popup-toast></popup-toast></div>";
+
+/***/ },
+/* 74 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(75)
+	__vue_script__ = __webpack_require__(77)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_commonTable.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(83)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_commonTable.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(80);
+	var content = __webpack_require__(76);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -15188,7 +15336,7 @@
 	}
 
 /***/ },
-/* 80 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -15196,13 +15344,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\r\n#components-wraper #common-table-ul{\r\n    margin-top: 3%;\r\n    display: block;\r\n    height: 15em;\r\n    background-color: #222222;\r\n}\r\n", "", {"version":3,"sources":["/./src/_commonTable.vue?7b3e03bf"],"names":[],"mappings":";AAsEA;IACA,eAAA;IACA,eAAA;IACA,aAAA;IACA,0BAAA;CACA","file":"_commonTable.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ btnText }}\r\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\r\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\r\n    <common-table :table-list.sync='tableList'></common-table>\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport commonTable from 'commonTable'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            btnText: \"Using Demonstrate\",\r\n            compTitle : \"Component Name\",\r\n            xLimitControl:3,\r\n            yLimitControl:4,\r\n            addLine: \"Add Line\",\r\n            addColumn: \"Add Column\",\r\n            hintingTitle: \"Using Sample Code:\",\r\n            tableList: [],\r\n            codeString: `\r\n    import commonTable from 'commonTable'; //引入组件\r\n\r\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\r\n    <common-table :table-list.sync='tableList'></common-table>`\r\n        }\r\n    },\r\n    ready(){\r\n        this.setTableList()\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        commonTable,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        setTableList: function(){\r\n            let tempArr = [];\r\n            for(let i=0; i<= this.xLimitControl; i++){\r\n                tempArr[i] = []\r\n                for(let j=0; j<=this.yLimitControl; j++){\r\n                    tempArr[i][j] = 'iLoveU' + j;\r\n                }\r\n            }\r\n            this.tableList = tempArr\r\n        },\r\n        onAddLineClick: function(){\r\n            this.xLimitControl += 1\r\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\r\n            this.setTableList()\r\n        },\r\n        onAddColumnClick: function(){\r\n            this.yLimitControl += 1\r\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\r\n            this.setTableList()\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#components-wraper #common-table-ul{\r\n    margin-top: 3%;\r\n    display: block;\r\n    height: 15em;\r\n    background-color: #222222;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\r\n#components-wraper #common-table-ul{\r\n    margin-top: 3%;\r\n    display: block;\r\n    height: 15em;\r\n    background-color: #222222;\r\n}\r\n", "", {"version":3,"sources":["/./src/_commonTable.vue?59493616"],"names":[],"mappings":";AAuEA;IACA,eAAA;IACA,eAAA;IACA,aAAA;IACA,0BAAA;CACA","file":"_commonTable.vue","sourcesContent":["<template lang='jade'>\r\n    h1#comp-title {{ compTitle }}\r\n    h2#hinting-title {{ hintingTitle }}\r\n    <pre-code :code-string=\"codeString\"></pre-code>\r\n    h2#hinting-title {{ hintingTitle2 }}\r\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\r\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\r\n    div.comp-area\r\n        <common-table :table-list.sync='tableList'></common-table>\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nimport commonTable from 'commonTable'\r\nimport preCode from './preCode.vue'\r\n\r\nexport default {\r\n    data () {\r\n        return {\r\n            hintingTitle2: \"表现示例:\",\r\n            compTitle : \"Component Name\",\r\n            xLimitControl:3,\r\n            yLimitControl:4,\r\n            addLine: \"Add Line\",\r\n            addColumn: \"Add Column\",\r\n            hintingTitle: \"使用示例:\",\r\n            tableList: [],\r\n            codeString: `\r\n    import commonTable from 'commonTable'; //引入组件\r\n\r\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\r\n    <common-table :table-list.sync='tableList'></common-table>`\r\n        }\r\n    },\r\n    ready(){\r\n        this.setTableList()\r\n    },\r\n    route:{\r\n\t\tdata(transition){\r\n            this.compTitle = transition.to.name\r\n\t\t}\r\n\t},\r\n    components: {\r\n        commonTable,\r\n        preCode,\r\n    },\r\n    methods: {\r\n        setTableList: function(){\r\n            let tempArr = [];\r\n            for(let i=0; i<= this.xLimitControl; i++){\r\n                tempArr[i] = []\r\n                for(let j=0; j<=this.yLimitControl; j++){\r\n                    tempArr[i][j] = 'iLoveU' + j;\r\n                }\r\n            }\r\n            this.tableList = tempArr\r\n        },\r\n        onAddLineClick: function(){\r\n            this.xLimitControl += 1\r\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\r\n            this.setTableList()\r\n        },\r\n        onAddColumnClick: function(){\r\n            this.yLimitControl += 1\r\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\r\n            this.setTableList()\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n#components-wraper #common-table-ul{\r\n    margin-top: 3%;\r\n    display: block;\r\n    height: 15em;\r\n    background-color: #222222;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 81 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -15211,7 +15359,7 @@
 	    value: true
 	});
 	
-	var _commonTable = __webpack_require__(83);
+	var _commonTable = __webpack_require__(78);
 	
 	var _commonTable2 = _interopRequireDefault(_commonTable);
 	
@@ -15225,23 +15373,24 @@
 	//     h1#comp-title {{ compTitle }}
 	//     h2#hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ btnText }}
+	//     h2#hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
 	//     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
-	//     <common-table :table-list.sync='tableList'></common-table>
+	//     div.comp-area
+	//         <common-table :table-list.sync='tableList'></common-table>
 	// </template>
 	//
 	// <script type="text/javascript">
 	exports.default = {
 	    data: function data() {
 	        return {
-	            btnText: "Using Demonstrate",
+	            hintingTitle2: "表现示例:",
 	            compTitle: "Component Name",
 	            xLimitControl: 3,
 	            yLimitControl: 4,
 	            addLine: "Add Line",
 	            addColumn: "Add Column",
-	            hintingTitle: "Using Sample Code:",
+	            hintingTitle: "使用示例:",
 	            tableList: [],
 	            codeString: '\n    import commonTable from \'commonTable\'; //引入组件\n\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\n    <common-table :table-list.sync=\'tableList\'></common-table>'
 	        };
@@ -15296,23 +15445,17 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 82 */
-/***/ function(module, exports) {
-
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ btnText }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><common-table :table-list.sync='tableList'></common-table>";
-
-/***/ },
-/* 83 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(84)
-	__vue_script__ = __webpack_require__(86)
+	__webpack_require__(79)
+	__vue_script__ = __webpack_require__(81)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] ..\\components\\widgets\\commonTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(87)
+	__vue_template__ = __webpack_require__(82)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15331,13 +15474,13 @@
 	})()}
 
 /***/ },
-/* 84 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(85);
+	var content = __webpack_require__(80);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -15357,7 +15500,7 @@
 	}
 
 /***/ },
-/* 85 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -15371,7 +15514,7 @@
 
 
 /***/ },
-/* 86 */
+/* 81 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15476,85 +15619,28 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 87 */
+/* 82 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<ul id=\"common-table-ul\" v-if=\"isShowTableFlag\">\n\t<li v-for='liItem in tableList'  class=\"common-table-li\">\n\t\t<span v-for='spanList in liItem' class=\"common-table-span\"> {{ spanList }} </span>\n\t</li>\n</ul>\n";
 
 /***/ },
-/* 88 */
+/* 83 */
 /***/ function(module, exports) {
 
-	module.exports = "<p class=\"noComplete\">{{ noComplete }}</p>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><div class=\"comp-area\"><common-table :table-list.sync='tableList'></common-table></div>";
 
 /***/ },
-/* 89 */
-/***/ function(module, exports) {
-
-	module.exports = "<p class=\"noComplete\">{{ noComplete }}</p>";
-
-/***/ },
-/* 90 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	// <template lang="jade">
-	//     p.noComplete {{ noComplete }}
-	// </template>
-	//
-	// <script type="text/javascript">
-	exports.default = {
-	    data: function data() {
-	        return {
-	            noComplete: "暂不开启Too"
-	        };
-	    }
-	};
-	// </script>
-
-	/* generated by vue-loader */
-
-/***/ },
-/* 91 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	// <template lang="jade">
-	//     p.noComplete {{ noComplete }}
-	// </template>
-	//
-	// <script type="text/javascript">
-	exports.default = {
-	    data: function data() {
-	        return {
-	            noComplete: "暂不开启"
-	        };
-	    }
-	};
-	// </script>
-
-	/* generated by vue-loader */
-
-/***/ },
-/* 92 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(95)
-	__vue_script__ = __webpack_require__(94)
+	__vue_script__ = __webpack_require__(85)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src\\desc.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(93)
+	  console.warn("[vue-loader] src\\_turnTable.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(86)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15564,7 +15650,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "F:\\jadeVueC\\demo\\src\\desc.vue"
+	  var id = "F:\\jadeVueC\\demo\\src\\_turnTable.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15573,66 +15659,197 @@
 	})()}
 
 /***/ },
-/* 93 */
-/***/ function(module, exports) {
+/* 85 */
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h1 class=\"welcome\">{{ welcome }}</h1><a href=\"https://nicejade.gitbooks.io/vue-components-doc/content/index.html\" class=\"desc-a\">{{ vueDoc }}</a>";
-
-/***/ },
-/* 94 */
-/***/ function(module, exports) {
-
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	// <template lang="jade">
-	//     h1.welcome {{ welcome }}
-	//     a(class="desc-a" href="https://nicejade.gitbooks.io/vue-components-doc/content/index.html") {{ vueDoc }}
+	
+	var _turnTable = __webpack_require__(95);
+	
+	var _turnTable2 = _interopRequireDefault(_turnTable);
+	
+	var _preCode = __webpack_require__(24);
+	
+	var _preCode2 = _interopRequireDefault(_preCode);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template lang='jade'>
+	//     h1#comp-title {{ compTitle }}
+	//     h2#hinting-title {{ hintingTitle }}
+	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2#hinting-title {{ hintingTitle2 }}
 	// </template>
 	//
 	// <script type="text/javascript">
 	exports.default = {
 	    data: function data() {
 	        return {
-	            welcome: "Welcome To Vue Component Desc And Example",
-	            vueDoc: "Vue Component Doc"
+	            compTitle: "Component Name",
+	            hintingTitle: "使用示例:",
+	            hintingTitle2: "表现示例:",
+	            codeString: '\n    import turnTable from \'turnTable\'; //引入组件\n\n    //模板中可以按需传递参数;\n    <turn-table :tools=\'Tools\' :turn-table-config=\'turnTableConfig\'></turn-table>\n\n    // vue逻辑处理代码\n    <script>\n        import ActTools from  "ActTools";\n        var Tools = ActTools.tools;\n\n        export default {\n            data () {\n                return {\n                    Tools: Tools, \n                    turnTableConfig: {\n                        rewardKinds: 8,     // 奖励种类数；可不传，默认8\n                        rotateNums: 2,      // 转盘旋转圈数；可不传，默认3\n                        callBackFunc: ( textMsg )=>{\n                            var dlgMsgObj = {\n                                titleText: "&温馨提示&", \n                                bodyText: textMsg,\n                                btnsObj: {\n                                    0: {\n                                        btnText: "取消",\n                                        callBackFunc: null\n                                    },\n                                    1: {\n                                        btnText: "确认",\n                                        callBackFunc: null\n                                    }\n                                },\n                                isShowCloseXFlag: true\n                            }\n                            this.$broadcast(\'show-strong-dlg\', dlgMsgObj);\n                        }\n                    }\n                }\n           },\n          components: {\n              turnTable,\n          }\n        }\n    < /script>\n    '
 	        };
+	    },
+	
+	    route: {
+	        data: function data(transition) {
+	            this.compTitle = transition.to.name;
+	        }
+	    },
+	    components: {
+	        preCode: _preCode2.default
+	    },
+	    methods: {},
+	    events: {
+	        'on-countdown-finish': function onCountdownFinish(countNum) {
+	            // countNum 统计调用此 countDown 次数;
+	            alert("countdown had down; num = " + countNum);
+	        }
 	    }
 	};
 	// </script>
-	//
-	// <style media="screen">
-	// .welcome{
-	//     text-align: center;
-	//     color: #000;
-	//     text-shadow: 0 1px 1px #fff;
-	// }
-	// .desc-a{
-	//     margin: 2% 2% 2% 0;
-	//     padding: 1% 3%;
-	//     position: absolute;
-	//     right: 10%;
-	//     color: #24B3D3;
-	//     font-size: 1em;
-	//     line-height: 1.2;
-	//     background-color: #222222;
-	//     border-radius: 1em;
-	//     text-decoration: none;
-	// }
-	// </style>
-
 	/* generated by vue-loader */
 
 /***/ },
-/* 95 */
+/* 86 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2>";
+
+/***/ },
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(88)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src\\_formDialog.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(89)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\demo\\src\\_formDialog.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 88 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _formDialog = __webpack_require__(90);
+	
+	var _formDialog2 = _interopRequireDefault(_formDialog);
+	
+	var _preCode = __webpack_require__(24);
+	
+	var _preCode2 = _interopRequireDefault(_preCode);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template lang='jade'>
+	//     h1#comp-title {{ compTitle }}
+	//     h2#hinting-title {{ hintingTitle }}
+	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2#hinting-title {{ hintingTitle2 }}
+	// </template>
+	//
+	// <script type="text/javascript">
+	exports.default = {
+	    data: function data() {
+	        return {
+	            compTitle: "Component Name",
+	            hintingTitle: "使用示例:",
+	            hintingTitle2: "表现示例:",
+	            codeString: '\n    import formDialog from \'formDialog\';; //引入组件\n\n    //模板中可以按需传递参数;\n    <form-dialog></form-dialog>\n\n    // vue逻辑处理代码\n    var dlgMsgObj = {\n\t    //*Tools必传；组件涉及数据请求\n\t    Tools: Tools, \n\t    //*可不用传；以下示例皆为默认参数\n\t    userName: \'姓名\',       \n\t    userPhone: \'<b>*</b>电话\',\n\t    userAddress: \'地址\',\n\t    leftBtnText: \'提交\',\n\t    rightBtnText: \'取消\',\n\t    namePlaceholder: \'请输入姓名\',\n\t    phonePlaceholder: \'请重新输入电话号码\',\n\t    addressPlaceholder: \'请输入您的地址\',\n\t    verifyPhoneNumReg: null,    //验证手机号是否合法正则;\n\t    callBackFunc: null,         //如果提交完毕，想做什么(succ tips)可放在这里；\n\t}\n\tthis.$broadcast(\'show-form-dlg\', dlgMsgObj);\n    '
+	        };
+	    },
+	
+	    route: {
+	        data: function data(transition) {
+	            this.compTitle = transition.to.name;
+	        }
+	    },
+	    components: {
+	        formDialog: _formDialog2.default,
+	        preCode: _preCode2.default
+	    },
+	    methods: {},
+	    events: {
+	        'on-countdown-finish': function onCountdownFinish(countNum) {
+	            // countNum 统计调用此 countDown 次数;
+	            alert("countdown had down; num = " + countNum);
+	        }
+	    }
+	};
+	// </script>
+	/* generated by vue-loader */
+
+/***/ },
+/* 89 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2>";
+
+/***/ },
+/* 90 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(91)
+	__vue_script__ = __webpack_require__(93)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] ..\\components\\modules\\FormDialog.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(94)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\components\\modules\\FormDialog.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(96);
+	var content = __webpack_require__(92);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -15641,8 +15858,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./desc.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./desc.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./FormDialog.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./FormDialog.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -15652,7 +15869,7 @@
 	}
 
 /***/ },
-/* 96 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -15660,10 +15877,487 @@
 	
 	
 	// module
-	exports.push([module.id, "\r\n.welcome{\r\n    text-align: center;\r\n    color: #000;\r\n    text-shadow: 0 1px 1px #fff;\r\n}\r\n.desc-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: absolute;\r\n    right: 10%;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 1.2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n", "", {"version":3,"sources":["/./src/desc.vue?39302f76"],"names":[],"mappings":";AAiBA;IACA,mBAAA;IACA,YAAA;IACA,4BAAA;CACA;AACA;IACA,mBAAA;IACA,eAAA;IACA,mBAAA;IACA,WAAA;IACA,eAAA;IACA,eAAA;IACA,iBAAA;IACA,0BAAA;IACA,mBAAA;IACA,sBAAA;CACA","file":"desc.vue","sourcesContent":["<template lang=\"jade\">\r\n    h1.welcome {{ welcome }}\r\n    a(class=\"desc-a\" href=\"https://nicejade.gitbooks.io/vue-components-doc/content/index.html\") {{ vueDoc }}\r\n</template>\r\n\r\n<script type=\"text/javascript\">\r\nexport default {\r\n    data () {\r\n        return {\r\n            welcome: \"Welcome To Vue Component Desc And Example\",\r\n            vueDoc: \"Vue Component Doc\"\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style media=\"screen\">\r\n.welcome{\r\n    text-align: center;\r\n    color: #000;\r\n    text-shadow: 0 1px 1px #fff;\r\n}\r\n.desc-a{\r\n    margin: 2% 2% 2% 0;\r\n    padding: 1% 3%;\r\n    position: absolute;\r\n    right: 10%;\r\n    color: #24B3D3;\r\n    font-size: 1em;\r\n    line-height: 1.2;\r\n    background-color: #222222;\r\n    border-radius: 1em;\r\n    text-decoration: none;\r\n}\r\n</style>\r\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\r\n.dialog.wrap, .form-dlg-shadow{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 5;\r\n}\r\n#form-dlg-shadow{\r\n    background: rgba(0,0,0,.6);\r\n    z-index: 11;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n#form-dialog-h1 {\r\n    font-size: 1.24em;\r\n    line-height: 2;\r\n    padding: 0;\r\n    font-weight: normal;\r\n    color: #FFF;\r\n    background-size: 100% 100%;\r\n    position: relative;\r\n}\r\n#form-dialog-body{\r\n\tposition:absolute;\r\n\ttop: 20%;\r\n\tleft: 52%;\r\n\twidth:70%;\r\n\tz-index:11;\r\n\ttext-align: center;\r\n\tmargin-left:-36%;\r\n\tborder-radius: .5em;\r\n\tbackground-color:transparent;\r\n\tbackground:#F5D39F;\r\n\tbox-sizing:border-box;\r\n\t-webkit-box-sizing:border-box;\r\n\t-moz-box-sizing:border-box;\r\n\tcolor:#4B2B1C;\r\n}\r\n#form-dialog-cont{width:90%;margin:1% auto}\r\n#form-dialog-body>section{\r\n    background-color: #E0AB75;\r\n    text-align: left;\r\n    padding: 4% 2%;\r\n    font-size: 1em;\r\n    line-height: 1.2em;\r\n    box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);\r\n    border-radius: .5em;\r\n    width: 87%;\r\n    margin: 0 auto;\r\n    margin-top: 4%;\r\n}\r\n#form-dialog-cont p{text-align: center;}\r\n#form-dialog-cont label{width:18%;\r\n\tpadding-right:2%;\r\n\ttext-align:right;\r\n\tdisplay:inline-block}\r\n#form-dialog-cont label>b{color:#fe0;vertical-align: middle;}\r\n#form-dialog-cont input{\r\n\twidth:64%;\r\n\tpadding:.3em;\r\n\tcolor:#000;\r\n\tfont-size: 1em;\r\n\tmargin:1% auto 1% 2%;\r\n\ttext-align:left;\r\n\tdisplay:inline-block;\r\n\toutline: none;\r\n\tborder:none;\r\n\tborder-radius:.5em;\r\n\tbox-shadow:inset -1px 1px 6px rgba(0,0,0,.4);\r\n}\r\n.form-dialog-a{\r\n    font: 1.2em Microsoft YaHei, sans-serif;\r\n    line-height: 1.69;\r\n    font-weight: bold;\r\n    color: #FFF;\r\n    text-align: center;\r\n    display: inline-block;\r\n    margin: 2% 4% 2%;\r\n    width: 23%;\r\n    height: 2em;\r\n    text-decoration: none;\r\n    border: none;\r\n    cursor: pointer;\r\n    background-color: transparent;\r\n    letter-spacing: .2em;\r\n    background-size: 100% 100%;\r\n}\r\n", "", {"version":3,"sources":["/../components/modules/FormDialog.vue?306e383c"],"names":[],"mappings":";AAiJA;IACA,mBAAA;IACA,YAAA;IACA,aAAA;IACA,OAAA;IACA,QAAA;IACA,WAAA;CACA;AACA;IACA,2BAAA;IACA,YAAA;IACA,YAAA;IACA,aAAA;CACA;AACA;IACA,kBAAA;IACA,eAAA;IACA,WAAA;IACA,oBAAA;IACA,YAAA;IACA,2BAAA;IACA,mBAAA;CACA;AACA;CACA,kBAAA;CACA,SAAA;CACA,UAAA;CACA,UAAA;CACA,WAAA;CACA,mBAAA;CACA,iBAAA;CACA,oBAAA;CACA,6BAAA;CACA,mBAAA;CACA,sBAAA;CACA,8BAAA;CACA,2BAAA;CACA,cAAA;CACA;AACA,kBAAA,UAAA,cAAA,CAAA;AACA;IACA,0BAAA;IACA,iBAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,yEAAA;IACA,oBAAA;IACA,WAAA;IACA,eAAA;IACA,eAAA;CACA;AACA,oBAAA,mBAAA,CAAA;AACA,wBAAA,UAAA;CACA,iBAAA;CACA,iBAAA;CACA,oBAAA,CAAA;AACA,0BAAA,WAAA,uBAAA,CAAA;AACA;CACA,UAAA;CACA,aAAA;CACA,WAAA;CACA,eAAA;CACA,qBAAA;CACA,gBAAA;CACA,qBAAA;CACA,cAAA;CACA,YAAA;CACA,mBAAA;CACA,6CAAA;CACA;AACA;IACA,wCAAA;IACA,kBAAA;IACA,kBAAA;IACA,YAAA;IACA,mBAAA;IACA,sBAAA;IACA,iBAAA;IACA,WAAA;IACA,YAAA;IACA,sBAAA;IACA,aAAA;IACA,gBAAA;IACA,8BAAA;IACA,qBAAA;IACA,2BAAA;CACA","file":"FormDialog.vue","sourcesContent":["<template lang=\"jade\">\r\n\tdiv(class='wrap dialog' id='form-dialog' v-if='isShowDlgFlag')\r\n\t\tdiv#form-dlg-shadow\r\n\t\tdiv#form-dialog-body.dlg-body\r\n\t\t\th1#form-dialog-h1 {{ titleText }}\r\n\t\t\tsection\r\n\t\t\t\tdiv#form-dialog-cont\r\n\t\t\t\t\tlabel(for='form-dialog-uname') {{{ userName }}}\r\n\t\t\t\t\tinput(type='text' maxlength='20' placeholder='{{ namePlaceholder }}' id='form-dialog-uname')\r\n\t\t\t\t\tbr\r\n\t\t\t\t\tlabel(for='form-dialog-phone') {{{ userPhone }}}\r\n\t\t\t\t\tinput(type='text' maxlength='12' placeholder='{{ phonePlaceholder }}' id='form-dialog-phone' required='required')\r\n\t\t\t\t\tbr\r\n\t\t\t\t\tlabel(for='form-dialog-address') {{{ userAddress }}}\r\n\t\t\t\t\tinput(type='text' placeholder='{{ addressPlaceholder }}' id='form-dialog-address' required='required')\r\n\t\t\t\t\tbr\r\n\t\t\tdiv#form-dialog-btns\r\n\t\t\t\ta(href=\"javascript:;\" class='form-dialog-a form-dialog-left-a dlg-submit-btn' @click='onLeftBtnClick') {{ leftBtnText }}\r\n\t\t\t\ta(href=\"javascript:;\" class='form-dialog-a form-dialog-right-a dlg-close-btn' @click='onRightBtnClick') {{ rightBtnText }}\r\n</template>\r\n\r\n\r\n<script>\r\nexport default {\r\n    data(){\r\n        return{\r\n            Tools: {},\r\n            titleText: '用户信息',\r\n            userName: '姓名',\r\n            userPhone: '<b>*</b>电话',\r\n            userAddress: '地址',\r\n            namePlaceholder: '请输入姓名',\r\n            phonePlaceholder: '请输入电话号码',\r\n            addressPlaceholder: '请输入您的地址',\r\n            leftBtnText: '提交',\r\n            rightBtnText: '取消',\r\n            callBackFunc: null,\r\n            isShowDlgFlag: false,\r\n            isExchangeBtnsFunc: false,\r\n            verifyPhoneNumReg: null,\r\n        }\r\n    },\r\n    methods: {\r\n        showFormDialog: function(dlgMsgObj){\r\n            this.Tools = dlgMsgObj.Tools\r\n            this.titleText = dlgMsgObj.titleText || this.titleText\r\n            this.userName = dlgMsgObj.userName || this.userName\r\n            this.userPhone = dlgMsgObj.userPhone || this.userPhone\r\n            this.userAddress = dlgMsgObj.userAddress || this.userAddress\r\n            this.namePlaceholder = dlgMsgObj.namePlaceholder || this.namePlaceholder\r\n            this.phonePlaceholder = dlgMsgObj.phonePlaceholder || this.phonePlaceholder\r\n            this.addressPlaceholder = dlgMsgObj.addressPlaceholder || this.addressPlaceholder\r\n            this.leftBtnText = dlgMsgObj.leftBtnText || this.leftBtnText\r\n            this.rightBtnText = dlgMsgObj.rightBtnText || this.rightBtnText\r\n            this.isExchangeBtnsFunc = dlgMsgObj.isExchangeBtnsFunc || this.isExchangeBtnsFunc\r\n\r\n            this.Tools.ajax({\"p\":\"getUserInfo\",\"extra\":{}}, (succData)=>{\r\n                var name = succData.name,\r\n                    tel = succData.tel,\r\n                    email = succData.email,\r\n                    addr = succData.addr;\r\n\r\n                this.isShowDlgFlag =  true\r\n                \r\n                setTimeout( (succData)=>{\r\n                \tif (succData !== \"\" &&  null !== succData) {\r\n\t                    if (name) $(\"#form-dialog-uname\").val(name)\r\n\t                    if (tel) $(\"#form-dialog-phone\").val(tel)\r\n\t                    if (email) $(\"#form-dialog-email\").val(email)\r\n\t                    if (addr) $(\"#form-dialog-address\").val(addr)\r\n\t                }\r\n                } ,0)\r\n            })\r\n        },\r\n        hideFormDialog: function(){\r\n        \tthis.isShowDlgFlag =  false\r\n        },\r\n        submmitFromInfo: function(){\r\n        \tvar uname = $(\"#form-dialog-uname\").val(),\r\n\t\t\t\ttel = $(\"#form-dialog-phone\").val(),\r\n\t\t\t\temail = $(\"#form-dialog-email\").val(),\r\n\t\t\t\taddr = $(\"#form-dialog-address\").val(),\r\n\t\t\t\t$form = $(\"#form-dialog-cont\");\r\n\r\n\t\t\t$(\"#error-info\").remove()\r\n\t\t\t$(\"#form-dialog-phone\").on(\"keydown\", function() {\r\n\t\t\t\t$(\"#error-info\").fadeOut(100)\r\n\t\t\t})\r\n\r\n\t\t\tvar zhReg = /^1[3-8][0-9]{9}$/,  //简体\r\n                thReg = /^08[0-9]{9,10}$/;   //繁体\r\n\r\n            var Reg = zhReg;   //默认简体\r\n            if( null !== this.verifyPhoneNumReg ){\r\n                Reg = this.verifyPhoneNumReg\r\n            }\r\n\r\n\t\t\tif (tel == \"\" || !Reg.test(tel)) {\r\n\t\t\t\t$(\"#form-dialog-phone\").val(\"\");\r\n\t\t\t\t$form.prepend($(\"<p id='error-info'/>\").html('请重新输入电话号码！').css(\"color\", \"#fe0\"));\r\n\t\t\t\treturn;\r\n\t\t\t} else {\r\n\t\t\t\tthis.Tools.ajax({\r\n\t\t\t\t\t\"p\": \"setUserInfo\",\r\n\t\t\t\t\t\"extra\": {\r\n\t\t\t\t\t\t\"name\": uname,\r\n\t\t\t\t\t\t\"tel\": tel,\r\n\t\t\t\t\t\t\"email\": email,\r\n\t\t\t\t\t\t\"addr\": addr\r\n\t\t\t\t\t}\r\n\t\t\t\t}, ( requestMsg )=>{\r\n\t\t\t\t\tthis.hideFormDialog()\r\n\t\t\t\t\tif( null !== this.callBackFunc ){\r\n\t\t\t\t\t\tthis.callBackFunc( requestMsg )\r\n\t\t\t\t\t}\r\n\t\t\t\t});\r\n\t\t\t}\r\n        },\r\n\r\n        /*-----------------Callback Function--------------------Private Func*/ \r\n        onLeftBtnClick: function(){\r\n        \tif( true === this.isExchangeBtnsFunc){\r\n        \t\tthis.hideFormDialog()\r\n        \t\treturn\r\n        \t}\r\n        \tthis.submmitFromInfo()\r\n        },\r\n        onRightBtnClick: function(){\r\n        \tif( true === this.isExchangeBtnsFunc){\r\n        \t\tthis.submmitFromInfo()\r\n        \t\treturn\r\n        \t}\r\n\r\n        \tthis.hideFormDialog()\r\n        }\r\n    },\r\n    events: {\r\n        'show-form-dlg': function (dlgMsgObj) {\r\n            this.showFormDialog(dlgMsgObj);\r\n        }\r\n    }\r\n}\r\n</script>\r\n\r\n<style>\r\n.dialog.wrap, .form-dlg-shadow{\r\n    position: absolute;\r\n    width: 100%;\r\n    height: 100%;\r\n    top: 0;\r\n    left: 0;\r\n    z-index: 5;\r\n}\r\n#form-dlg-shadow{\r\n    background: rgba(0,0,0,.6);\r\n    z-index: 11;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n#form-dialog-h1 {\r\n    font-size: 1.24em;\r\n    line-height: 2;\r\n    padding: 0;\r\n    font-weight: normal;\r\n    color: #FFF;\r\n    background-size: 100% 100%;\r\n    position: relative;\r\n}\r\n#form-dialog-body{\r\n\tposition:absolute;\r\n\ttop: 20%;\r\n\tleft: 52%;\r\n\twidth:70%;\r\n\tz-index:11;\r\n\ttext-align: center;\r\n\tmargin-left:-36%;\r\n\tborder-radius: .5em;\r\n\tbackground-color:transparent;\r\n\tbackground:#F5D39F;\r\n\tbox-sizing:border-box;\r\n\t-webkit-box-sizing:border-box;\r\n\t-moz-box-sizing:border-box;\r\n\tcolor:#4B2B1C;\r\n}\r\n#form-dialog-cont{width:90%;margin:1% auto}\r\n#form-dialog-body>section{\r\n    background-color: #E0AB75;\r\n    text-align: left;\r\n    padding: 4% 2%;\r\n    font-size: 1em;\r\n    line-height: 1.2em;\r\n    box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);\r\n    border-radius: .5em;\r\n    width: 87%;\r\n    margin: 0 auto;\r\n    margin-top: 4%;\r\n}\r\n#form-dialog-cont p{text-align: center;}\r\n#form-dialog-cont label{width:18%;\r\n\tpadding-right:2%;\r\n\ttext-align:right;\r\n\tdisplay:inline-block}\r\n#form-dialog-cont label>b{color:#fe0;vertical-align: middle;}\r\n#form-dialog-cont input{\r\n\twidth:64%;\r\n\tpadding:.3em;\r\n\tcolor:#000;\r\n\tfont-size: 1em;\r\n\tmargin:1% auto 1% 2%;\r\n\ttext-align:left;\r\n\tdisplay:inline-block;\r\n\toutline: none;\r\n\tborder:none;\r\n\tborder-radius:.5em;\r\n\tbox-shadow:inset -1px 1px 6px rgba(0,0,0,.4);\r\n}\r\n.form-dialog-a{\r\n    font: 1.2em Microsoft YaHei, sans-serif;\r\n    line-height: 1.69;\r\n    font-weight: bold;\r\n    color: #FFF;\r\n    text-align: center;\r\n    display: inline-block;\r\n    margin: 2% 4% 2%;\r\n    width: 23%;\r\n    height: 2em;\r\n    text-decoration: none;\r\n    border: none;\r\n    cursor: pointer;\r\n    background-color: transparent;\r\n    letter-spacing: .2em;\r\n    background-size: 100% 100%;\r\n}\r\n</style>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
+
+/***/ },
+/* 93 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	// <template lang="jade">
+	// 	div(class='wrap dialog' id='form-dialog' v-if='isShowDlgFlag')
+	// 		div#form-dlg-shadow
+	// 		div#form-dialog-body.dlg-body
+	// 			h1#form-dialog-h1 {{ titleText }}
+	// 			section
+	// 				div#form-dialog-cont
+	// 					label(for='form-dialog-uname') {{{ userName }}}
+	// 					input(type='text' maxlength='20' placeholder='{{ namePlaceholder }}' id='form-dialog-uname')
+	// 					br
+	// 					label(for='form-dialog-phone') {{{ userPhone }}}
+	// 					input(type='text' maxlength='12' placeholder='{{ phonePlaceholder }}' id='form-dialog-phone' required='required')
+	// 					br
+	// 					label(for='form-dialog-address') {{{ userAddress }}}
+	// 					input(type='text' placeholder='{{ addressPlaceholder }}' id='form-dialog-address' required='required')
+	// 					br
+	// 			div#form-dialog-btns
+	// 				a(href="javascript:;" class='form-dialog-a form-dialog-left-a dlg-submit-btn' @click='onLeftBtnClick') {{ leftBtnText }}
+	// 				a(href="javascript:;" class='form-dialog-a form-dialog-right-a dlg-close-btn' @click='onRightBtnClick') {{ rightBtnText }}
+	// </template>
+	//
+	//
+	// <script>
+	exports.default = {
+	    data: function data() {
+	        return {
+	            Tools: {},
+	            titleText: '用户信息',
+	            userName: '姓名',
+	            userPhone: '<b>*</b>电话',
+	            userAddress: '地址',
+	            namePlaceholder: '请输入姓名',
+	            phonePlaceholder: '请输入电话号码',
+	            addressPlaceholder: '请输入您的地址',
+	            leftBtnText: '提交',
+	            rightBtnText: '取消',
+	            callBackFunc: null,
+	            isShowDlgFlag: false,
+	            isExchangeBtnsFunc: false,
+	            verifyPhoneNumReg: null
+	        };
+	    },
+	
+	    methods: {
+	        showFormDialog: function showFormDialog(dlgMsgObj) {
+	            var _this = this;
+	
+	            this.Tools = dlgMsgObj.Tools;
+	            this.titleText = dlgMsgObj.titleText || this.titleText;
+	            this.userName = dlgMsgObj.userName || this.userName;
+	            this.userPhone = dlgMsgObj.userPhone || this.userPhone;
+	            this.userAddress = dlgMsgObj.userAddress || this.userAddress;
+	            this.namePlaceholder = dlgMsgObj.namePlaceholder || this.namePlaceholder;
+	            this.phonePlaceholder = dlgMsgObj.phonePlaceholder || this.phonePlaceholder;
+	            this.addressPlaceholder = dlgMsgObj.addressPlaceholder || this.addressPlaceholder;
+	            this.leftBtnText = dlgMsgObj.leftBtnText || this.leftBtnText;
+	            this.rightBtnText = dlgMsgObj.rightBtnText || this.rightBtnText;
+	            this.isExchangeBtnsFunc = dlgMsgObj.isExchangeBtnsFunc || this.isExchangeBtnsFunc;
+	
+	            this.Tools.ajax({ "p": "getUserInfo", "extra": {} }, function (succData) {
+	                var name = succData.name,
+	                    tel = succData.tel,
+	                    email = succData.email,
+	                    addr = succData.addr;
+	
+	                _this.isShowDlgFlag = true;
+	
+	                setTimeout(function (succData) {
+	                    if (succData !== "" && null !== succData) {
+	                        if (name) $("#form-dialog-uname").val(name);
+	                        if (tel) $("#form-dialog-phone").val(tel);
+	                        if (email) $("#form-dialog-email").val(email);
+	                        if (addr) $("#form-dialog-address").val(addr);
+	                    }
+	                }, 0);
+	            });
+	        },
+	        hideFormDialog: function hideFormDialog() {
+	            this.isShowDlgFlag = false;
+	        },
+	        submmitFromInfo: function submmitFromInfo() {
+	            var _this2 = this;
+	
+	            var uname = $("#form-dialog-uname").val(),
+	                tel = $("#form-dialog-phone").val(),
+	                email = $("#form-dialog-email").val(),
+	                addr = $("#form-dialog-address").val(),
+	                $form = $("#form-dialog-cont");
+	
+	            $("#error-info").remove();
+	            $("#form-dialog-phone").on("keydown", function () {
+	                $("#error-info").fadeOut(100);
+	            });
+	
+	            var zhReg = /^1[3-8][0-9]{9}$/,
+	                //简体
+	            thReg = /^08[0-9]{9,10}$/; //繁体
+	
+	            var Reg = zhReg; //默认简体
+	            if (null !== this.verifyPhoneNumReg) {
+	                Reg = this.verifyPhoneNumReg;
+	            }
+	
+	            if (tel == "" || !Reg.test(tel)) {
+	                $("#form-dialog-phone").val("");
+	                $form.prepend($("<p id='error-info'/>").html('请重新输入电话号码！').css("color", "#fe0"));
+	                return;
+	            } else {
+	                this.Tools.ajax({
+	                    "p": "setUserInfo",
+	                    "extra": {
+	                        "name": uname,
+	                        "tel": tel,
+	                        "email": email,
+	                        "addr": addr
+	                    }
+	                }, function (requestMsg) {
+	                    _this2.hideFormDialog();
+	                    if (null !== _this2.callBackFunc) {
+	                        _this2.callBackFunc(requestMsg);
+	                    }
+	                });
+	            }
+	        },
+	
+	        /*-----------------Callback Function--------------------Private Func*/
+	        onLeftBtnClick: function onLeftBtnClick() {
+	            if (true === this.isExchangeBtnsFunc) {
+	                this.hideFormDialog();
+	                return;
+	            }
+	            this.submmitFromInfo();
+	        },
+	        onRightBtnClick: function onRightBtnClick() {
+	            if (true === this.isExchangeBtnsFunc) {
+	                this.submmitFromInfo();
+	                return;
+	            }
+	
+	            this.hideFormDialog();
+	        }
+	    },
+	    events: {
+	        'show-form-dlg': function showFormDlg(dlgMsgObj) {
+	            this.showFormDialog(dlgMsgObj);
+	        }
+	    }
+	};
+	// </script>
+	//
+	// <style>
+	// .dialog.wrap, .form-dlg-shadow{
+	//     position: absolute;
+	//     width: 100%;
+	//     height: 100%;
+	//     top: 0;
+	//     left: 0;
+	//     z-index: 5;
+	// }
+	// #form-dlg-shadow{
+	//     background: rgba(0,0,0,.6);
+	//     z-index: 11;
+	//     width: 100%;
+	//     height: 100%;
+	// }
+	// #form-dialog-h1 {
+	//     font-size: 1.24em;
+	//     line-height: 2;
+	//     padding: 0;
+	//     font-weight: normal;
+	//     color: #FFF;
+	//     background-size: 100% 100%;
+	//     position: relative;
+	// }
+	// #form-dialog-body{
+	// 	position:absolute;
+	// 	top: 20%;
+	// 	left: 52%;
+	// 	width:70%;
+	// 	z-index:11;
+	// 	text-align: center;
+	// 	margin-left:-36%;
+	// 	border-radius: .5em;
+	// 	background-color:transparent;
+	// 	background:#F5D39F;
+	// 	box-sizing:border-box;
+	// 	-webkit-box-sizing:border-box;
+	// 	-moz-box-sizing:border-box;
+	// 	color:#4B2B1C;
+	// }
+	// #form-dialog-cont{width:90%;margin:1% auto}
+	// #form-dialog-body>section{
+	//     background-color: #E0AB75;
+	//     text-align: left;
+	//     padding: 4% 2%;
+	//     font-size: 1em;
+	//     line-height: 1.2em;
+	//     box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);
+	//     border-radius: .5em;
+	//     width: 87%;
+	//     margin: 0 auto;
+	//     margin-top: 4%;
+	// }
+	// #form-dialog-cont p{text-align: center;}
+	// #form-dialog-cont label{width:18%;
+	// 	padding-right:2%;
+	// 	text-align:right;
+	// 	display:inline-block}
+	// #form-dialog-cont label>b{color:#fe0;vertical-align: middle;}
+	// #form-dialog-cont input{
+	// 	width:64%;
+	// 	padding:.3em;
+	// 	color:#000;
+	// 	font-size: 1em;
+	// 	margin:1% auto 1% 2%;
+	// 	text-align:left;
+	// 	display:inline-block;
+	// 	outline: none;
+	// 	border:none;
+	// 	border-radius:.5em;
+	// 	box-shadow:inset -1px 1px 6px rgba(0,0,0,.4);
+	// }
+	// .form-dialog-a{
+	//     font: 1.2em Microsoft YaHei, sans-serif;
+	//     line-height: 1.69;
+	//     font-weight: bold;
+	//     color: #FFF;
+	//     text-align: center;
+	//     display: inline-block;
+	//     margin: 2% 4% 2%;
+	//     width: 23%;
+	//     height: 2em;
+	//     text-decoration: none;
+	//     border: none;
+	//     cursor: pointer;
+	//     background-color: transparent;
+	//     letter-spacing: .2em;
+	//     background-size: 100% 100%;
+	// }
+	// </style>
+	/* generated by vue-loader */
+
+/***/ },
+/* 94 */
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"form-dialog\" v-if=\"isShowDlgFlag\" class=\"wrap dialog\"><div id=\"form-dlg-shadow\"></div><div id=\"form-dialog-body\" class=\"dlg-body\"><h1 id=\"form-dialog-h1\">{{ titleText }}</h1><section><div id=\"form-dialog-cont\"><label for=\"form-dialog-uname\">{{{ userName }}}</label><input type=\"text\" maxlength=\"20\" placeholder=\"{{ namePlaceholder }}\" id=\"form-dialog-uname\"/><br/><label for=\"form-dialog-phone\">{{{ userPhone }}}</label><input type=\"text\" maxlength=\"12\" placeholder=\"{{ phonePlaceholder }}\" id=\"form-dialog-phone\" required=\"required\"/><br/><label for=\"form-dialog-address\">{{{ userAddress }}}</label><input type=\"text\" placeholder=\"{{ addressPlaceholder }}\" id=\"form-dialog-address\" required=\"required\"/><br/></div></section><div id=\"form-dialog-btns\"><a href=\"javascript:;\" @click=\"onLeftBtnClick\" class=\"form-dialog-a form-dialog-left-a dlg-submit-btn\">{{ leftBtnText }}</a><a href=\"javascript:;\" @click=\"onRightBtnClick\" class=\"form-dialog-a form-dialog-right-a dlg-close-btn\">{{ rightBtnText }}</a></div></div></div>";
+
+/***/ },
+/* 95 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(96)
+	__vue_script__ = __webpack_require__(98)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] ..\\components\\modules\\turnTable.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(99)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "F:\\jadeVueC\\components\\modules\\turnTable.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 96 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(97);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./turnTable.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./turnTable.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 97 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\r\n#turntable-root {\r\n\tposition: absolute;\r\n\twidth: 50%;\r\n\theight: 78%;\r\n\ttop: 9%;\r\n\tright: 2.5%;\r\n}\r\n#turntable-drawbox {\r\n    width: 83%;\r\n    height: 93%;\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 6%;\r\n\tbottom: 13.5%;\r\n\tbackground-size: 100% 100%;\r\n}\r\n#turntable-drawpoint {\r\n    width: 16.7%;\r\n    top: 33.66%;\r\n    left: 42.4%;\r\n    height: 23.9%;\r\n\tbackground-size: 100% 100%;\r\n\tposition: absolute;\r\n\tz-index: 2;\r\n\t-webkit-transform-origin: 50% 65.1%;\r\n\ttransform-origin: 50% 65.1%;\r\n\twill-change: transform;\r\n}\r\n.turntable-transition{\r\n    -webkit-transition: -webkit-transform 2s ease-in-out;\r\n    transition: -webkit-transform 2s ease-in-out;\r\n    transition: transform 2s ease-in-out;\r\n    transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;\r\n}\r\n", "", {"version":3,"sources":["/../components/modules/turnTable.vue?5ae7b69b"],"names":[],"mappings":";AA+FA;CACA,mBAAA;CACA,WAAA;CACA,YAAA;CACA,QAAA;CACA,YAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;CACA,mBAAA;CACA,OAAA;CACA,UAAA;CACA,cAAA;CACA,2BAAA;CACA;AACA;IACA,aAAA;IACA,YAAA;IACA,YAAA;IACA,cAAA;CACA,2BAAA;CACA,mBAAA;CACA,WAAA;CACA,oCAAA;CAIA,4BAAA;CACA,uBAAA;CACA;AACA;IACA,qDAAA;IACA,6CAAA;IAAA,qCAAA;IAAA,uEAAA;CACA","file":"turnTable.vue","sourcesContent":["<!--Date: 16-04-18\r\n\tAuthor: jeffjade\r\n\tDesc: 大转盘/抽奖等功能模块组件\r\n -->\r\n <template lang=\"jade\">\r\n\t#turntable-root\r\n\t\t#turntable-drawbox\r\n\t\t\tdiv(id=\"turntable-drawpoint\" v-on:click=\"onDrawboxCallback\")\r\n</template>\r\n\r\n<!-- <template>\r\n\t<div id=\"turntable-root\">\r\n\t\t<div id=\"turntable-drawbox\">\r\n\t\t\t<div v-on:click=\"onDrawboxCallback\"  id=\"turntable-drawpoint\"></div>\r\n\t\t</div>\r\n\t</div>\r\n</template> -->\r\n\r\n<script>\r\nexport default {\r\n\tdata(){\r\n\t\treturn{\r\n\t\t\trequestSuccData:{}\r\n\t\t}\r\n\t},\r\n\r\n\tready(){\r\n\t\tdocument.getElementById('turntable-drawpoint').addEventListener('webkitTransitionEnd', ()=>{\r\n            setTimeout( ()=>{\r\n            \tthis.excuteCallBackFunc()\r\n            \t$('#turntable-drawpoint').removeClass('turntable-transition').css({'webkitTransform' : 'rotate(0deg)'});\r\n            }, this.turnTableConfig.resumeDelay );\r\n\t\t}, false);\r\n\t},\r\n\r\n\tprops:{\r\n\t\tTools:{\r\n            type: null,\r\n            default: {}\r\n        },\r\n        turnTableConfig:{\r\n        \ttype: Object,\r\n        \tdefault: function(){\r\n        \t\treturn {\r\n        \t\t\trewardKinds: 8,\r\n        \t\t\tresumeDelay: 1000,\r\n        \t\t\trotateNums: 3,\r\n        \t\t\timgOffset: 22.5,\r\n        \t\t\tcallBackFunc: null\r\n        \t\t}\r\n        \t}\r\n        }\r\n\t},\r\n\r\n\tmethods: {\r\n\t\tonDrawboxCallback: function(event){\r\n\t\t\tthis.startupDrawbox()\r\n\t\t},\r\n\t\tstartupDrawbox: function(){\r\n\t\t\tthis.Tools.ajax({\"p\":\"complete\",\"extra\":{\"keys\":\"turntable\"}}, (succData)=>{\r\n\t\t\t\tthis.requestSuccData = succData || {};\r\n\t\t\t\tlet rewardKinds = this.turnTableConfig.rewardKinds\r\n\t\t\t\tlet rotateNums = this.turnTableConfig.rotateNums\r\n\r\n\t\t\t\tif( succData.status >= 0 ){\r\n\t\t\t\t\tlet offset = (360/rewardKinds)*succData.num\r\n\t\t\t\t\tlet tragetAngel = (360*rotateNums)+offset - this.turnTableConfig.imgOffset\r\n\t\t\t\t\t$(\"#turntable-drawpoint\").addClass('turntable-transition').css({ 'webkitTransform':'rotate('+tragetAngel+'deg)' });\r\n\t\t\t\t}else{\r\n\t\t\t\t\tthis.excuteCallBackFunc()\r\n\t\t\t\t}\r\n\t\t\t})\r\n\t\t},\r\n\t\texcuteCallBackFunc: function(){\r\n\t\t\tif(null !== this.turnTableConfig.callBackFunc){\r\n\t\t\t\tvar cdObj = {\r\n\t\t\t\t\tmsg: this.requestSuccData.msg,\r\n\t\t\t\t\tname: this.requestSuccData.name || \"\"\r\n\t\t\t\t}\r\n            \tthis.turnTableConfig.callBackFunc( cdObj );\r\n            }\r\n\t\t}\r\n\t},\r\n\r\n\tevents: {\r\n\t   'turntable-msg': function () {\r\n\t\t\t// 兼容下，开启大转盘按钮不在此组件情形;\r\n\t\t\tthis.startupDrawbox();\r\n\t\t}\r\n   }\r\n}\r\n</script>\r\n\r\n\r\n<style>\r\n#turntable-root {\r\n\tposition: absolute;\r\n\twidth: 50%;\r\n\theight: 78%;\r\n\ttop: 9%;\r\n\tright: 2.5%;\r\n}\r\n#turntable-drawbox {\r\n    width: 83%;\r\n    height: 93%;\r\n\tposition: absolute;\r\n\ttop: 0;\r\n\tright: 6%;\r\n\tbottom: 13.5%;\r\n\tbackground-size: 100% 100%;\r\n}\r\n#turntable-drawpoint {\r\n    width: 16.7%;\r\n    top: 33.66%;\r\n    left: 42.4%;\r\n    height: 23.9%;\r\n\tbackground-size: 100% 100%;\r\n\tposition: absolute;\r\n\tz-index: 2;\r\n\t-webkit-transform-origin: 50% 65.1%;\r\n\t-ms-transform-origin: 50% 65.1%;\r\n\t-o-transform-origin: 50% 65.1%;\r\n\t-moz-transform-origin: 50% 65.1%;\r\n\ttransform-origin: 50% 65.1%;\r\n\twill-change: transform;\r\n}\r\n.turntable-transition{\r\n    -webkit-transition: -webkit-transform 2s ease-in-out;\r\n    transition: transform 2s ease-in-out;\r\n}\r\n</style>"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 98 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	// <!--Date: 16-04-18
+	// 	Author: jeffjade
+	// 	Desc: 大转盘/抽奖等功能模块组件
+	//  -->
+	//  <template lang="jade">
+	// 	#turntable-root
+	// 		#turntable-drawbox
+	// 			div(id="turntable-drawpoint" v-on:click="onDrawboxCallback")
+	// </template>
+	//
+	// <!-- <template>
+	// 	<div id="turntable-root">
+	// 		<div id="turntable-drawbox">
+	// 			<div v-on:click="onDrawboxCallback"  id="turntable-drawpoint"></div>
+	// 		</div>
+	// 	</div>
+	// </template> -->
+	//
+	// <script>
+	exports.default = {
+		data: function data() {
+			return {
+				requestSuccData: {}
+			};
+		},
+		ready: function ready() {
+			var _this = this;
+	
+			document.getElementById('turntable-drawpoint').addEventListener('webkitTransitionEnd', function () {
+				setTimeout(function () {
+					_this.excuteCallBackFunc();
+					$('#turntable-drawpoint').removeClass('turntable-transition').css({ 'webkitTransform': 'rotate(0deg)' });
+				}, _this.turnTableConfig.resumeDelay);
+			}, false);
+		},
+	
+		props: {
+			Tools: {
+				type: null,
+				default: {}
+			},
+			turnTableConfig: {
+				type: Object,
+				default: function _default() {
+					return {
+						rewardKinds: 8,
+						resumeDelay: 1000,
+						rotateNums: 3,
+						imgOffset: 22.5,
+						callBackFunc: null
+					};
+				}
+			}
+		},
+	
+		methods: {
+			onDrawboxCallback: function onDrawboxCallback(event) {
+				this.startupDrawbox();
+			},
+			startupDrawbox: function startupDrawbox() {
+				var _this2 = this;
+	
+				this.Tools.ajax({ "p": "complete", "extra": { "keys": "turntable" } }, function (succData) {
+					_this2.requestSuccData = succData || {};
+					var rewardKinds = _this2.turnTableConfig.rewardKinds;
+					var rotateNums = _this2.turnTableConfig.rotateNums;
+	
+					if (succData.status >= 0) {
+						var offset = 360 / rewardKinds * succData.num;
+						var tragetAngel = 360 * rotateNums + offset - _this2.turnTableConfig.imgOffset;
+						$("#turntable-drawpoint").addClass('turntable-transition').css({ 'webkitTransform': 'rotate(' + tragetAngel + 'deg)' });
+					} else {
+						_this2.excuteCallBackFunc();
+					}
+				});
+			},
+			excuteCallBackFunc: function excuteCallBackFunc() {
+				if (null !== this.turnTableConfig.callBackFunc) {
+					var cdObj = {
+						msg: this.requestSuccData.msg,
+						name: this.requestSuccData.name || ""
+					};
+					this.turnTableConfig.callBackFunc(cdObj);
+				}
+			}
+		},
+	
+		events: {
+			'turntable-msg': function turntableMsg() {
+				// 兼容下，开启大转盘按钮不在此组件情形;
+				this.startupDrawbox();
+			}
+		}
+	};
+	// </script>
+	//
+	//
+	// <style>
+	// #turntable-root {
+	// 	position: absolute;
+	// 	width: 50%;
+	// 	height: 78%;
+	// 	top: 9%;
+	// 	right: 2.5%;
+	// }
+	// #turntable-drawbox {
+	//     width: 83%;
+	//     height: 93%;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 6%;
+	// 	bottom: 13.5%;
+	// 	background-size: 100% 100%;
+	// }
+	// #turntable-drawpoint {
+	//     width: 16.7%;
+	//     top: 33.66%;
+	//     left: 42.4%;
+	//     height: 23.9%;
+	// 	background-size: 100% 100%;
+	// 	position: absolute;
+	// 	z-index: 2;
+	// 	-webkit-transform-origin: 50% 65.1%;
+	// 	-ms-transform-origin: 50% 65.1%;
+	// 	-o-transform-origin: 50% 65.1%;
+	// 	-moz-transform-origin: 50% 65.1%;
+	// 	transform-origin: 50% 65.1%;
+	// 	will-change: transform;
+	// }
+	// .turntable-transition{
+	//     -webkit-transition: -webkit-transform 2s ease-in-out;
+	//     transition: transform 2s ease-in-out;
+	// }
+	// </style>
+	/* generated by vue-loader */
+
+/***/ },
+/* 99 */
+/***/ function(module, exports) {
+
+	module.exports = "<div id=\"turntable-root\"><div id=\"turntable-drawbox\"><div id=\"turntable-drawpoint\" v-on:click=\"onDrawboxCallback\"></div></div></div>";
 
 /***/ }
 /******/ ]);
