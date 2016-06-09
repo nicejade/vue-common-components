@@ -99,8 +99,7 @@ export default {
     text-align: center;
     margin-left: -36%;
     border-radius: .5em;
-    background-color: transparent;
-    background: #F5D39F;
+    background-color: #130c0e;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -124,7 +123,7 @@ export default {
     height: 2.38em;
 }
 #strong-dlg-body > section {
-    background-color: #E0AB75;
+    background-color: #d3d7d4;
     text-align: left;
     padding: 4% 2%;
     font-size: 1em;

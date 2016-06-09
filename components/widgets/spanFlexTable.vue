@@ -3,13 +3,11 @@
 	Author: Nicejade
  -->
 <template>
-	<div id="span-flex-table" v-if="isShowTableFlag">
-		<ul>
-			<li v-for='liItem in tableList'  class="span-flex-table-li">
-				<span v-for='spanList in liItem' class="span-flex-table-span"> {{ spanList }} </span>
-			</li>
-		</ul>
-	</div>
+	<ul id="span-flex-table" v-if="isShowTableFlag">
+		<li v-for='liItem in tableList'  class="span-flex-table-li">
+			<span v-for='spanList in liItem' class="span-flex-table-span"> {{ spanList }} </span>
+		</li>
+	</ul>
 </template>
 
 
@@ -35,6 +33,10 @@ export default {
     		var tableListLen = this.getObjLength( tableInfo )
         	var cssHeight = 100/tableListLen + "%";
         	$('.span-flex-table-li').css( {'height': cssHeight} )
+
+			var subTableListLen = this.getObjLength( tableInfo[tableListLen-1] )
+			var cssWidth = 100/subTableListLen + "%";
+			$('.span-flex-table-span').css( {'width': cssWidth} )
     	},
     	getObjLength: function(obj){
     		if(null === obj || undefined === obj){
@@ -57,62 +59,39 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style>
 *{padding:0;margin:0;box-sizing:border-box;}
-$h30   : 30%;
-$h50   : 50%;
-$h60   : 60%;
-$h70   : 70%;
-$h80   : 80%;
-$h100  : 100%;
-$w100  : 100%;
-
-$pa    : absolute;
-$pr    : relative;
-$tc    : center;
-
-@mixin flex(){
-	display:flex;
-	display: -webkit-flex;
-	flex-wrap:wrap;
-	justify-content:$tc;
-	align-items:$tc;
-}
-
 #span-flex-table{
 	position: $pr;
-	width: $h60;
-	padding-top: $h30;
+	width: 60%;
 	background-color: #999;
 	color: #333;
 	text-align: $tc;
-	&>ul{
-		@include flex();
-		text-align: $tc;
-		position: $pa;
-		top: 0%;
-		left: 0%;
-		width: $w100;
-		height: $h100;
-		border: 2px solid #000;
-		&>li{
-			list-style: none;
-			width: $w100;
-			height: calc(100% / 2);
-			display: table;
-			&:not(:last-child){
-				border-bottom: 1px solid #000;
-			}
-			&>span{
-				/* 子元素设置为表格单元块，方便居中设置 */
-				display:table-cell;
-				height: $h100;
-				vertical-align:middle;
-				&:not(:last-child){
-					border-right: 1px solid #000;
-				}
-			}
-		}
-	}
+	border: 2px solid #000;
+}
+.span-flex-table-li{
+	list-style: none;
+	text-align: center;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	-webkit-align-items: center;
+	-webkit-flex-flow: row wrap;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+.span-flex-table-li:not(:last-child){
+	border-bottom: 1px solid #000;
+}
+.sidebar-widgets-span{
+	height: $h100;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	vertical-align:middle;
+}
+.sidebar-widgets-span:not(:last-child){
+	border-right: 1px solid #000;
 }
 </style>

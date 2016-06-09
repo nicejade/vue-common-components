@@ -51,6 +51,7 @@ html, body{
     height: 100%;
     background-color: #1C1F2B;
     background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));
+    font-family:"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif
 }
 #app{
     height: 100%;

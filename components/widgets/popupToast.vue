@@ -1,5 +1,5 @@
 <template lang="jade">
-div(class="popup-toast" id="modal-template"  v-if="isShowToastFlag") 
+div(class="popup-toast" id="modal-template"  v-if="isShowToastFlag")
 	section
 		p {{ bodyText }}
 </template>
@@ -14,7 +14,7 @@ div(class="popup-toast" id="modal-template"  v-if="isShowToastFlag")
     text-align: center;
     font-size: 1.24em;
     color: #fff;
-    z-index: 12;
+    z-index: 20;
     background-color: #6f599c;
     border-radius: 1em;
     border: 2px solid #6f599c;

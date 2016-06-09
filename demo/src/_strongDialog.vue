@@ -8,10 +8,12 @@
     a(href='javascript:;' @click="onCloseDemoClick" class='demonstrate-a ahead') {{ hideStrongDlgText }}
     div.comp-area
         strong-dialog
+        popup-toast
 </template>
 
 <script type="text/javascript">
 import strongDialog from 'strongDialog'
+import popupToast from 'popupToast'
 import preCode from './preCode.vue'
 
 export default {
@@ -61,16 +63,26 @@ export default {
 	},
     components: {
         strongDialog,
+        popupToast,
         preCode,
     },
     methods: {
+        showPopupToast: function( text ){
+            var toastMsg = {
+                bodyText: text,
+                timer: 2222,           //可不传；默认2000ms
+                callBackFunc: function(){console.log('callback down!')}
+            }
+            this.$broadcast('show-popup-toast', toastMsg);
+        },
         onCallDemoClick: function(){
+            var _That = this;
             function leftCallback(){
-                console.log('leftCallback To Here');
+                _That.showPopupToast('excute left-btn callback')
             }
 
             function rightCallback(){
-                console.log('rightCallback To Here');
+                _That.showPopupToast('excute right-btn callback')
             }
 
             var dlgMsgObj = {

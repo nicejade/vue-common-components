@@ -2,7 +2,7 @@
     h1#comp-title {{ compTitle }}
     h2#hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
-    h2#hinting-title {{ btnText }}
+    h2#hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onStartCountClick" class='demonstrate-a') {{ btnText }}
     div.comp-area
         <count-down :time.sync="time" :is-complete-show-hms="isCompleteShowHms" :fore-time-text="foreTimeText" :last-time-text="lastTimeText" :start.sync="isStartCount"></count-down>
@@ -20,6 +20,7 @@ export default {
             btnText: "StartCountDown",
             compTitle : "Component Name",
             hintingTitle: "使用示例:",
+            hintingTitle2: "表现示例",
             foreTimeText: "(倒计时fore)",
             lastTimeText: "(倒计时end)",
             isCompleteShowHms: true,

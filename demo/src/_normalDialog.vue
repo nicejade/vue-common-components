@@ -6,10 +6,12 @@
     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
     div.comp-area
         normal-dialog
+        popup-toast
 </template>
 
 <script type="text/javascript">
 import normalDialog from 'normalDialog'
+import popupToast from 'popupToast'
 import preCode from './preCode.vue'
 
 export default {
@@ -40,6 +42,7 @@ export default {
 	},
     components: {
         normalDialog,
+        popupToast,
         preCode,
     },
     methods: {
@@ -48,14 +51,20 @@ export default {
                 titleText: "&温馨提示&",       //可不传，默认 “温馨提示”
                 bodyText: "www.jeffjade.com",
                 confirmText: "确认",             //可不传，默认 “确认”
-                callBackFunc: ()=>{
-                    alert('Execute Button CallBackFunc')
-                },      //可不传，默认null
+                callBackFunc: this.showPopupToast,
                 isShowCloseXFlag: true       //可不传，默认 true
             }
 
             // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）
             this.$broadcast('show-normal-dlg', dlgMsgObj);
+        },
+        showPopupToast: function(){
+            var toastMsg = {
+                bodyText: "execute normal dialog callback",
+                timer: 2222,           //可不传；默认2000ms
+                callBackFunc: function(){console.log('callback down!')}
+            }
+            this.$broadcast('show-popup-toast', toastMsg);
         }
     }
 }

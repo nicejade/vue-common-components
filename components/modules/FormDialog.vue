@@ -61,7 +61,7 @@ export default {
                     addr = succData.addr;
 
                 this.isShowDlgFlag =  true
-                
+
                 setTimeout( (succData)=>{
                 	if (succData !== "" &&  null !== succData) {
 	                    if (name) $("#form-dialog-uname").val(name)
@@ -117,7 +117,7 @@ export default {
 			}
         },
 
-        /*-----------------Callback Function--------------------Private Func*/ 
+        /*-----------------Callback Function--------------------Private Func*/
         onLeftBtnClick: function(){
         	if( true === this.isExchangeBtnsFunc){
         		this.hideFormDialog()

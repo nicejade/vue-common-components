@@ -35,10 +35,10 @@ export default {
         this.setTableList()
     },
     route:{
-		data(transition){
+  		data(transition){
             this.compTitle = transition.to.name
-		}
-	},
+  		}
+	 },
     components: {
         commonTable,
         preCode,

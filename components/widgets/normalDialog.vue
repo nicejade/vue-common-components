@@ -10,82 +10,6 @@
 </div>
 </template>
 
-<style>
-.dialog.wrap, .normal-dlg-shadow{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-.normal-dlg-shadow{
-    background: rgba(0,0,0,.6);
-    z-index: 11;
-}
-#normal-dlg-body{
-    position: absolute;
-    top: 20%;
-    left: 52%;
-    width: 70%;
-    z-index: 11;
-    text-align: center;
-    margin-left: -36%;
-    border-radius: .5em;
-    background-color: transparent;
-    background: #F5D39F;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    color: #4B2B1C;
-}
-#normal-dlg-body > h1{
-    font-size: 1.24em;
-    line-height: 2;
-    padding: 0;
-    font-weight: normal;
-    color: #FFF;
-    background-size: 100% 100%;
-    position: relative;
-}
-.normal-dlg-close{
-    position: absolute;
-    right: -1%;
-    top: -3%;
-    background-size: 100% 100%;
-    width: 2.38em;
-    height: 2.38em;
-}
-#normal-dlg-body > section {
-    background-color: #E0AB75;
-    text-align: left;
-    padding: 4% 2%;
-    font-size: 1em;
-    line-height: 1.2em;
-    border-radius: .5em;
-    width: 87%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 4%;
-}
-#normal-dlg-body .confirm{
-    font: 1.2em Microsoft YaHei, sans-serif;
-    line-height: 1.69;
-    font-weight: bold;
-    color: #FFF;
-    text-align: center;
-    display: inline-block;
-    margin: 2% 3% 3%;
-    padding: 0 7%;
-    height: 2.2em;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    letter-spacing: .2em;
-    background-size: 100% 100%;
-}
-</style>
-
 <script type="text/javascript">
 export default {
     data () {
@@ -132,11 +56,10 @@ export default {
         },
 
         onConfirmClick: function(){
-            this.hideNormalDialog();
-            console.log(this.callBackFunc);
             if(this.callBackFunc !== null){
                 this.callBackFunc();
             }
+            this.hideNormalDialog();
         }
     },
     events: {
@@ -146,3 +69,78 @@ export default {
     }
 }
 </script>
+
+<style>
+.dialog.wrap, .normal-dlg-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.normal-dlg-shadow{
+    background: rgba(0,0,0,.6);
+    z-index: 11;
+}
+#normal-dlg-body{
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    width: 70%;
+    z-index: 11;
+    text-align: center;
+    margin-left: -36%;
+    border-radius: .5em;
+    background-color: #130c0e;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: #4B2B1C;
+}
+#normal-dlg-body > h1{
+    font-size: 1.24em;
+    line-height: 2;
+    padding: 0;
+    font-weight: normal;
+    color: #FFF;
+    background-size: 100% 100%;
+    position: relative;
+}
+.normal-dlg-close{
+    position: absolute;
+    right: -1%;
+    top: -3%;
+    background-size: 100% 100%;
+    width: 2.38em;
+    height: 2.38em;
+}
+#normal-dlg-body > section {
+    background-color: #d3d7d4;
+    text-align: left;
+    padding: 4% 2%;
+    font-size: 1em;
+    line-height: 1.2em;
+    border-radius: .5em;
+    width: 87%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4%;
+}
+#normal-dlg-body .confirm{
+    font: 1.2em Microsoft YaHei, sans-serif;
+    line-height: 1.69;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+    margin: 2% 3% 3%;
+    padding: 0 7%;
+    height: 2.2em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    letter-spacing: .2em;
+    background-size: 100% 100%;
+}
+</style>
