@@ -100,6 +100,10 @@
 	    '/formDialog':{
 	        name: 'formDialog',
 			component: __webpack_require__(92)
+	    },
+		'/shaveLottery':{
+	        name: 'shaveLottery',
+			component: __webpack_require__(100)
 	    }
 	});
 	
@@ -13017,7 +13021,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*{margin: 0;padding: 0}\nli{list-style: none}\nhtml, body{\n    height: 100%;\n    background-color: #1C1F2B;\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));\n    font-family:\"lucida grande\", \"lucida sans unicode\", lucida, helvetica, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", sans-serif\n}\n#app{\n    height: 100%;\n    width: 100%;\n    min-width: 800px;\n    position: relative;\n}\n#left-sidebar{\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow-y: auto;\n    height: 100%;\n    width: 300px;\n    text-align: center;\n    color: #ffffff;\n    /*background-color: #2D3143;*/\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));\n    z-index: 1;\n}\n#sidebar-widgets, #sidebar-modules{\n    width: 100%;\n    font-size: 1.1em;\n    color: #f2f2f2;\n    border-top: 1px solid #221D1D;\n}\n.sidebar-widgets-li, .sidebar-modules-li{\n    width: 100%;\n    height: 2em;\n    line-height: 2;\n    display: table;\n    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/\n    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;\n}\n.sidebar-widgets-li.active, .sidebar-modules-li.active,\n.sidebar-widgets-li:hover, .sidebar-modules-li:hover{\n    background-color: #130c0e;\n}\n.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{\n    background: transparent;\n    font-weight: 600;\n    display: inline-block;\n    width: 90%;\n    text-indent: 15%;\n    margin: 0 5%;\n    text-align: left;\n}\n.sidebar-title{\n    text-indent: 0%;\n    font-size: 1.3em;\n    height: 2em;\n    line-height: 2;\n}\n/*-----components-cont-----*/\n#components-wraper{\n    display: table;\n    width: calc(100% - 300px);\n    height: 100%;\n    border-collapse: collapse;\n    border-spacing: 0;\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n#components-cont{\n    position: relative;\n    left: 0px;\n    -webkit-transition: 300ms ease left;\n    transition: 300ms ease left;\n    max-width: 1000px;\n    margin: 0 auto;\n    padding: 20px 100px;\n    z-index: 1;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    left: 0;\n    overflow-y: auto;\n}\n#components-cont::-webkit-scrollbar {\n    background: transparent;\n}\n@media (max-width: 1240px) {\n    #components-wraper{\n        -webkit-transition:-webkit-transform 250ms ease;\n        transition: -webkit-transform 250ms ease;\n        transition: transform 250ms ease;\n        transition: transform 250ms ease, -webkit-transform 250ms ease;\n        padding-bottom: 20px\n    }\n}\n\n@media (min-width: 600px) {\n    #components-wraper{\n        left:300px\n    }\n}\n#comp-title{\n    text-align: center;\n    color: #f2f2f2;\n    font-weight: 500;\n    text-shadow: 1px 1px 1px #000;\n    margin: 2% 0 5% 0;\n}\n#comp-title:hover{\n    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n}\n#hinting-title{\n    margin: 2% 0;\n    color: #130C0E;\n}\n.demonstrate-a{\n    margin: 2% 0;\n    color: #009ad6;\n    font-size: 1.3em;\n    line-height: 1.3;\n    display: inline-block;\n}\n.ahead{\n    position: relative;\n    z-index: 12;\n}\n\n.common-a{\n    margin: 2% 2% 2% 0;\n    padding: 1% 3%;\n    position: relative;\n    color: #24B3D3;\n    font-size: 1em;\n    line-height: 2;\n    background-color: #222222;\n    border-radius: 1em;\n    text-decoration: none;\n}\n.noComplete{\n    margin: 2% 0;\n    background-color: #222222;\n    font-size: 2em;\n    line-height: 2;\n    text-align: center;\n    color: #f2f2f2;\n}\n.comp-area{\n    position: relative;\n}\n", "", {"version":3,"sources":["/./src/index.vue?e09c4fa6"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA+CA,EAAA,UAAA,UAAA,CAAA;AACA,GAAA,gBAAA,CAAA;AACA;IACA,aAAA;IACA,0BAAA;IACA,wEAAA;IACA,+IAAA;CACA;AACA;IACA,aAAA;IACA,YAAA;IACA,iBAAA;IACA,mBAAA;CACA;AACA;IACA,mBAAA;IACA,OAAA;IACA,QAAA;IACA,SAAA;IACA,UAAA;IACA,iBAAA;IACA,aAAA;IACA,aAAA;IACA,mBAAA;IACA,eAAA;IACA,8BAAA;IACA,wEAAA;IACA,WAAA;CACA;AACA;IACA,YAAA;IACA,iBAAA;IACA,eAAA;IACA,8BAAA;CACA;AACA;IACA,YAAA;IACA,YAAA;IACA,eAAA;IACA,eAAA;IACA,gDAAA;IACA,2CAAA;CACA;AACA;;IAEA,0BAAA;CACA;AACA;IACA,wBAAA;IACA,iBAAA;IACA,sBAAA;IACA,WAAA;IACA,iBAAA;IACA,aAAA;IACA,iBAAA;CACA;AACA;IACA,gBAAA;IACA,iBAAA;IACA,YAAA;IACA,eAAA;CACA;AACA,6BAAA;AACA;IACA,eAAA;IACA,0BAAA;IACA,aAAA;IACA,0BAAA;IACA,kBAAA;IACA,mBAAA;IACA,OAAA;IACA,QAAA;IACA,UAAA;IACA,SAAA;CACA;AACA;IACA,mBAAA;IACA,UAAA;IACA,oCAAA;IAAA,4BAAA;IACA,kBAAA;IACA,eAAA;IACA,oBAAA;IACA,WAAA;IACA,mBAAA;IACA,OAAA;IACA,UAAA;IACA,SAAA;IACA,QAAA;IACA,iBAAA;CACA;AACA;IACA,wBAAA;CACA;AACA;IACA;QACA,gDAAA;QAGA,yCAAA;QAAA,iCAAA;QAAA,+DAAA;QACA,oBAAA;KACA;CACA;;AAEA;IACA;QACA,UAAA;KACA;CACA;AACA;IACA,mBAAA;IACA,eAAA;IACA,iBAAA;IACA,8BAAA;IACA,kBAAA;CACA;AACA;IACA,yFAAA;IACA,iGAAA;IACA,8FAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;IACA,iBAAA;IACA,iBAAA;IACA,sBAAA;CACA;AACA;IACA,mBAAA;IACA,YAAA;CACA;;AAEA;IACA,mBAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;IACA,eAAA;IACA,eAAA;IACA,0BAAA;IACA,mBAAA;IACA,sBAAA;CACA;AACA;IACA,aAAA;IACA,0BAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;CACA;AACA;IACA,mBAAA;CACA","file":"index.vue","sourcesContent":["<template id=\"index\" lang='jade'>\ndiv#app\n    div#left-sidebar\n        p(class='sidebar-title') {{ widgetsTitle }}\n        ul#sidebar-widgets\n            li(v-for='item in widgetsComp' class='sidebar-widgets-li')\n                a(class='sidebar-widgets-span' id='{{ item }}' @click=\"onEntryDemoClick(item)\") {{ item }}\n        p(class='sidebar-title') {{ modulesTitle }}\n        ul#sidebar-modules\n            li(v-for='item in modulesComp' class='sidebar-modules-li')\n                a(class='sidebar-modules-span' @click=\"onEntryDemoClick(item)\" ) {{ item }}\n    div#components-wraper\n        div#components-cont\n            <router-view></router-view>\n</template>\n\n<script type=\"text/javascript\">\nvar componentsConfig = require('./../../config/componentsConfig.js')();\nexport default {\n    data () {\n        return {\n            widgetsComp: componentsConfig.widgets,\n            modulesComp: componentsConfig.modules,\n            widgetsTitle: \"WidgetsComponents\",\n            modulesTitle: \"ModulesComponents\",\n        }\n    },\n    route:{\n\t\tdata(transition){\n\t\t}\n\t},\n    components: {\n    },\n    methods: {\n        onEntryDemoClick: function( param ){\n            console.log( param );\n            // this.$route.router.go({name: param ,params: { actId: id }})\n            this.$route.router.go({name: param})\n            var activeId = '#' + param;\n            $('#left-sidebar').find('.active').removeClass('active')\n            $(activeId).parent().addClass('active')\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n*{margin: 0;padding: 0}\nli{list-style: none}\nhtml, body{\n    height: 100%;\n    background-color: #1C1F2B;\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));\n    font-family:\"lucida grande\", \"lucida sans unicode\", lucida, helvetica, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", sans-serif\n}\n#app{\n    height: 100%;\n    width: 100%;\n    min-width: 800px;\n    position: relative;\n}\n#left-sidebar{\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow-y: auto;\n    height: 100%;\n    width: 300px;\n    text-align: center;\n    color: #ffffff;\n    /*background-color: #2D3143;*/\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));\n    z-index: 1;\n}\n#sidebar-widgets, #sidebar-modules{\n    width: 100%;\n    font-size: 1.1em;\n    color: #f2f2f2;\n    border-top: 1px solid #221D1D;\n}\n.sidebar-widgets-li, .sidebar-modules-li{\n    width: 100%;\n    height: 2em;\n    line-height: 2;\n    display: table;\n    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/\n    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;\n}\n.sidebar-widgets-li.active, .sidebar-modules-li.active,\n.sidebar-widgets-li:hover, .sidebar-modules-li:hover{\n    background-color: #130c0e;\n}\n.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{\n    background: transparent;\n    font-weight: 600;\n    display: inline-block;\n    width: 90%;\n    text-indent: 15%;\n    margin: 0 5%;\n    text-align: left;\n}\n.sidebar-title{\n    text-indent: 0%;\n    font-size: 1.3em;\n    height: 2em;\n    line-height: 2;\n}\n/*-----components-cont-----*/\n#components-wraper{\n    display: table;\n    width: calc(100% - 300px);\n    height: 100%;\n    border-collapse: collapse;\n    border-spacing: 0;\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n#components-cont{\n    position: relative;\n    left: 0px;\n    transition: 300ms ease left;\n    max-width: 1000px;\n    margin: 0 auto;\n    padding: 20px 100px;\n    z-index: 1;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    left: 0;\n    overflow-y: auto;\n}\n#components-cont::-webkit-scrollbar {\n    background: transparent;\n}\n@media (max-width: 1240px) {\n    #components-wraper{\n        -webkit-transition:-webkit-transform 250ms ease;\n        -moz-transition: -moz-transform 250ms ease;\n        -o-transition: -o-transform 250ms ease;\n        transition: transform 250ms ease;\n        padding-bottom: 20px\n    }\n}\n\n@media (min-width: 600px) {\n    #components-wraper{\n        left:300px\n    }\n}\n#comp-title{\n    text-align: center;\n    color: #f2f2f2;\n    font-weight: 500;\n    text-shadow: 1px 1px 1px #000;\n    margin: 2% 0 5% 0;\n}\n#comp-title:hover{\n    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n}\n#hinting-title{\n    margin: 2% 0;\n    color: #130C0E;\n}\n.demonstrate-a{\n    margin: 2% 0;\n    color: #009ad6;\n    font-size: 1.3em;\n    line-height: 1.3;\n    display: inline-block;\n}\n.ahead{\n    position: relative;\n    z-index: 12;\n}\n\n.common-a{\n    margin: 2% 2% 2% 0;\n    padding: 1% 3%;\n    position: relative;\n    color: #24B3D3;\n    font-size: 1em;\n    line-height: 2;\n    background-color: #222222;\n    border-radius: 1em;\n    text-decoration: none;\n}\n.noComplete{\n    margin: 2% 0;\n    background-color: #222222;\n    font-size: 2em;\n    line-height: 2;\n    text-align: center;\n    color: #f2f2f2;\n}\n.comp-area{\n    position: relative;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*{margin: 0;padding: 0}\nli{list-style: none}\nhtml, body{\n    height: 100%;\n    background-color: #1C1F2B;\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));\n    font-family:\"lucida grande\", \"lucida sans unicode\", lucida, helvetica, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", sans-serif\n}\n#app{\n    height: 100%;\n    width: 100%;\n    min-width: 800px;\n    position: relative;\n}\n#left-sidebar{\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow-y: auto;\n    height: 100%;\n    width: 300px;\n    text-align: center;\n    color: #ffffff;\n    /*background-color: #2D3143;*/\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));\n    z-index: 1;\n}\n#sidebar-widgets, #sidebar-modules{\n    width: 100%;\n    font-size: 1.1em;\n    color: #f2f2f2;\n    border-top: 1px solid #221D1D;\n}\n.sidebar-widgets-li, .sidebar-modules-li{\n    width: 100%;\n    height: 2em;\n    line-height: 2;\n    display: table;\n    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/\n    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;\n}\n.sidebar-widgets-li.active, .sidebar-modules-li.active,\n.sidebar-widgets-li:hover, .sidebar-modules-li:hover{\n    background-color: #130c0e;\n}\n.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{\n    background: transparent;\n    font-weight: 600;\n    display: inline-block;\n    width: 90%;\n    text-indent: 15%;\n    margin: 0 5%;\n    text-align: left;\n}\n.sidebar-title{\n    text-indent: 0%;\n    font-size: 1.3em;\n    height: 2em;\n    line-height: 2;\n}\n/*-----components-cont-----*/\n#components-wraper{\n    display: table;\n    width: calc(100% - 300px);\n    height: 100%;\n    border-collapse: collapse;\n    border-spacing: 0;\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n#components-cont{\n    position: relative;\n    left: 0px;\n    -webkit-transition: 300ms ease left;\n    transition: 300ms ease left;\n    max-width: 1000px;\n    margin: 0 auto;\n    padding: 20px 100px;\n    z-index: 1;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    left: 0;\n    overflow-y: auto;\n}\n#components-cont::-webkit-scrollbar {\n    background: transparent;\n}\n@media (max-width: 1240px) {\n    #components-wraper{\n        -webkit-transition:-webkit-transform 250ms ease;\n        transition: -webkit-transform 250ms ease;\n        transition: transform 250ms ease;\n        transition: transform 250ms ease, -webkit-transform 250ms ease;\n        padding-bottom: 20px\n    }\n}\n\n@media (min-width: 600px) {\n    #components-wraper{\n        left:300px\n    }\n}\n#comp-title{\n    text-align: center;\n    color: #f2f2f2;\n    font-weight: 500;\n    text-shadow: 1px 1px 1px #000;\n    margin: 2% 0 5% 0;\n}\n#comp-title:hover{\n    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n}\n.hinting-title{\n    margin: 2% 0;\n    color: #130C0E;\n}\n.demonstrate-a{\n    margin: 2% 0;\n    color: #009ad6;\n    font-size: 1.3em;\n    line-height: 1.3;\n    display: inline-block;\n}\n.ahead{\n    position: relative;\n    z-index: 12;\n}\n\n.common-a{\n    margin: 2% 2% 2% 0;\n    padding: 1% 3%;\n    position: relative;\n    color: #24B3D3;\n    font-size: 1em;\n    line-height: 2;\n    background-color: #222222;\n    border-radius: 1em;\n    text-decoration: none;\n}\n.noComplete{\n    margin: 2% 0;\n    background-color: #222222;\n    font-size: 2em;\n    line-height: 2;\n    text-align: center;\n    color: #f2f2f2;\n}\n.comp-area{\n    position: relative;\n    margin-left: 5%;\n}\n", "", {"version":3,"sources":["/./src/index.vue?2a7bd152"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA+CA,EAAA,UAAA,UAAA,CAAA;AACA,GAAA,gBAAA,CAAA;AACA;IACA,aAAA;IACA,0BAAA;IACA,wEAAA;IACA,+IAAA;CACA;AACA;IACA,aAAA;IACA,YAAA;IACA,iBAAA;IACA,mBAAA;CACA;AACA;IACA,mBAAA;IACA,OAAA;IACA,QAAA;IACA,SAAA;IACA,UAAA;IACA,iBAAA;IACA,aAAA;IACA,aAAA;IACA,mBAAA;IACA,eAAA;IACA,8BAAA;IACA,wEAAA;IACA,WAAA;CACA;AACA;IACA,YAAA;IACA,iBAAA;IACA,eAAA;IACA,8BAAA;CACA;AACA;IACA,YAAA;IACA,YAAA;IACA,eAAA;IACA,eAAA;IACA,gDAAA;IACA,2CAAA;CACA;AACA;;IAEA,0BAAA;CACA;AACA;IACA,wBAAA;IACA,iBAAA;IACA,sBAAA;IACA,WAAA;IACA,iBAAA;IACA,aAAA;IACA,iBAAA;CACA;AACA;IACA,gBAAA;IACA,iBAAA;IACA,YAAA;IACA,eAAA;CACA;AACA,6BAAA;AACA;IACA,eAAA;IACA,0BAAA;IACA,aAAA;IACA,0BAAA;IACA,kBAAA;IACA,mBAAA;IACA,OAAA;IACA,QAAA;IACA,UAAA;IACA,SAAA;CACA;AACA;IACA,mBAAA;IACA,UAAA;IACA,oCAAA;IAAA,4BAAA;IACA,kBAAA;IACA,eAAA;IACA,oBAAA;IACA,WAAA;IACA,mBAAA;IACA,OAAA;IACA,UAAA;IACA,SAAA;IACA,QAAA;IACA,iBAAA;CACA;AACA;IACA,wBAAA;CACA;AACA;IACA;QACA,gDAAA;QAGA,yCAAA;QAAA,iCAAA;QAAA,+DAAA;QACA,oBAAA;KACA;CACA;;AAEA;IACA;QACA,UAAA;KACA;CACA;AACA;IACA,mBAAA;IACA,eAAA;IACA,iBAAA;IACA,8BAAA;IACA,kBAAA;CACA;AACA;IACA,yFAAA;IACA,iGAAA;IACA,8FAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,eAAA;IACA,iBAAA;IACA,iBAAA;IACA,sBAAA;CACA;AACA;IACA,mBAAA;IACA,YAAA;CACA;;AAEA;IACA,mBAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;IACA,eAAA;IACA,eAAA;IACA,0BAAA;IACA,mBAAA;IACA,sBAAA;CACA;AACA;IACA,aAAA;IACA,0BAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,eAAA;CACA;AACA;IACA,mBAAA;IACA,gBAAA;CACA","file":"index.vue","sourcesContent":["<template id=\"index\" lang='jade'>\ndiv#app\n    div#left-sidebar\n        p(class='sidebar-title') {{ widgetsTitle }}\n        ul#sidebar-widgets\n            li(v-for='item in widgetsComp' class='sidebar-widgets-li')\n                a(class='sidebar-widgets-span' id='{{ item }}' @click=\"onEntryDemoClick(item)\") {{ item }}\n        p(class='sidebar-title') {{ modulesTitle }}\n        ul#sidebar-modules\n            li(v-for='item in modulesComp' class='sidebar-modules-li')\n                a(class='sidebar-modules-span' @click=\"onEntryDemoClick(item)\" ) {{ item }}\n    div#components-wraper\n        div#components-cont\n            <router-view></router-view>\n</template>\n\n<script type=\"text/javascript\">\nvar componentsConfig = require('./../../config/componentsConfig.js')();\nexport default {\n    data () {\n        return {\n            widgetsComp: componentsConfig.widgets,\n            modulesComp: componentsConfig.modules,\n            widgetsTitle: \"WidgetsComponents\",\n            modulesTitle: \"ModulesComponents\",\n        }\n    },\n    route:{\n\t\tdata(transition){\n\t\t}\n\t},\n    components: {\n    },\n    methods: {\n        onEntryDemoClick: function( param ){\n            console.log( param );\n            // this.$route.router.go({name: param ,params: { actId: id }})\n            this.$route.router.go({name: param})\n            var activeId = '#' + param;\n            $('#left-sidebar').find('.active').removeClass('active')\n            $(activeId).parent().addClass('active')\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n*{margin: 0;padding: 0}\nli{list-style: none}\nhtml, body{\n    height: 100%;\n    background-color: #1C1F2B;\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#888),to(#fff));\n    font-family:\"lucida grande\", \"lucida sans unicode\", lucida, helvetica, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"WenQuanYi Micro Hei\", sans-serif\n}\n#app{\n    height: 100%;\n    width: 100%;\n    min-width: 800px;\n    position: relative;\n}\n#left-sidebar{\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow-y: auto;\n    height: 100%;\n    width: 300px;\n    text-align: center;\n    color: #ffffff;\n    /*background-color: #2D3143;*/\n    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));\n    z-index: 1;\n}\n#sidebar-widgets, #sidebar-modules{\n    width: 100%;\n    font-size: 1.1em;\n    color: #f2f2f2;\n    border-top: 1px solid #221D1D;\n}\n.sidebar-widgets-li, .sidebar-modules-li{\n    width: 100%;\n    height: 2em;\n    line-height: 2;\n    display: table;\n    /*border-bottom: 1px dashed rgba(99,99,99,.6);*/\n    box-shadow: 0 1px 0 #221D1D,0 1px 1px #999;\n}\n.sidebar-widgets-li.active, .sidebar-modules-li.active,\n.sidebar-widgets-li:hover, .sidebar-modules-li:hover{\n    background-color: #130c0e;\n}\n.sidebar-title, .sidebar-widgets-span, .sidebar-modules-span{\n    background: transparent;\n    font-weight: 600;\n    display: inline-block;\n    width: 90%;\n    text-indent: 15%;\n    margin: 0 5%;\n    text-align: left;\n}\n.sidebar-title{\n    text-indent: 0%;\n    font-size: 1.3em;\n    height: 2em;\n    line-height: 2;\n}\n/*-----components-cont-----*/\n#components-wraper{\n    display: table;\n    width: calc(100% - 300px);\n    height: 100%;\n    border-collapse: collapse;\n    border-spacing: 0;\n    position: absolute;\n    top: 0;\n    left: 0;\n    bottom: 0;\n    right: 0;\n}\n#components-cont{\n    position: relative;\n    left: 0px;\n    transition: 300ms ease left;\n    max-width: 1000px;\n    margin: 0 auto;\n    padding: 20px 100px;\n    z-index: 1;\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    right: 0;\n    left: 0;\n    overflow-y: auto;\n}\n#components-cont::-webkit-scrollbar {\n    background: transparent;\n}\n@media (max-width: 1240px) {\n    #components-wraper{\n        -webkit-transition:-webkit-transform 250ms ease;\n        -moz-transition: -moz-transform 250ms ease;\n        -o-transition: -o-transform 250ms ease;\n        transition: transform 250ms ease;\n        padding-bottom: 20px\n    }\n}\n\n@media (min-width: 600px) {\n    #components-wraper{\n        left:300px\n    }\n}\n#comp-title{\n    text-align: center;\n    color: #f2f2f2;\n    font-weight: 500;\n    text-shadow: 1px 1px 1px #000;\n    margin: 2% 0 5% 0;\n}\n#comp-title:hover{\n    box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n    -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));\n}\n.hinting-title{\n    margin: 2% 0;\n    color: #130C0E;\n}\n.demonstrate-a{\n    margin: 2% 0;\n    color: #009ad6;\n    font-size: 1.3em;\n    line-height: 1.3;\n    display: inline-block;\n}\n.ahead{\n    position: relative;\n    z-index: 12;\n}\n\n.common-a{\n    margin: 2% 2% 2% 0;\n    padding: 1% 3%;\n    position: relative;\n    color: #24B3D3;\n    font-size: 1em;\n    line-height: 2;\n    background-color: #222222;\n    border-radius: 1em;\n    text-decoration: none;\n}\n.noComplete{\n    margin: 2% 0;\n    background-color: #222222;\n    font-size: 2em;\n    line-height: 2;\n    text-align: center;\n    color: #f2f2f2;\n}\n.comp-area{\n    position: relative;\n    margin-left: 5%;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -13475,7 +13479,7 @@
 	//     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
 	//     -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
 	// }
-	// #hinting-title{
+	// .hinting-title{
 	//     margin: 2% 0;
 	//     color: #130C0E;
 	// }
@@ -13512,6 +13516,7 @@
 	// }
 	// .comp-area{
 	//     position: relative;
+	//     margin-left: 5%;
 	// }
 	// </style>
 
@@ -13534,7 +13539,8 @@
 	        },
 	        "modules":{
 	            "0": "turnTable",
-	            "1": "formDialog"
+	            "1": "formDialog",
+				"2": "shaveLottery",
 	        }
 		}
 	}
@@ -13718,9 +13724,9 @@
 	
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
 	//     div.comp-area
 	//         popup-toast
@@ -13972,7 +13978,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#pre-wrapper{\n    background-color: #2D2D2D;\n    border-left: 2px solid #fe0;\n}\n", "", {"version":3,"sources":["/./src/preCode.vue?accdf5b2"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;AAuBA;IACA,0BAAA;IACA,4BAAA;CACA","file":"preCode.vue","sourcesContent":["<template lang='jade'>\n    pre#pre-wrapper(class=\"brush: js\") {{ codeString }}\n    hr\n</template>\n\n<script type=\"text/javascript\">\nexport default {\n    data () {\n    },\n    props: {\n        codeString:{\n            type: String,\n            default: \"\"\n        }\n    },\n    ready(){\n    },\n    methods: {\n    }\n}\n</script>\n\n<style media=\"screen\">\n#pre-wrapper{\n    background-color: #2D2D2D;\n    border-left: 2px solid #fe0;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#pre-wrapper{\n    background-color: #2D2D2D;\n    border-left: 2px solid #fe0;\n}\n", "", {"version":3,"sources":["/./src/preCode.vue?09f1fdad"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;AAwBA;IACA,0BAAA;IACA,4BAAA;CACA","file":"preCode.vue","sourcesContent":["<template lang='jade'>\n    pre#pre-wrapper(class=\"brush: js\") {{ codeString }}\n    hr\n</template>\n\n<script type=\"text/javascript\">\nexport default {\n    data () {\n        return{}\n    },\n    props: {\n        codeString:{\n            type: String,\n            default: \"\"\n        }\n    },\n    ready(){\n    },\n    methods: {\n    }\n}\n</script>\n\n<style media=\"screen\">\n#pre-wrapper{\n    background-color: #2D2D2D;\n    border-left: 2px solid #fe0;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -13993,7 +13999,9 @@
 	//
 	// <script type="text/javascript">
 	exports.default = {
-	    data: function data() {},
+	    data: function data() {
+	        return {};
+	    },
 	
 	    props: {
 	        codeString: {
@@ -14026,7 +14034,7 @@
 /* 29 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><popup-toast></popup-toast></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><popup-toast></popup-toast></div>";
 
 /***/ },
 /* 30 */
@@ -14092,7 +14100,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#normal-dlg-body{\n    top: 39% !important;\n}\n", "", {"version":3,"sources":["/./src/_normalDialog.vue?71b1b4ae"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyEA;IACA,oBAAA;CACA","file":"_normalDialog.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2#hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2#hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onCallDemoClick\" class='demonstrate-a') {{ btnText }}\n    div.comp-area\n        normal-dialog\n        popup-toast\n</template>\n\n<script type=\"text/javascript\">\nimport normalDialog from 'normalDialog'\nimport popupToast from 'popupToast'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            hintingTitle2: \"表现示例:\",\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            btnText: \"Call NormalDialog\",\n            codeString: `\n    import normalDialog from 'normalDialog'; //引入组件\n\n    var dlgMsgObj = {\n        titleText: \"&温馨提示&\",            //可不传，默认 “温馨提示”\n        bodyText: text,\n        confirmText: \"确认\",                //可不传，默认 “确认”\n        callBackFunc: null,                 //可不传，默认null\n        isShowCloseXFlag: true       //可不传，默认 true\n    }\n    // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n    this.$broadcast('show-normal-dlg', dlgMsgObj);`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        normalDialog,\n        popupToast,\n        preCode,\n    },\n    methods: {\n        onCallDemoClick: function(){\n            var dlgMsgObj = {\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\n                bodyText: \"www.jeffjade.com\",\n                confirmText: \"确认\",             //可不传，默认 “确认”\n                callBackFunc: this.showPopupToast,\n                isShowCloseXFlag: true       //可不传，默认 true\n            }\n\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\n        },\n        showPopupToast: function(){\n            var toastMsg = {\n                bodyText: \"execute normal dialog callback\",\n                timer: 2222,           //可不传；默认2000ms\n                callBackFunc: function(){console.log('callback down!')}\n            }\n            this.$broadcast('show-popup-toast', toastMsg);\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#normal-dlg-body{\n    top: 39% !important;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#normal-dlg-body{\n    top: 39% !important;\n}\n", "", {"version":3,"sources":["/./src/_normalDialog.vue?226489bf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyEA;IACA,oBAAA;CACA","file":"_normalDialog.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onCallDemoClick\" class='demonstrate-a') {{ btnText }}\n    div.comp-area\n        normal-dialog\n        popup-toast\n</template>\n\n<script type=\"text/javascript\">\nimport normalDialog from 'normalDialog'\nimport popupToast from 'popupToast'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            hintingTitle2: \"表现示例:\",\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            btnText: \"Call NormalDialog\",\n            codeString: `\n    import normalDialog from 'normalDialog'; //引入组件\n\n    var dlgMsgObj = {\n        titleText: \"&温馨提示&\",            //可不传，默认 “温馨提示”\n        bodyText: text,\n        confirmText: \"确认\",                //可不传，默认 “确认”\n        callBackFunc: null,                 //可不传，默认null\n        isShowCloseXFlag: true       //可不传，默认 true\n    }\n    // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n    this.$broadcast('show-normal-dlg', dlgMsgObj);`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        normalDialog,\n        popupToast,\n        preCode,\n    },\n    methods: {\n        onCallDemoClick: function(){\n            var dlgMsgObj = {\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\n                bodyText: \"www.jeffjade.com\",\n                confirmText: \"确认\",             //可不传，默认 “确认”\n                callBackFunc: this.showPopupToast,\n                isShowCloseXFlag: true       //可不传，默认 true\n            }\n\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\n        },\n        showPopupToast: function(){\n            var toastMsg = {\n                bodyText: \"execute normal dialog callback\",\n                timer: 2222,           //可不传；默认2000ms\n                callBackFunc: function(){console.log('callback down!')}\n            }\n            this.$broadcast('show-popup-toast', toastMsg);\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#normal-dlg-body{\n    top: 39% !important;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14178,9 +14186,9 @@
 	/* generated by vue-loader */
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
 	//     div.comp-area
 	//         normal-dialog
@@ -14426,7 +14434,7 @@
 /* 39 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><normal-dialog></normal-dialog><popup-toast></popup-toast></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><normal-dialog></normal-dialog><popup-toast></popup-toast></div>";
 
 /***/ },
 /* 40 */
@@ -14551,9 +14559,9 @@
 	/* generated by vue-loader */
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a ahead') {{ showStrongDlgText }}
 	//     br
 	//     a(href='javascript:;' @click="onCloseDemoClick" class='demonstrate-a ahead') {{ hideStrongDlgText }}
@@ -14824,7 +14832,7 @@
 /* 47 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a ahead\">{{ showStrongDlgText }}</a><br/><a href=\"javascript:;\" @click=\"onCloseDemoClick\" class=\"demonstrate-a ahead\">{{ hideStrongDlgText }}</a><div class=\"comp-area\"><strong-dialog></strong-dialog><popup-toast></popup-toast></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onCallDemoClick\" class=\"demonstrate-a ahead\">{{ showStrongDlgText }}</a><br/><a href=\"javascript:;\" @click=\"onCloseDemoClick\" class=\"demonstrate-a ahead\">{{ hideStrongDlgText }}</a><div class=\"comp-area\"><strong-dialog></strong-dialog><popup-toast></popup-toast></div>";
 
 /***/ },
 /* 48 */
@@ -14890,7 +14898,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.content{\n    margin-top: 2%;\n    height: 3em;\n    line-height: 3;\n    width: 100%;\n    display: inline-block;\n    text-align: center;\n    background-color: #2F2F2F;\n    color: purple;\n    font-size: 2em;\n}\n.tab-bar-li{\n    float: right;\n    margin: 2% 0 1% 2%;\n    padding: 1%;\n    background-color: rgba(11,11,11,.6);\n}\n.tab-bar-li.active{\n    background-color: #523B76;\n}\n", "", {"version":3,"sources":["/./src/_tabBarWithJq.vue?5e14a8b2"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyDA;IACA,eAAA;IACA,YAAA;IACA,eAAA;IACA,YAAA;IACA,sBAAA;IACA,mBAAA;IACA,0BAAA;IACA,cAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,mBAAA;IACA,YAAA;IACA,oCAAA;CACA;AACA;IACA,0BAAA;CACA","file":"_tabBarWithJq.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2#hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2#hinting-title {{ hintingTitle2 }}\n    div.comp-area\n        <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\n        div.content\n            section {{ tabList[0] }}\n            section(style=\"display:none;\") {{ tabList[1] }}\n            section(style=\"display:none;\") {{ tabList[2] }}\n            section(style=\"display:none;\") {{ tabList[3] }}\n</template>\n\n<script type=\"text/javascript\">\nimport tabBarWithJq from 'tabBarWithJq'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            hintingTitle2: \"表现示例:\",\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            tabList: {\n                \"0\": \"赵钱孙李\",\n                \"1\": \"周吴郑王\",\n                \"2\": \"冯陈诸卫\",\n                \"3\": \"蒋沈韩杨\",\n            },\n            codeString: `\n    import tabBarWithJq from 'tabBarWithJq'; //引入组件\n\n    //在模板(jade)中如下注入组件and标签页即可(定义tabList数组/Object)：\n    <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\n    div.content\n        section {{ tabList[1] }}\n        section(style=\"display:none;\") {{ tabList[2] }}\n        section(style=\"display:none;\") {{ tabList[3] }}\n        section(style=\"display:none;\") {{ tabList[4] }}`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        tabBarWithJq,\n        preCode,\n    },\n    methods: {\n    }\n}\n</script>\n\n<style media=\"screen\">\n.content{\n    margin-top: 2%;\n    height: 3em;\n    line-height: 3;\n    width: 100%;\n    display: inline-block;\n    text-align: center;\n    background-color: #2F2F2F;\n    color: purple;\n    font-size: 2em;\n}\n.tab-bar-li{\n    float: right;\n    margin: 2% 0 1% 2%;\n    padding: 1%;\n    background-color: rgba(11,11,11,.6);\n}\n.tab-bar-li.active{\n    background-color: #523B76;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.content{\n    margin-top: 2%;\n    height: 3em;\n    line-height: 3;\n    width: 100%;\n    display: inline-block;\n    text-align: center;\n    background-color: #2F2F2F;\n    color: purple;\n    font-size: 2em;\n}\n.tab-bar-li{\n    float: right;\n    margin: 2% 0 1% 2%;\n    padding: 1%;\n    background-color: rgba(11,11,11,.6);\n}\n.tab-bar-li.active{\n    background-color: #523B76;\n}\n", "", {"version":3,"sources":["/./src/_tabBarWithJq.vue?33dea451"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAyDA;IACA,eAAA;IACA,YAAA;IACA,eAAA;IACA,YAAA;IACA,sBAAA;IACA,mBAAA;IACA,0BAAA;IACA,cAAA;IACA,eAAA;CACA;AACA;IACA,aAAA;IACA,mBAAA;IACA,YAAA;IACA,oCAAA;CACA;AACA;IACA,0BAAA;CACA","file":"_tabBarWithJq.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    div.comp-area\n        <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\n        div.content\n            section {{ tabList[0] }}\n            section(style=\"display:none;\") {{ tabList[1] }}\n            section(style=\"display:none;\") {{ tabList[2] }}\n            section(style=\"display:none;\") {{ tabList[3] }}\n</template>\n\n<script type=\"text/javascript\">\nimport tabBarWithJq from 'tabBarWithJq'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            hintingTitle2: \"表现示例:\",\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            tabList: {\n                \"0\": \"赵钱孙李\",\n                \"1\": \"周吴郑王\",\n                \"2\": \"冯陈诸卫\",\n                \"3\": \"蒋沈韩杨\",\n            },\n            codeString: `\n    import tabBarWithJq from 'tabBarWithJq'; //引入组件\n\n    //在模板(jade)中如下注入组件and标签页即可(定义tabList数组/Object)：\n    <tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq>\n    div.content\n        section {{ tabList[1] }}\n        section(style=\"display:none;\") {{ tabList[2] }}\n        section(style=\"display:none;\") {{ tabList[3] }}\n        section(style=\"display:none;\") {{ tabList[4] }}`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        tabBarWithJq,\n        preCode,\n    },\n    methods: {\n    }\n}\n</script>\n\n<style media=\"screen\">\n.content{\n    margin-top: 2%;\n    height: 3em;\n    line-height: 3;\n    width: 100%;\n    display: inline-block;\n    text-align: center;\n    background-color: #2F2F2F;\n    color: purple;\n    font-size: 2em;\n}\n.tab-bar-li{\n    float: right;\n    margin: 2% 0 1% 2%;\n    padding: 1%;\n    background-color: rgba(11,11,11,.6);\n}\n.tab-bar-li.active{\n    background-color: #523B76;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14917,9 +14925,9 @@
 	
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     div.comp-area
 	//         <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
 	//         div.content
@@ -15071,7 +15079,7 @@
 /* 55 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><div class=\"comp-area\"><tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq><div class=\"content\"><section>{{ tabList[0] }}</section><section style=\"display:none;\">{{ tabList[1] }}</section><section style=\"display:none;\">{{ tabList[2] }}</section><section style=\"display:none;\">{{ tabList[3] }}</section></div></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><div class=\"comp-area\"><tab-bar-with-jq :tab-list.sync=\"tabList\"></tab-bar-with-jq><div class=\"content\"><section>{{ tabList[0] }}</section><section style=\"display:none;\">{{ tabList[1] }}</section><section style=\"display:none;\">{{ tabList[2] }}</section><section style=\"display:none;\">{{ tabList[3] }}</section></div></div>";
 
 /***/ },
 /* 56 */
@@ -15137,7 +15145,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#components-wraper #span-flex-table{\n    width: 77%;\n    margin: 3% auto;\n    background-color: #222222;\n    color: #f2f2f2;\n}\n", "", {"version":3,"sources":["/./src/_spanFlexTable.vue?e32c8596"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuEA;IACA,WAAA;IACA,gBAAA;IACA,0BAAA;IACA,eAAA;CACA","file":"_spanFlexTable.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2#hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2#hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\n    div.comp-area\n        <span-flex-table :table-list.sync='tableList'></span-flex-table>\n</template>\n\n<script type=\"text/javascript\">\nimport spanFlexTable from 'spanFlexTable'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            compTitle : \"Component Name\",\n            xLimitControl:3,\n            yLimitControl:4,\n            addLine: \"Add Line\",\n            addColumn: \"Add Column\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例:\",\n            tableList: [],\n            codeString: `\n    import spanFlexTable from 'spanFlexTable'; //引入组件\n\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\n    <span-flex-table :table-list.sync='tableList'></span-flex-table>`\n        }\n    },\n    ready(){\n        this.setTableList()\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        spanFlexTable,\n        preCode,\n    },\n    methods: {\n        setTableList: function(){\n            let tempArr = [];\n            for(let i=0; i<= this.xLimitControl; i++){\n                tempArr[i] = []\n                for(let j=0; j<=this.yLimitControl; j++){\n                    tempArr[i][j] = 'iLoveU' + j;\n                }\n            }\n            this.tableList = tempArr\n        },\n        onAddLineClick: function(){\n            this.xLimitControl += 1\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\n            this.setTableList()\n        },\n        onAddColumnClick: function(){\n            this.yLimitControl += 1\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\n            this.setTableList()\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#components-wraper #span-flex-table{\n    width: 77%;\n    margin: 3% auto;\n    background-color: #222222;\n    color: #f2f2f2;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#components-wraper #span-flex-table{\n    width: 77%;\n    margin: 3% auto;\n    background-color: #222222;\n    color: #f2f2f2;\n}\n", "", {"version":3,"sources":["/./src/_spanFlexTable.vue?6f02d4cb"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuEA;IACA,WAAA;IACA,gBAAA;IACA,0BAAA;IACA,eAAA;CACA","file":"_spanFlexTable.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\n    div.comp-area\n        <span-flex-table :table-list.sync='tableList'></span-flex-table>\n</template>\n\n<script type=\"text/javascript\">\nimport spanFlexTable from 'spanFlexTable'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            compTitle : \"Component Name\",\n            xLimitControl:3,\n            yLimitControl:4,\n            addLine: \"Add Line\",\n            addColumn: \"Add Column\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例:\",\n            tableList: [],\n            codeString: `\n    import spanFlexTable from 'spanFlexTable'; //引入组件\n\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\n    <span-flex-table :table-list.sync='tableList'></span-flex-table>`\n        }\n    },\n    ready(){\n        this.setTableList()\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        spanFlexTable,\n        preCode,\n    },\n    methods: {\n        setTableList: function(){\n            let tempArr = [];\n            for(let i=0; i<= this.xLimitControl; i++){\n                tempArr[i] = []\n                for(let j=0; j<=this.yLimitControl; j++){\n                    tempArr[i][j] = 'iLoveU' + j;\n                }\n            }\n            this.tableList = tempArr\n        },\n        onAddLineClick: function(){\n            this.xLimitControl += 1\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\n            this.setTableList()\n        },\n        onAddColumnClick: function(){\n            this.yLimitControl += 1\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\n            this.setTableList()\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#components-wraper #span-flex-table{\n    width: 77%;\n    margin: 3% auto;\n    background-color: #222222;\n    color: #f2f2f2;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -15164,9 +15172,9 @@
 	
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
 	//     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
 	//     div.comp-area
@@ -15242,7 +15250,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(100)
+	__webpack_require__(61)
 	__vue_script__ = __webpack_require__(63)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
@@ -15267,8 +15275,46 @@
 	})()}
 
 /***/ },
-/* 61 */,
-/* 62 */,
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(62);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./spanFlexTable.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./spanFlexTable.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*{padding:0;margin:0;box-sizing:border-box;}\n#span-flex-table{\n\tposition: $pr;\n\twidth: 60%;\n\tbackground-color: #999;\n\tcolor: #333;\n\ttext-align: $tc;\n\tborder: 2px solid #000;\n}\n.span-flex-table-li{\n\tlist-style: none;\n\ttext-align: center;\n\twidth: 100%;\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n\t-ms-flex-flow: row wrap;\n\t    flex-flow: row wrap;\n\t-webkit-align-items: center;\n\t-webkit-flex-flow: row wrap;\n\t-ms-flex-pack: distribute;\n\t    justify-content: space-around;\n\t-webkit-justify-content: space-around;\n}\n.span-flex-table-li:not(:last-child){\n\tborder-bottom: 1px solid #000;\n}\n.sidebar-widgets-span{\n\theight: $h100;\n\t-webkit-box-flex: 1;\n\t    -ms-flex-positive: 1;\n\t        flex-grow: 1;\n\t-webkit-flex-grow: 1;\n\tvertical-align:middle;\n}\n.sidebar-widgets-span:not(:last-child){\n\tborder-right: 1px solid #000;\n}\n", "", {"version":3,"sources":["/../components/widgets/spanFlexTable.vue?086d45a0"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8DA,EAAA,UAAA,SAAA,sBAAA,CAAA;AACA;CACA,cAAA;CACA,WAAA;CACA,uBAAA;CACA,YAAA;CACA,gBAAA;CACA,uBAAA;CACA;AACA;CACA,iBAAA;CACA,mBAAA;CACA,YAAA;CAEA,qBAAA;CAAA,qBAAA;CAAA,cAAA;CACA,0BAAA;KAAA,uBAAA;SAAA,oBAAA;CACA,wBAAA;KAAA,oBAAA;CACA,4BAAA;CACA,4BAAA;CACA,0BAAA;KAAA,8BAAA;CACA,sCAAA;CACA;AACA;CACA,8BAAA;CACA;AACA;CACA,cAAA;CACA,oBAAA;KAAA,qBAAA;SAAA,aAAA;CACA,qBAAA;CACA,sBAAA;CACA;AACA;CACA,6BAAA;CACA","file":"spanFlexTable.vue","sourcesContent":["<!--Desc: 以Span+Li来模拟伸缩Table：高度固定，liHeight=总Height/内容条数;\n\tDate: 16-04-14~15\n\tAuthor: Nicejade\n -->\n<template>\n\t<ul id=\"span-flex-table\" v-if=\"isShowTableFlag\">\n\t\t<li v-for='liItem in tableList'  class=\"span-flex-table-li\">\n\t\t\t<span v-for='spanList in liItem' class=\"span-flex-table-span\"> {{ spanList }} </span>\n\t\t</li>\n\t</ul>\n</template>\n\n\n<script type=\"text/javascript\">\nexport default {\n\tdata(){\n        return {\n          \t'isShowTableFlag': false\n        }\n    },\n    ready(){\n\t    this.isShowTableFlag = true\n\t    this.updateTable( this.tableList )\n    },\n    props: ['tableList'],\n   \twatch: {\n        tableList: function (newVal, oldVal) {\n        \tthis.updateTable( newVal)\n        }\n    },\n    methods: {\n    \tupdateTable: function(tableInfo){\n    \t\tvar tableListLen = this.getObjLength( tableInfo )\n        \tvar cssHeight = 100/tableListLen + \"%\";\n        \t$('.span-flex-table-li').css( {'height': cssHeight} )\n\n\t\t\tvar subTableListLen = this.getObjLength( tableInfo[tableListLen-1] )\n\t\t\tvar cssWidth = 100/subTableListLen + \"%\";\n\t\t\t$('.span-flex-table-span').css( {'width': cssWidth} )\n    \t},\n    \tgetObjLength: function(obj){\n    \t\tif(null === obj || undefined === obj){\n    \t\t\treturn 0;\n    \t\t}\n\n    \t\tif(undefined === obj.length){\n\t    \t\tlet count = 0\n\t\t\t    for(let key in obj){\n\t\t\t    \tcount++\n\t\t\t    }\n\t\t\t    return count\n\t\t\t}else{\n\t\t\t\treturn obj['length']\n\t\t\t}\n    \t}\n    },\n    events: {\n    }\n}\n</script>\n\n<style>\n*{padding:0;margin:0;box-sizing:border-box;}\n#span-flex-table{\n\tposition: $pr;\n\twidth: 60%;\n\tbackground-color: #999;\n\tcolor: #333;\n\ttext-align: $tc;\n\tborder: 2px solid #000;\n}\n.span-flex-table-li{\n\tlist-style: none;\n\ttext-align: center;\n\twidth: 100%;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-flow: row wrap;\n\t-webkit-align-items: center;\n\t-webkit-flex-flow: row wrap;\n\tjustify-content: space-around;\n\t-webkit-justify-content: space-around;\n}\n.span-flex-table-li:not(:last-child){\n\tborder-bottom: 1px solid #000;\n}\n.sidebar-widgets-span{\n\theight: $h100;\n\tflex-grow: 1;\n\t-webkit-flex-grow: 1;\n\tvertical-align:middle;\n}\n.sidebar-widgets-span:not(:last-child){\n\tborder-right: 1px solid #000;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
 /* 63 */
 /***/ function(module, exports) {
 
@@ -15387,7 +15433,7 @@
 /* 65 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><div class=\"comp-area\"><span-flex-table :table-list.sync='tableList'></span-flex-table></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><div class=\"comp-area\"><span-flex-table :table-list.sync='tableList'></span-flex-table></div>";
 
 /***/ },
 /* 66 */
@@ -15453,7 +15499,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#normal-dlg-body{\n    top: 39% !important;\n}\n", "", {"version":3,"sources":["/./src/_countDown.vue?1b50137b"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA+FA;IACA,oBAAA;CACA","file":"_countDown.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2#hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2#hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onStartCountClick\" class='demonstrate-a') {{ btnText }}\n    div.comp-area\n        <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down>\n        popup-toast\n</template>\n\n<script type=\"text/javascript\">\nimport countDown from 'countDown'\nimport popupToast from 'popupToast'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            btnText: \"StartCountDown\",\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例\",\n            foreTimeText: \"(倒计时fore)\",\n            lastTimeText: \"(倒计时end)\",\n            isCompleteShowHms: true,\n            time: 0,\n            isStartCount: false,\n            codeString: `\n    import countDown from 'countDown'; //引入组件\n\n    //模板中可以按需传递参数;\n    <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :start.sync=\"isStartCount\"\n                :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" ></count-down>\n\n    // vue逻辑处理代码\n    methods: {\n        onStartCountClick: function(){\n            this.time = 2113;\n            this.isStartCount = true;\n        }\n    },\n    events: {\n        'on-countdown-finish': function (countNum) {\n            // countNum 统计调用此 countDown 次数;\n            alert(\"countdown had down; num = \" + countNum )\n        }\n    }\n\n    /*\n    time: 倒计时时间(type: Number;单位：秒s)；值小于0，则不显示；默认值：60；\n        超过60s会将显示对应转换为默认是xx时yy分zz秒;可从 timeUnitObj 传参改变时间单位；\n    start: 是否立即开始(type：Boolean)；默认值：false\n    isCompleteShowHms: 是否完整显示“xx时yy分zz秒”，默认false。\n    foreTimeText： 承载倒计时数字span之前标签内容；不传不显示此span；默认值：\"\"\n    lastTimeText： 承载倒计时数字span之后标签内容；不传不显示此span；默认值：\"\"\n    /*\n    `\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        countDown,\n        popupToast,\n        preCode,\n    },\n    methods: {\n        onStartCountClick: function(){\n            this.time = 9;\n            this.isStartCount = true;\n        },\n\n        showPopupToast: function( text ){\n            var toastMsg = {\n                bodyText: text,\n                timer: 2222,           //可不传；默认2000ms\n                callBackFunc: null     // 可不传，默认null；\n            }\n            this.$broadcast('show-popup-toast', toastMsg);\n        }\n    },\n    events: {\n        'on-countdown-finish': function (countNum) {\n            // countNum 统计调用此 countDown 次数;\n            this.showPopupToast( \"countdown had down; countNum = \" + countNum )\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#normal-dlg-body{\n    top: 39% !important;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#normal-dlg-body{\n    top: 39% !important;\n}\n", "", {"version":3,"sources":["/./src/_countDown.vue?684ee591"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA+FA;IACA,oBAAA;CACA","file":"_countDown.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onStartCountClick\" class='demonstrate-a') {{ btnText }}\n    div.comp-area\n        <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down>\n        popup-toast\n</template>\n\n<script type=\"text/javascript\">\nimport countDown from 'countDown'\nimport popupToast from 'popupToast'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            btnText: \"StartCountDown\",\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例\",\n            foreTimeText: \"(倒计时fore)\",\n            lastTimeText: \"(倒计时end)\",\n            isCompleteShowHms: true,\n            time: 0,\n            isStartCount: false,\n            codeString: `\n    import countDown from 'countDown'; //引入组件\n\n    //模板中可以按需传递参数;\n    <count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :start.sync=\"isStartCount\"\n                :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" ></count-down>\n\n    // vue逻辑处理代码\n    methods: {\n        onStartCountClick: function(){\n            this.time = 2113;\n            this.isStartCount = true;\n        }\n    },\n    events: {\n        'on-countdown-finish': function (countNum) {\n            // countNum 统计调用此 countDown 次数;\n            alert(\"countdown had down; num = \" + countNum )\n        }\n    }\n\n    /*\n    time: 倒计时时间(type: Number;单位：秒s)；值小于0，则不显示；默认值：60；\n        超过60s会将显示对应转换为默认是xx时yy分zz秒;可从 timeUnitObj 传参改变时间单位；\n    start: 是否立即开始(type：Boolean)；默认值：false\n    isCompleteShowHms: 是否完整显示“xx时yy分zz秒”，默认false。\n    foreTimeText： 承载倒计时数字span之前标签内容；不传不显示此span；默认值：\"\"\n    lastTimeText： 承载倒计时数字span之后标签内容；不传不显示此span；默认值：\"\"\n    /*\n    `\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    components: {\n        countDown,\n        popupToast,\n        preCode,\n    },\n    methods: {\n        onStartCountClick: function(){\n            this.time = 9;\n            this.isStartCount = true;\n        },\n\n        showPopupToast: function( text ){\n            var toastMsg = {\n                bodyText: text,\n                timer: 2222,           //可不传；默认2000ms\n                callBackFunc: null     // 可不传，默认null；\n            }\n            this.$broadcast('show-popup-toast', toastMsg);\n        }\n    },\n    events: {\n        'on-countdown-finish': function (countNum) {\n            // countNum 统计调用此 countDown 次数;\n            this.showPopupToast( \"countdown had down; countNum = \" + countNum )\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#normal-dlg-body{\n    top: 39% !important;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -15541,9 +15587,9 @@
 	/* generated by vue-loader */
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onStartCountClick" class='demonstrate-a') {{ btnText }}
 	//     div.comp-area
 	//         <count-down :time.sync="time" :is-complete-show-hms="isCompleteShowHms" :fore-time-text="foreTimeText" :last-time-text="lastTimeText" :start.sync="isStartCount"></count-down>
@@ -15750,7 +15796,7 @@
 /* 73 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onStartCountClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down><popup-toast></popup-toast></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onStartCountClick\" class=\"demonstrate-a\">{{ btnText }}</a><div class=\"comp-area\"><count-down :time.sync=\"time\" :is-complete-show-hms=\"isCompleteShowHms\" :fore-time-text=\"foreTimeText\" :last-time-text=\"lastTimeText\" :start.sync=\"isStartCount\"></count-down><popup-toast></popup-toast></div>";
 
 /***/ },
 /* 74 */
@@ -15816,7 +15862,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#components-wraper #common-table-ul{\n    margin-top: 3%;\n    display: block;\n    height: 15em;\n    background-color: #222222;\n}\n", "", {"version":3,"sources":["/./src/_commonTable.vue?94082200"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuEA;IACA,eAAA;IACA,eAAA;IACA,aAAA;IACA,0BAAA;CACA","file":"_commonTable.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2#hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2#hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\n    div.comp-area\n        <common-table :table-list.sync='tableList'></common-table>\n</template>\n\n<script type=\"text/javascript\">\nimport commonTable from 'commonTable'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            hintingTitle2: \"表现示例:\",\n            compTitle : \"Component Name\",\n            xLimitControl:3,\n            yLimitControl:4,\n            addLine: \"Add Line\",\n            addColumn: \"Add Column\",\n            hintingTitle: \"使用示例:\",\n            tableList: [],\n            codeString: `\n    import commonTable from 'commonTable'; //引入组件\n\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\n    <common-table :table-list.sync='tableList'></common-table>`\n        }\n    },\n    ready(){\n        this.setTableList()\n    },\n    route:{\n  \t\tdata(transition){\n            this.compTitle = transition.to.name\n  \t\t}\n\t },\n    components: {\n        commonTable,\n        preCode,\n    },\n    methods: {\n        setTableList: function(){\n            let tempArr = [];\n            for(let i=0; i<= this.xLimitControl; i++){\n                tempArr[i] = []\n                for(let j=0; j<=this.yLimitControl; j++){\n                    tempArr[i][j] = 'iLoveU' + j;\n                }\n            }\n            this.tableList = tempArr\n        },\n        onAddLineClick: function(){\n            this.xLimitControl += 1\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\n            this.setTableList()\n        },\n        onAddColumnClick: function(){\n            this.yLimitControl += 1\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\n            this.setTableList()\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#components-wraper #common-table-ul{\n    margin-top: 3%;\n    display: block;\n    height: 15em;\n    background-color: #222222;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#components-wraper #common-table-ul{\n    margin-top: 3%;\n    display: block;\n    height: 15em;\n    background-color: #222222;\n}\n", "", {"version":3,"sources":["/./src/_commonTable.vue?2372f296"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuEA;IACA,eAAA;IACA,eAAA;IACA,aAAA;IACA,0BAAA;CACA","file":"_commonTable.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    a(href='javascript:;' @click=\"onAddLineClick\" class='common-a') {{ addLine }}\n    a(href='javascript:;' @click=\"onAddColumnClick\" class='common-a') {{ addColumn }}\n    div.comp-area\n        <common-table :table-list.sync='tableList'></common-table>\n</template>\n\n<script type=\"text/javascript\">\nimport commonTable from 'commonTable'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            hintingTitle2: \"表现示例:\",\n            compTitle : \"Component Name\",\n            xLimitControl:3,\n            yLimitControl:4,\n            addLine: \"Add Line\",\n            addColumn: \"Add Column\",\n            hintingTitle: \"使用示例:\",\n            tableList: [],\n            codeString: `\n    import commonTable from 'commonTable'; //引入组件\n\n    //在模板中如下加入组件即可(定义tabList数组/Object)：\n    <common-table :table-list.sync='tableList'></common-table>`\n        }\n    },\n    ready(){\n        this.setTableList()\n    },\n    route:{\n  \t\tdata(transition){\n            this.compTitle = transition.to.name\n  \t\t}\n\t },\n    components: {\n        commonTable,\n        preCode,\n    },\n    methods: {\n        setTableList: function(){\n            let tempArr = [];\n            for(let i=0; i<= this.xLimitControl; i++){\n                tempArr[i] = []\n                for(let j=0; j<=this.yLimitControl; j++){\n                    tempArr[i][j] = 'iLoveU' + j;\n                }\n            }\n            this.tableList = tempArr\n        },\n        onAddLineClick: function(){\n            this.xLimitControl += 1\n            this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0\n            this.setTableList()\n        },\n        onAddColumnClick: function(){\n            this.yLimitControl += 1\n            this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0\n            this.setTableList()\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n#components-wraper #common-table-ul{\n    margin-top: 3%;\n    display: block;\n    height: 15em;\n    background-color: #222222;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -15843,9 +15889,9 @@
 	
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	//     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
 	//     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
 	//     div.comp-area
@@ -16100,7 +16146,7 @@
 /* 83 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><div class=\"comp-area\"><common-table :table-list.sync='tableList'></common-table></div>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><a href=\"javascript:;\" @click=\"onAddLineClick\" class=\"common-a\">{{ addLine }}</a><a href=\"javascript:;\" @click=\"onAddColumnClick\" class=\"common-a\">{{ addColumn }}</a><div class=\"comp-area\"><common-table :table-list.sync='tableList'></common-table></div>";
 
 /***/ },
 /* 84 */
@@ -16152,9 +16198,9 @@
 	
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	// </template>
 	//
 	// <script type="text/javascript">
@@ -16251,7 +16297,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#turntable-root {\n\tposition: absolute;\n\twidth: 50%;\n\theight: 78%;\n\ttop: 9%;\n\tright: 2.5%;\n}\n#turntable-drawbox {\n    width: 83%;\n    height: 93%;\n\tposition: absolute;\n\ttop: 0;\n\tright: 6%;\n\tbottom: 13.5%;\n\tbackground-size: 100% 100%;\n}\n#turntable-drawpoint {\n    width: 16.7%;\n    top: 33.66%;\n    left: 42.4%;\n    height: 23.9%;\n\tbackground-size: 100% 100%;\n\tposition: absolute;\n\tz-index: 2;\n\t-webkit-transform-origin: 50% 65.1%;\n\ttransform-origin: 50% 65.1%;\n\twill-change: transform;\n}\n.turntable-transition{\n    -webkit-transition: -webkit-transform 2s ease-in-out;\n    transition: -webkit-transform 2s ease-in-out;\n    transition: transform 2s ease-in-out;\n    transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;\n}\n", "", {"version":3,"sources":["/../components/modules/turnTable.vue?3276a406"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA+FA;CACA,mBAAA;CACA,WAAA;CACA,YAAA;CACA,QAAA;CACA,YAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;CACA,mBAAA;CACA,OAAA;CACA,UAAA;CACA,cAAA;CACA,2BAAA;CACA;AACA;IACA,aAAA;IACA,YAAA;IACA,YAAA;IACA,cAAA;CACA,2BAAA;CACA,mBAAA;CACA,WAAA;CACA,oCAAA;CAIA,4BAAA;CACA,uBAAA;CACA;AACA;IACA,qDAAA;IACA,6CAAA;IAAA,qCAAA;IAAA,uEAAA;CACA","file":"turnTable.vue","sourcesContent":["<!--Date: 16-04-18\n\tAuthor: jeffjade\n\tDesc: 大转盘/抽奖等功能模块组件\n -->\n <template lang=\"jade\">\n\t#turntable-root\n\t\t#turntable-drawbox\n\t\t\tdiv(id=\"turntable-drawpoint\" v-on:click=\"onDrawboxCallback\")\n</template>\n\n<!-- <template>\n\t<div id=\"turntable-root\">\n\t\t<div id=\"turntable-drawbox\">\n\t\t\t<div v-on:click=\"onDrawboxCallback\"  id=\"turntable-drawpoint\"></div>\n\t\t</div>\n\t</div>\n</template> -->\n\n<script>\nexport default {\n\tdata(){\n\t\treturn{\n\t\t\trequestSuccData:{}\n\t\t}\n\t},\n\n\tready(){\n\t\tdocument.getElementById('turntable-drawpoint').addEventListener('webkitTransitionEnd', ()=>{\n            setTimeout( ()=>{\n            \tthis.excuteCallBackFunc()\n            \t$('#turntable-drawpoint').removeClass('turntable-transition').css({'webkitTransform' : 'rotate(0deg)'});\n            }, this.turnTableConfig.resumeDelay );\n\t\t}, false);\n\t},\n\n\tprops:{\n\t\tTools:{\n            type: null,\n            default: {}\n        },\n        turnTableConfig:{\n        \ttype: Object,\n        \tdefault: function(){\n        \t\treturn {\n        \t\t\trewardKinds: 8,\n        \t\t\tresumeDelay: 1000,\n        \t\t\trotateNums: 3,\n        \t\t\timgOffset: 22.5,\n        \t\t\tcallBackFunc: null\n        \t\t}\n        \t}\n        }\n\t},\n\n\tmethods: {\n\t\tonDrawboxCallback: function(event){\n\t\t\tthis.startupDrawbox()\n\t\t},\n\t\tstartupDrawbox: function(){\n\t\t\tthis.Tools.ajax({\"p\":\"complete\",\"extra\":{\"keys\":\"turntable\"}}, (succData)=>{\n\t\t\t\tthis.requestSuccData = succData || {};\n\t\t\t\tlet rewardKinds = this.turnTableConfig.rewardKinds\n\t\t\t\tlet rotateNums = this.turnTableConfig.rotateNums\n\n\t\t\t\tif( succData.status >= 0 ){\n\t\t\t\t\tlet offset = (360/rewardKinds)*succData.num\n\t\t\t\t\tlet tragetAngel = (360*rotateNums)+offset - this.turnTableConfig.imgOffset\n\t\t\t\t\t$(\"#turntable-drawpoint\").addClass('turntable-transition').css({ 'webkitTransform':'rotate('+tragetAngel+'deg)' });\n\t\t\t\t}else{\n\t\t\t\t\tthis.excuteCallBackFunc()\n\t\t\t\t}\n\t\t\t})\n\t\t},\n\t\texcuteCallBackFunc: function(){\n\t\t\tif(null !== this.turnTableConfig.callBackFunc){\n\t\t\t\tvar cdObj = {\n\t\t\t\t\tmsg: this.requestSuccData.msg,\n\t\t\t\t\tname: this.requestSuccData.name || \"\"\n\t\t\t\t}\n            \tthis.turnTableConfig.callBackFunc( cdObj );\n            }\n\t\t}\n\t},\n\n\tevents: {\n\t   'turntable-msg': function () {\n\t\t\t// 兼容下，开启大转盘按钮不在此组件情形;\n\t\t\tthis.startupDrawbox();\n\t\t}\n   }\n}\n</script>\n\n\n<style>\n#turntable-root {\n\tposition: absolute;\n\twidth: 50%;\n\theight: 78%;\n\ttop: 9%;\n\tright: 2.5%;\n}\n#turntable-drawbox {\n    width: 83%;\n    height: 93%;\n\tposition: absolute;\n\ttop: 0;\n\tright: 6%;\n\tbottom: 13.5%;\n\tbackground-size: 100% 100%;\n}\n#turntable-drawpoint {\n    width: 16.7%;\n    top: 33.66%;\n    left: 42.4%;\n    height: 23.9%;\n\tbackground-size: 100% 100%;\n\tposition: absolute;\n\tz-index: 2;\n\t-webkit-transform-origin: 50% 65.1%;\n\t-ms-transform-origin: 50% 65.1%;\n\t-o-transform-origin: 50% 65.1%;\n\t-moz-transform-origin: 50% 65.1%;\n\ttransform-origin: 50% 65.1%;\n\twill-change: transform;\n}\n.turntable-transition{\n    -webkit-transition: -webkit-transform 2s ease-in-out;\n    transition: transform 2s ease-in-out;\n}\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#turntable-root {\n\tposition: absolute;\n\twidth: 50%;\n\theight: 78%;\n\ttop: 9%;\n\tright: 2.5%;\n}\n#turntable-drawbox {\n    width: 83%;\n    height: 93%;\n\tposition: absolute;\n\ttop: 0;\n\tright: 6%;\n\tbottom: 13.5%;\n\tbackground-size: 100% 100%;\n}\n#turntable-drawpoint {\n    width: 16.7%;\n    top: 33.66%;\n    left: 42.4%;\n    height: 23.9%;\n\tbackground-size: 100% 100%;\n\tposition: absolute;\n\tz-index: 2;\n\t-webkit-transform-origin: 50% 65.1%;\n\ttransform-origin: 50% 65.1%;\n\twill-change: transform;\n}\n.turntable-transition{\n    -webkit-transition: -webkit-transform 2s ease-in-out;\n    transition: -webkit-transform 2s ease-in-out;\n    transition: transform 2s ease-in-out;\n    transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;\n}\n", "", {"version":3,"sources":["/../components/modules/turnTable.vue?402293d6"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuFA;CACA,mBAAA;CACA,WAAA;CACA,YAAA;CACA,QAAA;CACA,YAAA;CACA;AACA;IACA,WAAA;IACA,YAAA;CACA,mBAAA;CACA,OAAA;CACA,UAAA;CACA,cAAA;CACA,2BAAA;CACA;AACA;IACA,aAAA;IACA,YAAA;IACA,YAAA;IACA,cAAA;CACA,2BAAA;CACA,mBAAA;CACA,WAAA;CACA,oCAAA;CAIA,4BAAA;CACA,uBAAA;CACA;AACA;IACA,qDAAA;IACA,6CAAA;IAAA,qCAAA;IAAA,uEAAA;CACA","file":"turnTable.vue","sourcesContent":["<!--Date: 16-04-18\n\tAuthor: jeffjade\n\tDesc: 大转盘/抽奖等功能模块组件\n -->\n <template lang=\"jade\">\n\t#turntable-root\n\t\t#turntable-drawbox\n\t\t\tdiv(id=\"turntable-drawpoint\" v-on:click=\"onDrawboxCallback\")\n</template>\n\n<script>\nexport default {\n\tdata(){\n\t\treturn{\n\t\t\trequestSuccData:{}\n\t\t}\n\t},\n\n\tready(){\n\t\tdocument.getElementById('turntable-drawpoint').addEventListener('webkitTransitionEnd', ()=>{\n            setTimeout( ()=>{\n            \tthis.excuteCallBackFunc()\n            \t$('#turntable-drawpoint').removeClass('turntable-transition').css({'webkitTransform' : 'rotate(0deg)'});\n            }, this.turnTableConfig.resumeDelay );\n\t\t}, false);\n\t},\n\n\tprops:{\n\t\tTools:{\n            type: null,\n            default: {}\n        },\n        turnTableConfig:{\n        \ttype: Object,\n        \tdefault: function(){\n        \t\treturn {\n        \t\t\trewardKinds: 8,\n        \t\t\tresumeDelay: 1000,\n        \t\t\trotateNums: 3,\n        \t\t\timgOffset: 22.5,\n        \t\t\tcallBackFunc: null\n        \t\t}\n        \t}\n        }\n\t},\n\n\tmethods: {\n\t\tonDrawboxCallback: function(event){\n\t\t\tthis.startupDrawbox()\n\t\t},\n\t\tstartupDrawbox: function(){\n\t\t\tthis.Tools.ajax({\"p\":\"complete\",\"extra\":{\"keys\":\"turntable\"}}, (succData)=>{\n\t\t\t\tthis.requestSuccData = succData || {};\n\t\t\t\tlet rewardKinds = this.turnTableConfig.rewardKinds\n\t\t\t\tlet rotateNums = this.turnTableConfig.rotateNums\n\n\t\t\t\tif( succData.status >= 0 ){\n\t\t\t\t\tlet offset = (360/rewardKinds)*succData.num\n\t\t\t\t\tlet tragetAngel = (360*rotateNums)+offset - this.turnTableConfig.imgOffset\n\t\t\t\t\t$(\"#turntable-drawpoint\").addClass('turntable-transition').css({ 'webkitTransform':'rotate('+tragetAngel+'deg)' });\n\t\t\t\t}else{\n\t\t\t\t\tthis.excuteCallBackFunc()\n\t\t\t\t}\n\t\t\t})\n\t\t},\n\t\texcuteCallBackFunc: function(){\n\t\t\tif(null !== this.turnTableConfig.callBackFunc){\n\t\t\t\tvar cdObj = {\n\t\t\t\t\tmsg: this.requestSuccData.msg,\n\t\t\t\t\tname: this.requestSuccData.name || \"\"\n\t\t\t\t}\n            \tthis.turnTableConfig.callBackFunc( cdObj );\n            }\n\t\t}\n\t},\n\n\tevents: {\n\t   'turntable-msg': function () {\n\t\t\t// 兼容下，开启大转盘按钮不在此组件情形;\n\t\t\tthis.startupDrawbox();\n\t\t}\n   }\n}\n</script>\n\n\n<style>\n#turntable-root {\n\tposition: absolute;\n\twidth: 50%;\n\theight: 78%;\n\ttop: 9%;\n\tright: 2.5%;\n}\n#turntable-drawbox {\n    width: 83%;\n    height: 93%;\n\tposition: absolute;\n\ttop: 0;\n\tright: 6%;\n\tbottom: 13.5%;\n\tbackground-size: 100% 100%;\n}\n#turntable-drawpoint {\n    width: 16.7%;\n    top: 33.66%;\n    left: 42.4%;\n    height: 23.9%;\n\tbackground-size: 100% 100%;\n\tposition: absolute;\n\tz-index: 2;\n\t-webkit-transform-origin: 50% 65.1%;\n\t-ms-transform-origin: 50% 65.1%;\n\t-o-transform-origin: 50% 65.1%;\n\t-moz-transform-origin: 50% 65.1%;\n\ttransform-origin: 50% 65.1%;\n\twill-change: transform;\n}\n.turntable-transition{\n    -webkit-transition: -webkit-transform 2s ease-in-out;\n    transition: transform 2s ease-in-out;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -16274,14 +16320,6 @@
 	// 		#turntable-drawbox
 	// 			div(id="turntable-drawpoint" v-on:click="onDrawboxCallback")
 	// </template>
-	//
-	// <!-- <template>
-	// 	<div id="turntable-root">
-	// 		<div id="turntable-drawbox">
-	// 			<div v-on:click="onDrawboxCallback"  id="turntable-drawpoint"></div>
-	// 		</div>
-	// 	</div>
-	// </template> -->
 	//
 	// <script>
 	exports.default = {
@@ -16400,6 +16438,7 @@
 	//     transition: transform 2s ease-in-out;
 	// }
 	// </style>
+
 	/* generated by vue-loader */
 
 /***/ },
@@ -16412,7 +16451,7 @@
 /* 91 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2>";
 
 /***/ },
 /* 92 */
@@ -16464,9 +16503,9 @@
 	
 	// <template lang='jade'>
 	//     h1#comp-title {{ compTitle }}
-	//     h2#hinting-title {{ hintingTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
 	//     <pre-code :code-string="codeString"></pre-code>
-	//     h2#hinting-title {{ hintingTitle2 }}
+	//     h2.hinting-title {{ hintingTitle2 }}
 	// </template>
 	//
 	// <script type="text/javascript">
@@ -16510,7 +16549,7 @@
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] ../components/modules/FormDialog.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] ../components/modules/formDialog.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(98)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -16521,7 +16560,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "./FormDialog.vue"
+	  var id = "./formDialog.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -16545,8 +16584,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./FormDialog.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./FormDialog.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./formDialog.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./formDialog.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -16564,7 +16603,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.dialog.wrap, .form-dlg-shadow{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 5;\n}\n#form-dlg-shadow{\n    background: rgba(0,0,0,.6);\n    z-index: 11;\n    width: 100%;\n    height: 100%;\n}\n#form-dialog-h1 {\n    font-size: 1.24em;\n    line-height: 2;\n    padding: 0;\n    font-weight: normal;\n    color: #FFF;\n    background-size: 100% 100%;\n    position: relative;\n}\n#form-dialog-body{\n\tposition:absolute;\n\ttop: 20%;\n\tleft: 52%;\n\twidth:70%;\n\tz-index:11;\n\ttext-align: center;\n\tmargin-left:-36%;\n\tborder-radius: .5em;\n\tbackground-color:transparent;\n\tbackground:#F5D39F;\n\tbox-sizing:border-box;\n\t-webkit-box-sizing:border-box;\n\t-moz-box-sizing:border-box;\n\tcolor:#4B2B1C;\n}\n#form-dialog-cont{width:90%;margin:1% auto}\n#form-dialog-body>section{\n    background-color: #E0AB75;\n    text-align: left;\n    padding: 4% 2%;\n    font-size: 1em;\n    line-height: 1.2em;\n    box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);\n    border-radius: .5em;\n    width: 87%;\n    margin: 0 auto;\n    margin-top: 4%;\n}\n#form-dialog-cont p{text-align: center;}\n#form-dialog-cont label{width:18%;\n\tpadding-right:2%;\n\ttext-align:right;\n\tdisplay:inline-block}\n#form-dialog-cont label>b{color:#fe0;vertical-align: middle;}\n#form-dialog-cont input{\n\twidth:64%;\n\tpadding:.3em;\n\tcolor:#000;\n\tfont-size: 1em;\n\tmargin:1% auto 1% 2%;\n\ttext-align:left;\n\tdisplay:inline-block;\n\toutline: none;\n\tborder:none;\n\tborder-radius:.5em;\n\tbox-shadow:inset -1px 1px 6px rgba(0,0,0,.4);\n}\n.form-dialog-a{\n    font: 1.2em Microsoft YaHei, sans-serif;\n    line-height: 1.69;\n    font-weight: bold;\n    color: #FFF;\n    text-align: center;\n    display: inline-block;\n    margin: 2% 4% 2%;\n    width: 23%;\n    height: 2em;\n    text-decoration: none;\n    border: none;\n    cursor: pointer;\n    background-color: transparent;\n    letter-spacing: .2em;\n    background-size: 100% 100%;\n}\n", "", {"version":3,"sources":["/../components/modules/FormDialog.vue?17449d96"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiJA;IACA,mBAAA;IACA,YAAA;IACA,aAAA;IACA,OAAA;IACA,QAAA;IACA,WAAA;CACA;AACA;IACA,2BAAA;IACA,YAAA;IACA,YAAA;IACA,aAAA;CACA;AACA;IACA,kBAAA;IACA,eAAA;IACA,WAAA;IACA,oBAAA;IACA,YAAA;IACA,2BAAA;IACA,mBAAA;CACA;AACA;CACA,kBAAA;CACA,SAAA;CACA,UAAA;CACA,UAAA;CACA,WAAA;CACA,mBAAA;CACA,iBAAA;CACA,oBAAA;CACA,6BAAA;CACA,mBAAA;CACA,sBAAA;CACA,8BAAA;CACA,2BAAA;CACA,cAAA;CACA;AACA,kBAAA,UAAA,cAAA,CAAA;AACA;IACA,0BAAA;IACA,iBAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,yEAAA;IACA,oBAAA;IACA,WAAA;IACA,eAAA;IACA,eAAA;CACA;AACA,oBAAA,mBAAA,CAAA;AACA,wBAAA,UAAA;CACA,iBAAA;CACA,iBAAA;CACA,oBAAA,CAAA;AACA,0BAAA,WAAA,uBAAA,CAAA;AACA;CACA,UAAA;CACA,aAAA;CACA,WAAA;CACA,eAAA;CACA,qBAAA;CACA,gBAAA;CACA,qBAAA;CACA,cAAA;CACA,YAAA;CACA,mBAAA;CACA,6CAAA;CACA;AACA;IACA,wCAAA;IACA,kBAAA;IACA,kBAAA;IACA,YAAA;IACA,mBAAA;IACA,sBAAA;IACA,iBAAA;IACA,WAAA;IACA,YAAA;IACA,sBAAA;IACA,aAAA;IACA,gBAAA;IACA,8BAAA;IACA,qBAAA;IACA,2BAAA;CACA","file":"FormDialog.vue","sourcesContent":["<template lang=\"jade\">\n\tdiv(class='wrap dialog' id='form-dialog' v-if='isShowDlgFlag')\n\t\tdiv#form-dlg-shadow\n\t\tdiv#form-dialog-body.dlg-body\n\t\t\th1#form-dialog-h1 {{ titleText }}\n\t\t\tsection\n\t\t\t\tdiv#form-dialog-cont\n\t\t\t\t\tlabel(for='form-dialog-uname') {{{ userName }}}\n\t\t\t\t\tinput(type='text' maxlength='20' placeholder='{{ namePlaceholder }}' id='form-dialog-uname')\n\t\t\t\t\tbr\n\t\t\t\t\tlabel(for='form-dialog-phone') {{{ userPhone }}}\n\t\t\t\t\tinput(type='text' maxlength='12' placeholder='{{ phonePlaceholder }}' id='form-dialog-phone' required='required')\n\t\t\t\t\tbr\n\t\t\t\t\tlabel(for='form-dialog-address') {{{ userAddress }}}\n\t\t\t\t\tinput(type='text' placeholder='{{ addressPlaceholder }}' id='form-dialog-address' required='required')\n\t\t\t\t\tbr\n\t\t\tdiv#form-dialog-btns\n\t\t\t\ta(href=\"javascript:;\" class='form-dialog-a form-dialog-left-a dlg-submit-btn' @click='onLeftBtnClick') {{ leftBtnText }}\n\t\t\t\ta(href=\"javascript:;\" class='form-dialog-a form-dialog-right-a dlg-close-btn' @click='onRightBtnClick') {{ rightBtnText }}\n</template>\n\n\n<script>\nexport default {\n    data(){\n        return{\n            Tools: {},\n            titleText: '用户信息',\n            userName: '姓名',\n            userPhone: '<b>*</b>电话',\n            userAddress: '地址',\n            namePlaceholder: '请输入姓名',\n            phonePlaceholder: '请输入电话号码',\n            addressPlaceholder: '请输入您的地址',\n            leftBtnText: '提交',\n            rightBtnText: '取消',\n            callBackFunc: null,\n            isShowDlgFlag: false,\n            isExchangeBtnsFunc: false,\n            verifyPhoneNumReg: null,\n        }\n    },\n    methods: {\n        showFormDialog: function(dlgMsgObj){\n            this.Tools = dlgMsgObj.Tools\n            this.titleText = dlgMsgObj.titleText || this.titleText\n            this.userName = dlgMsgObj.userName || this.userName\n            this.userPhone = dlgMsgObj.userPhone || this.userPhone\n            this.userAddress = dlgMsgObj.userAddress || this.userAddress\n            this.namePlaceholder = dlgMsgObj.namePlaceholder || this.namePlaceholder\n            this.phonePlaceholder = dlgMsgObj.phonePlaceholder || this.phonePlaceholder\n            this.addressPlaceholder = dlgMsgObj.addressPlaceholder || this.addressPlaceholder\n            this.leftBtnText = dlgMsgObj.leftBtnText || this.leftBtnText\n            this.rightBtnText = dlgMsgObj.rightBtnText || this.rightBtnText\n            this.isExchangeBtnsFunc = dlgMsgObj.isExchangeBtnsFunc || this.isExchangeBtnsFunc\n\n            this.Tools.ajax({\"p\":\"getUserInfo\",\"extra\":{}}, (succData)=>{\n                var name = succData.name,\n                    tel = succData.tel,\n                    email = succData.email,\n                    addr = succData.addr;\n\n                this.isShowDlgFlag =  true\n                \n                setTimeout( (succData)=>{\n                \tif (succData !== \"\" &&  null !== succData) {\n\t                    if (name) $(\"#form-dialog-uname\").val(name)\n\t                    if (tel) $(\"#form-dialog-phone\").val(tel)\n\t                    if (email) $(\"#form-dialog-email\").val(email)\n\t                    if (addr) $(\"#form-dialog-address\").val(addr)\n\t                }\n                } ,0)\n            })\n        },\n        hideFormDialog: function(){\n        \tthis.isShowDlgFlag =  false\n        },\n        submmitFromInfo: function(){\n        \tvar uname = $(\"#form-dialog-uname\").val(),\n\t\t\t\ttel = $(\"#form-dialog-phone\").val(),\n\t\t\t\temail = $(\"#form-dialog-email\").val(),\n\t\t\t\taddr = $(\"#form-dialog-address\").val(),\n\t\t\t\t$form = $(\"#form-dialog-cont\");\n\n\t\t\t$(\"#error-info\").remove()\n\t\t\t$(\"#form-dialog-phone\").on(\"keydown\", function() {\n\t\t\t\t$(\"#error-info\").fadeOut(100)\n\t\t\t})\n\n\t\t\tvar zhReg = /^1[3-8][0-9]{9}$/,  //简体\n                thReg = /^08[0-9]{9,10}$/;   //繁体\n\n            var Reg = zhReg;   //默认简体\n            if( null !== this.verifyPhoneNumReg ){\n                Reg = this.verifyPhoneNumReg\n            }\n\n\t\t\tif (tel == \"\" || !Reg.test(tel)) {\n\t\t\t\t$(\"#form-dialog-phone\").val(\"\");\n\t\t\t\t$form.prepend($(\"<p id='error-info'/>\").html('请重新输入电话号码！').css(\"color\", \"#fe0\"));\n\t\t\t\treturn;\n\t\t\t} else {\n\t\t\t\tthis.Tools.ajax({\n\t\t\t\t\t\"p\": \"setUserInfo\",\n\t\t\t\t\t\"extra\": {\n\t\t\t\t\t\t\"name\": uname,\n\t\t\t\t\t\t\"tel\": tel,\n\t\t\t\t\t\t\"email\": email,\n\t\t\t\t\t\t\"addr\": addr\n\t\t\t\t\t}\n\t\t\t\t}, ( requestMsg )=>{\n\t\t\t\t\tthis.hideFormDialog()\n\t\t\t\t\tif( null !== this.callBackFunc ){\n\t\t\t\t\t\tthis.callBackFunc( requestMsg )\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n        },\n\n        /*-----------------Callback Function--------------------Private Func*/ \n        onLeftBtnClick: function(){\n        \tif( true === this.isExchangeBtnsFunc){\n        \t\tthis.hideFormDialog()\n        \t\treturn\n        \t}\n        \tthis.submmitFromInfo()\n        },\n        onRightBtnClick: function(){\n        \tif( true === this.isExchangeBtnsFunc){\n        \t\tthis.submmitFromInfo()\n        \t\treturn\n        \t}\n\n        \tthis.hideFormDialog()\n        }\n    },\n    events: {\n        'show-form-dlg': function (dlgMsgObj) {\n            this.showFormDialog(dlgMsgObj);\n        }\n    }\n}\n</script>\n\n<style>\n.dialog.wrap, .form-dlg-shadow{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 5;\n}\n#form-dlg-shadow{\n    background: rgba(0,0,0,.6);\n    z-index: 11;\n    width: 100%;\n    height: 100%;\n}\n#form-dialog-h1 {\n    font-size: 1.24em;\n    line-height: 2;\n    padding: 0;\n    font-weight: normal;\n    color: #FFF;\n    background-size: 100% 100%;\n    position: relative;\n}\n#form-dialog-body{\n\tposition:absolute;\n\ttop: 20%;\n\tleft: 52%;\n\twidth:70%;\n\tz-index:11;\n\ttext-align: center;\n\tmargin-left:-36%;\n\tborder-radius: .5em;\n\tbackground-color:transparent;\n\tbackground:#F5D39F;\n\tbox-sizing:border-box;\n\t-webkit-box-sizing:border-box;\n\t-moz-box-sizing:border-box;\n\tcolor:#4B2B1C;\n}\n#form-dialog-cont{width:90%;margin:1% auto}\n#form-dialog-body>section{\n    background-color: #E0AB75;\n    text-align: left;\n    padding: 4% 2%;\n    font-size: 1em;\n    line-height: 1.2em;\n    box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);\n    border-radius: .5em;\n    width: 87%;\n    margin: 0 auto;\n    margin-top: 4%;\n}\n#form-dialog-cont p{text-align: center;}\n#form-dialog-cont label{width:18%;\n\tpadding-right:2%;\n\ttext-align:right;\n\tdisplay:inline-block}\n#form-dialog-cont label>b{color:#fe0;vertical-align: middle;}\n#form-dialog-cont input{\n\twidth:64%;\n\tpadding:.3em;\n\tcolor:#000;\n\tfont-size: 1em;\n\tmargin:1% auto 1% 2%;\n\ttext-align:left;\n\tdisplay:inline-block;\n\toutline: none;\n\tborder:none;\n\tborder-radius:.5em;\n\tbox-shadow:inset -1px 1px 6px rgba(0,0,0,.4);\n}\n.form-dialog-a{\n    font: 1.2em Microsoft YaHei, sans-serif;\n    line-height: 1.69;\n    font-weight: bold;\n    color: #FFF;\n    text-align: center;\n    display: inline-block;\n    margin: 2% 4% 2%;\n    width: 23%;\n    height: 2em;\n    text-decoration: none;\n    border: none;\n    cursor: pointer;\n    background-color: transparent;\n    letter-spacing: .2em;\n    background-size: 100% 100%;\n}\n</style>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.dialog.wrap, .form-dlg-shadow{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 5;\n}\n#form-dlg-shadow{\n    background: rgba(0,0,0,.6);\n    z-index: 11;\n    width: 100%;\n    height: 100%;\n}\n#form-dialog-h1 {\n    font-size: 1.24em;\n    line-height: 2;\n    padding: 0;\n    font-weight: normal;\n    color: #FFF;\n    background-size: 100% 100%;\n    position: relative;\n}\n#form-dialog-body{\n\tposition:absolute;\n\ttop: 20%;\n\tleft: 52%;\n\twidth:70%;\n\tz-index:11;\n\ttext-align: center;\n\tmargin-left:-36%;\n\tborder-radius: .5em;\n\tbackground-color:transparent;\n\tbackground:#F5D39F;\n\tbox-sizing:border-box;\n\t-webkit-box-sizing:border-box;\n\t-moz-box-sizing:border-box;\n\tcolor:#4B2B1C;\n}\n#form-dialog-cont{width:90%;margin:1% auto}\n#form-dialog-body>section{\n    background-color: #E0AB75;\n    text-align: left;\n    padding: 4% 2%;\n    font-size: 1em;\n    line-height: 1.2em;\n    box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);\n    border-radius: .5em;\n    width: 87%;\n    margin: 0 auto;\n    margin-top: 4%;\n}\n#form-dialog-cont p{text-align: center;}\n#form-dialog-cont label{width:18%;\n\tpadding-right:2%;\n\ttext-align:right;\n\tdisplay:inline-block}\n#form-dialog-cont label>b{color:#fe0;vertical-align: middle;}\n#form-dialog-cont input{\n\twidth:64%;\n\tpadding:.3em;\n\tcolor:#000;\n\tfont-size: 1em;\n\tmargin:1% auto 1% 2%;\n\ttext-align:left;\n\tdisplay:inline-block;\n\toutline: none;\n\tborder:none;\n\tborder-radius:.5em;\n\tbox-shadow:inset -1px 1px 6px rgba(0,0,0,.4);\n}\n.form-dialog-a{\n    font: 1.2em Microsoft YaHei, sans-serif;\n    line-height: 1.69;\n    font-weight: bold;\n    color: #FFF;\n    text-align: center;\n    display: inline-block;\n    margin: 2% 4% 2%;\n    width: 23%;\n    height: 2em;\n    text-decoration: none;\n    border: none;\n    cursor: pointer;\n    background-color: transparent;\n    letter-spacing: .2em;\n    background-size: 100% 100%;\n}\n", "", {"version":3,"sources":["/../components/modules/formDialog.vue?e9a7cb26"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAiJA;IACA,mBAAA;IACA,YAAA;IACA,aAAA;IACA,OAAA;IACA,QAAA;IACA,WAAA;CACA;AACA;IACA,2BAAA;IACA,YAAA;IACA,YAAA;IACA,aAAA;CACA;AACA;IACA,kBAAA;IACA,eAAA;IACA,WAAA;IACA,oBAAA;IACA,YAAA;IACA,2BAAA;IACA,mBAAA;CACA;AACA;CACA,kBAAA;CACA,SAAA;CACA,UAAA;CACA,UAAA;CACA,WAAA;CACA,mBAAA;CACA,iBAAA;CACA,oBAAA;CACA,6BAAA;CACA,mBAAA;CACA,sBAAA;CACA,8BAAA;CACA,2BAAA;CACA,cAAA;CACA;AACA,kBAAA,UAAA,cAAA,CAAA;AACA;IACA,0BAAA;IACA,iBAAA;IACA,eAAA;IACA,eAAA;IACA,mBAAA;IACA,yEAAA;IACA,oBAAA;IACA,WAAA;IACA,eAAA;IACA,eAAA;CACA;AACA,oBAAA,mBAAA,CAAA;AACA,wBAAA,UAAA;CACA,iBAAA;CACA,iBAAA;CACA,oBAAA,CAAA;AACA,0BAAA,WAAA,uBAAA,CAAA;AACA;CACA,UAAA;CACA,aAAA;CACA,WAAA;CACA,eAAA;CACA,qBAAA;CACA,gBAAA;CACA,qBAAA;CACA,cAAA;CACA,YAAA;CACA,mBAAA;CACA,6CAAA;CACA;AACA;IACA,wCAAA;IACA,kBAAA;IACA,kBAAA;IACA,YAAA;IACA,mBAAA;IACA,sBAAA;IACA,iBAAA;IACA,WAAA;IACA,YAAA;IACA,sBAAA;IACA,aAAA;IACA,gBAAA;IACA,8BAAA;IACA,qBAAA;IACA,2BAAA;CACA","file":"formDialog.vue","sourcesContent":["<template lang=\"jade\">\n\tdiv(class='wrap dialog' id='form-dialog' v-if='isShowDlgFlag')\n\t\tdiv#form-dlg-shadow\n\t\tdiv#form-dialog-body.dlg-body\n\t\t\th1#form-dialog-h1 {{ titleText }}\n\t\t\tsection\n\t\t\t\tdiv#form-dialog-cont\n\t\t\t\t\tlabel(for='form-dialog-uname') {{{ userName }}}\n\t\t\t\t\tinput(type='text' maxlength='20' placeholder='{{ namePlaceholder }}' id='form-dialog-uname')\n\t\t\t\t\tbr\n\t\t\t\t\tlabel(for='form-dialog-phone') {{{ userPhone }}}\n\t\t\t\t\tinput(type='text' maxlength='12' placeholder='{{ phonePlaceholder }}' id='form-dialog-phone' required='required')\n\t\t\t\t\tbr\n\t\t\t\t\tlabel(for='form-dialog-address') {{{ userAddress }}}\n\t\t\t\t\tinput(type='text' placeholder='{{ addressPlaceholder }}' id='form-dialog-address' required='required')\n\t\t\t\t\tbr\n\t\t\tdiv#form-dialog-btns\n\t\t\t\ta(href=\"javascript:;\" class='form-dialog-a form-dialog-left-a dlg-submit-btn' @click='onLeftBtnClick') {{ leftBtnText }}\n\t\t\t\ta(href=\"javascript:;\" class='form-dialog-a form-dialog-right-a dlg-close-btn' @click='onRightBtnClick') {{ rightBtnText }}\n</template>\n\n\n<script>\nexport default {\n    data(){\n        return{\n            Tools: {},\n            titleText: '用户信息',\n            userName: '姓名',\n            userPhone: '<b>*</b>电话',\n            userAddress: '地址',\n            namePlaceholder: '请输入姓名',\n            phonePlaceholder: '请输入电话号码',\n            addressPlaceholder: '请输入您的地址',\n            leftBtnText: '提交',\n            rightBtnText: '取消',\n            callBackFunc: null,\n            isShowDlgFlag: false,\n            isExchangeBtnsFunc: false,\n            verifyPhoneNumReg: null,\n        }\n    },\n    methods: {\n        showFormDialog: function(dlgMsgObj){\n            this.Tools = dlgMsgObj.Tools\n            this.titleText = dlgMsgObj.titleText || this.titleText\n            this.userName = dlgMsgObj.userName || this.userName\n            this.userPhone = dlgMsgObj.userPhone || this.userPhone\n            this.userAddress = dlgMsgObj.userAddress || this.userAddress\n            this.namePlaceholder = dlgMsgObj.namePlaceholder || this.namePlaceholder\n            this.phonePlaceholder = dlgMsgObj.phonePlaceholder || this.phonePlaceholder\n            this.addressPlaceholder = dlgMsgObj.addressPlaceholder || this.addressPlaceholder\n            this.leftBtnText = dlgMsgObj.leftBtnText || this.leftBtnText\n            this.rightBtnText = dlgMsgObj.rightBtnText || this.rightBtnText\n            this.isExchangeBtnsFunc = dlgMsgObj.isExchangeBtnsFunc || this.isExchangeBtnsFunc\n\n            this.Tools.ajax({\"p\":\"getUserInfo\",\"extra\":{}}, (succData)=>{\n                var name = succData.name,\n                    tel = succData.tel,\n                    email = succData.email,\n                    addr = succData.addr;\n\n                this.isShowDlgFlag =  true\n\n                setTimeout( (succData)=>{\n                \tif (succData !== \"\" &&  null !== succData) {\n\t                    if (name) $(\"#form-dialog-uname\").val(name)\n\t                    if (tel) $(\"#form-dialog-phone\").val(tel)\n\t                    if (email) $(\"#form-dialog-email\").val(email)\n\t                    if (addr) $(\"#form-dialog-address\").val(addr)\n\t                }\n                } ,0)\n            })\n        },\n        hideFormDialog: function(){\n        \tthis.isShowDlgFlag =  false\n        },\n        submmitFromInfo: function(){\n        \tvar uname = $(\"#form-dialog-uname\").val(),\n\t\t\t\ttel = $(\"#form-dialog-phone\").val(),\n\t\t\t\temail = $(\"#form-dialog-email\").val(),\n\t\t\t\taddr = $(\"#form-dialog-address\").val(),\n\t\t\t\t$form = $(\"#form-dialog-cont\");\n\n\t\t\t$(\"#error-info\").remove()\n\t\t\t$(\"#form-dialog-phone\").on(\"keydown\", function() {\n\t\t\t\t$(\"#error-info\").fadeOut(100)\n\t\t\t})\n\n\t\t\tvar zhReg = /^1[3-8][0-9]{9}$/,  //简体\n                thReg = /^08[0-9]{9,10}$/;   //繁体\n\n            var Reg = zhReg;   //默认简体\n            if( null !== this.verifyPhoneNumReg ){\n                Reg = this.verifyPhoneNumReg\n            }\n\n\t\t\tif (tel == \"\" || !Reg.test(tel)) {\n\t\t\t\t$(\"#form-dialog-phone\").val(\"\");\n\t\t\t\t$form.prepend($(\"<p id='error-info'/>\").html('请重新输入电话号码！').css(\"color\", \"#fe0\"));\n\t\t\t\treturn;\n\t\t\t} else {\n\t\t\t\tthis.Tools.ajax({\n\t\t\t\t\t\"p\": \"setUserInfo\",\n\t\t\t\t\t\"extra\": {\n\t\t\t\t\t\t\"name\": uname,\n\t\t\t\t\t\t\"tel\": tel,\n\t\t\t\t\t\t\"email\": email,\n\t\t\t\t\t\t\"addr\": addr\n\t\t\t\t\t}\n\t\t\t\t}, ( requestMsg )=>{\n\t\t\t\t\tthis.hideFormDialog()\n\t\t\t\t\tif( null !== this.callBackFunc ){\n\t\t\t\t\t\tthis.callBackFunc( requestMsg )\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n        },\n\n        /*-----------------Callback Function--------------------Private Func*/\n        onLeftBtnClick: function(){\n        \tif( true === this.isExchangeBtnsFunc){\n        \t\tthis.hideFormDialog()\n        \t\treturn\n        \t}\n        \tthis.submmitFromInfo()\n        },\n        onRightBtnClick: function(){\n        \tif( true === this.isExchangeBtnsFunc){\n        \t\tthis.submmitFromInfo()\n        \t\treturn\n        \t}\n\n        \tthis.hideFormDialog()\n        }\n    },\n    events: {\n        'show-form-dlg': function (dlgMsgObj) {\n            this.showFormDialog(dlgMsgObj);\n        }\n    }\n}\n</script>\n\n<style>\n.dialog.wrap, .form-dlg-shadow{\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    top: 0;\n    left: 0;\n    z-index: 5;\n}\n#form-dlg-shadow{\n    background: rgba(0,0,0,.6);\n    z-index: 11;\n    width: 100%;\n    height: 100%;\n}\n#form-dialog-h1 {\n    font-size: 1.24em;\n    line-height: 2;\n    padding: 0;\n    font-weight: normal;\n    color: #FFF;\n    background-size: 100% 100%;\n    position: relative;\n}\n#form-dialog-body{\n\tposition:absolute;\n\ttop: 20%;\n\tleft: 52%;\n\twidth:70%;\n\tz-index:11;\n\ttext-align: center;\n\tmargin-left:-36%;\n\tborder-radius: .5em;\n\tbackground-color:transparent;\n\tbackground:#F5D39F;\n\tbox-sizing:border-box;\n\t-webkit-box-sizing:border-box;\n\t-moz-box-sizing:border-box;\n\tcolor:#4B2B1C;\n}\n#form-dialog-cont{width:90%;margin:1% auto}\n#form-dialog-body>section{\n    background-color: #E0AB75;\n    text-align: left;\n    padding: 4% 2%;\n    font-size: 1em;\n    line-height: 1.2em;\n    box-shadow: 0 1px 1px rgba(200,71,67,.5),inset 0 1px 2px rgba(0,0,0,.35);\n    border-radius: .5em;\n    width: 87%;\n    margin: 0 auto;\n    margin-top: 4%;\n}\n#form-dialog-cont p{text-align: center;}\n#form-dialog-cont label{width:18%;\n\tpadding-right:2%;\n\ttext-align:right;\n\tdisplay:inline-block}\n#form-dialog-cont label>b{color:#fe0;vertical-align: middle;}\n#form-dialog-cont input{\n\twidth:64%;\n\tpadding:.3em;\n\tcolor:#000;\n\tfont-size: 1em;\n\tmargin:1% auto 1% 2%;\n\ttext-align:left;\n\tdisplay:inline-block;\n\toutline: none;\n\tborder:none;\n\tborder-radius:.5em;\n\tbox-shadow:inset -1px 1px 6px rgba(0,0,0,.4);\n}\n.form-dialog-a{\n    font: 1.2em Microsoft YaHei, sans-serif;\n    line-height: 1.69;\n    font-weight: bold;\n    color: #FFF;\n    text-align: center;\n    display: inline-block;\n    margin: 2% 4% 2%;\n    width: 23%;\n    height: 2em;\n    text-decoration: none;\n    border: none;\n    cursor: pointer;\n    background-color: transparent;\n    letter-spacing: .2em;\n    background-size: 100% 100%;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -16818,6 +16857,7 @@
 	//     background-size: 100% 100%;
 	// }
 	// </style>
+
 	/* generated by vue-loader */
 
 /***/ },
@@ -16830,16 +16870,45 @@
 /* 99 */
 /***/ function(module, exports) {
 
-	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 id=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 id=\"hinting-title\">{{ hintingTitle2 }}</h2>";
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2>";
 
 /***/ },
 /* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var __vue_script__, __vue_template__
+	__webpack_require__(101)
+	__vue_script__ = __webpack_require__(103)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/_shaveLottery.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(109)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./_shaveLottery.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 101 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(101);
+	var content = __webpack_require__(102);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -16848,8 +16917,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./spanFlexTable.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./spanFlexTable.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./_shaveLottery.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./_shaveLottery.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -16859,7 +16928,7 @@
 	}
 
 /***/ },
-/* 101 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -16867,9 +16936,504 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n*{padding:0;margin:0;box-sizing:border-box;}\n#span-flex-table{\n\tposition: $pr;\n\twidth: 60%;\n\tbackground-color: #999;\n\tcolor: #333;\n\ttext-align: $tc;\n\tborder: 2px solid #000;\n}\n.span-flex-table-li{\n\tlist-style: none;\n\ttext-align: center;\n\twidth: 100%;\n\tdisplay: -webkit-box;\n\tdisplay: -ms-flexbox;\n\tdisplay: flex;\n\t-webkit-box-align: center;\n\t    -ms-flex-align: center;\n\t        align-items: center;\n\t-ms-flex-flow: row wrap;\n\t    flex-flow: row wrap;\n\t-webkit-align-items: center;\n\t-webkit-flex-flow: row wrap;\n\t-ms-flex-pack: distribute;\n\t    justify-content: space-around;\n\t-webkit-justify-content: space-around;\n}\n.span-flex-table-li:not(:last-child){\n\tborder-bottom: 1px solid #000;\n}\n.sidebar-widgets-span{\n\theight: $h100;\n\t-webkit-box-flex: 1;\n\t    -ms-flex-positive: 1;\n\t        flex-grow: 1;\n\t-webkit-flex-grow: 1;\n\tvertical-align:middle;\n}\n.sidebar-widgets-span:not(:last-child){\n\tborder-right: 1px solid #000;\n}\n", "", {"version":3,"sources":["/../components/widgets/spanFlexTable.vue?086d45a0"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA8DA,EAAA,UAAA,SAAA,sBAAA,CAAA;AACA;CACA,cAAA;CACA,WAAA;CACA,uBAAA;CACA,YAAA;CACA,gBAAA;CACA,uBAAA;CACA;AACA;CACA,iBAAA;CACA,mBAAA;CACA,YAAA;CAEA,qBAAA;CAAA,qBAAA;CAAA,cAAA;CACA,0BAAA;KAAA,uBAAA;SAAA,oBAAA;CACA,wBAAA;KAAA,oBAAA;CACA,4BAAA;CACA,4BAAA;CACA,0BAAA;KAAA,8BAAA;CACA,sCAAA;CACA;AACA;CACA,8BAAA;CACA;AACA;CACA,cAAA;CACA,oBAAA;KAAA,qBAAA;SAAA,aAAA;CACA,qBAAA;CACA,sBAAA;CACA;AACA;CACA,6BAAA;CACA","file":"spanFlexTable.vue","sourcesContent":["<!--Desc: 以Span+Li来模拟伸缩Table：高度固定，liHeight=总Height/内容条数;\n\tDate: 16-04-14~15\n\tAuthor: Nicejade\n -->\n<template>\n\t<ul id=\"span-flex-table\" v-if=\"isShowTableFlag\">\n\t\t<li v-for='liItem in tableList'  class=\"span-flex-table-li\">\n\t\t\t<span v-for='spanList in liItem' class=\"span-flex-table-span\"> {{ spanList }} </span>\n\t\t</li>\n\t</ul>\n</template>\n\n\n<script type=\"text/javascript\">\nexport default {\n\tdata(){\n        return {\n          \t'isShowTableFlag': false\n        }\n    },\n    ready(){\n\t    this.isShowTableFlag = true\n\t    this.updateTable( this.tableList )\n    },\n    props: ['tableList'],\n   \twatch: {\n        tableList: function (newVal, oldVal) {\n        \tthis.updateTable( newVal)\n        }\n    },\n    methods: {\n    \tupdateTable: function(tableInfo){\n    \t\tvar tableListLen = this.getObjLength( tableInfo )\n        \tvar cssHeight = 100/tableListLen + \"%\";\n        \t$('.span-flex-table-li').css( {'height': cssHeight} )\n\n\t\t\tvar subTableListLen = this.getObjLength( tableInfo[tableListLen-1] )\n\t\t\tvar cssWidth = 100/subTableListLen + \"%\";\n\t\t\t$('.span-flex-table-span').css( {'width': cssWidth} )\n    \t},\n    \tgetObjLength: function(obj){\n    \t\tif(null === obj || undefined === obj){\n    \t\t\treturn 0;\n    \t\t}\n\n    \t\tif(undefined === obj.length){\n\t    \t\tlet count = 0\n\t\t\t    for(let key in obj){\n\t\t\t    \tcount++\n\t\t\t    }\n\t\t\t    return count\n\t\t\t}else{\n\t\t\t\treturn obj['length']\n\t\t\t}\n    \t}\n    },\n    events: {\n    }\n}\n</script>\n\n<style>\n*{padding:0;margin:0;box-sizing:border-box;}\n#span-flex-table{\n\tposition: $pr;\n\twidth: 60%;\n\tbackground-color: #999;\n\tcolor: #333;\n\ttext-align: $tc;\n\tborder: 2px solid #000;\n}\n.span-flex-table-li{\n\tlist-style: none;\n\ttext-align: center;\n\twidth: 100%;\n\tdisplay: -webkit-flex;\n\tdisplay: flex;\n\talign-items: center;\n\tflex-flow: row wrap;\n\t-webkit-align-items: center;\n\t-webkit-flex-flow: row wrap;\n\tjustify-content: space-around;\n\t-webkit-justify-content: space-around;\n}\n.span-flex-table-li:not(:last-child){\n\tborder-bottom: 1px solid #000;\n}\n.sidebar-widgets-span{\n\theight: $h100;\n\tflex-grow: 1;\n\t-webkit-flex-grow: 1;\n\tvertical-align:middle;\n}\n.sidebar-widgets-span:not(:last-child){\n\tborder-right: 1px solid #000;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.demo-check-area{\n    position: relative;\n    margin: 1% auto;\n}\n", "", {"version":3,"sources":["/./src/_shaveLottery.vue?4d0febaf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA4HA;IACA,mBAAA;IACA,gBAAA;CACA","file":"_shaveLottery.vue","sourcesContent":["<template lang='jade'>\n    h1#comp-title {{ compTitle }}\n    h2.hinting-title {{ hintingTitle }}\n    <pre-code :code-string=\"codeString\"></pre-code>\n    h2.hinting-title {{ hintingTitle2 }}\n    div.comp-area\n        div.demo-check-area\n            <input type=\"radio\" id=\"radio-one\" value=\"1\" v-model=\"picked\">\n            <label for=\"one\">lotteryType: text</label>\n            <br>\n            <input type=\"radio\" id=\"radio-two\" value=\"2\" v-model=\"picked\">\n            <label for=\"two\">lotteryType: image</label>\n            <br>\n        <shave-lottery :params-list.sync='paramsList'></shave-lottery>\n        normal-dialog\n</template>\n\n<script type=\"text/javascript\">\nimport shaveLottery from 'shaveLottery'\nimport normalDialog from 'normalDialog'\nimport preCode from './preCode.vue'\n\nexport default {\n    data () {\n        return {\n            compTitle : \"Component Name\",\n            hintingTitle: \"使用示例:\",\n            hintingTitle2: \"表现示例:\",\n            picked: 'default',\n            paramsList: {\n                width: 360,\n                height: 356,\n                cover: '#999',\n                coverType: 'color',\n                paintSize: 26,\n                lotteryContent: \"http://www.jeffjade.com\",\n                lotteryType: 'text',\n                callBackFunc: this.onShowNormalDlg\n            },\n            codeString: `\n    import shaveLottery from 'shaveLottery'; //引入组件\n\n    //在模板中如下加入组件即可(定义paramsList传递需要的参数即可)：\n    <shave-lottery :params-list.sync='paramsList'></shave-lottery>\n\n    //在逻辑代码中调用Like This即可；\n    <script type=\"text/javascript\">\n    import shaveLottery from 'shaveLottery'\n    import normalDialog from 'normalDialog'\n\n    export default {\n        data () {\n            return {\n                paramsList: {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: \"http://www.jeffjade.com\",\n                    lotteryType: 'text',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    }\n    </ script>`\n        }\n    },\n    route:{\n\t\tdata(transition){\n            this.compTitle = transition.to.name\n\t\t}\n\t},\n    watch: {\n        picked: function (newVal, oldVal) {\n        \tif(newVal === '1'){\n                this.paramsList = {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: \"www.jeffjade.com\",\n                    lotteryType: 'text',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }else if(newVal === '2'){\n                this.paramsList = {\n                    width: 360,\n                    height: 356,\n                    cover: '#999',\n                    coverType: 'color',\n                    paintSize: 26,\n                    lotteryContent: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',\n                    lotteryType: 'image',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    },\n    components: {\n        shaveLottery,\n        normalDialog,\n        preCode,\n    },\n    methods: {\n        onShowNormalDlg: function( text ){\n            var dlgMsgObj = {\n                titleText: \"&温馨提示&\",       //可不传，默认 “温馨提示”\n                bodyText: text,\n                confirmText: \"确认\",             //可不传，默认 “确认”\n                callBackFunc: null,\n                isShowCloseXFlag: true       //可不传，默认 true\n            }\n\n            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）\n            this.$broadcast('show-normal-dlg', dlgMsgObj);\n        }\n    }\n}\n</script>\n\n<style media=\"screen\">\n.demo-check-area{\n    position: relative;\n    margin: 1% auto;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
+
+
+/***/ },
+/* 103 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _shaveLottery = __webpack_require__(104);
+	
+	var _shaveLottery2 = _interopRequireDefault(_shaveLottery);
+	
+	var _normalDialog = __webpack_require__(34);
+	
+	var _normalDialog2 = _interopRequireDefault(_normalDialog);
+	
+	var _preCode = __webpack_require__(24);
+	
+	var _preCode2 = _interopRequireDefault(_preCode);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	    data: function data() {
+	        return {
+	            compTitle: "Component Name",
+	            hintingTitle: "使用示例:",
+	            hintingTitle2: "表现示例:",
+	            picked: 'default',
+	            paramsList: {
+	                width: 360,
+	                height: 356,
+	                cover: '#999',
+	                coverType: 'color',
+	                paintSize: 26,
+	                lotteryContent: "http://www.jeffjade.com",
+	                lotteryType: 'text',
+	                callBackFunc: this.onShowNormalDlg
+	            },
+	            codeString: '\n    import shaveLottery from \'shaveLottery\'; //引入组件\n\n    //在模板中如下加入组件即可(定义paramsList传递需要的参数即可)：\n    <shave-lottery :params-list.sync=\'paramsList\'></shave-lottery>\n\n    //在逻辑代码中调用Like This即可；\n    <script type="text/javascript">\n    import shaveLottery from \'shaveLottery\'\n    import normalDialog from \'normalDialog\'\n\n    export default {\n        data () {\n            return {\n                paramsList: {\n                    width: 360,\n                    height: 356,\n                    cover: \'#999\',\n                    coverType: \'color\',\n                    paintSize: 26,\n                    lotteryContent: "http://www.jeffjade.com",\n                    lotteryType: \'text\',\n                    callBackFunc: this.onShowNormalDlg\n                }\n            }\n        }\n    }\n    </ script>'
+	        };
+	    },
+	
+	    route: {
+	        data: function data(transition) {
+	            this.compTitle = transition.to.name;
+	        }
+	    },
+	    watch: {
+	        picked: function picked(newVal, oldVal) {
+	            if (newVal === '1') {
+	                this.paramsList = {
+	                    width: 360,
+	                    height: 356,
+	                    cover: '#999',
+	                    coverType: 'color',
+	                    paintSize: 26,
+	                    lotteryContent: "www.jeffjade.com",
+	                    lotteryType: 'text',
+	                    callBackFunc: this.onShowNormalDlg
+	                };
+	            } else if (newVal === '2') {
+	                this.paramsList = {
+	                    width: 360,
+	                    height: 356,
+	                    cover: '#999',
+	                    coverType: 'color',
+	                    paintSize: 26,
+	                    lotteryContent: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',
+	                    lotteryType: 'image',
+	                    callBackFunc: this.onShowNormalDlg
+	                };
+	            }
+	        }
+	    },
+	    components: {
+	        shaveLottery: _shaveLottery2.default,
+	        normalDialog: _normalDialog2.default,
+	        preCode: _preCode2.default
+	    },
+	    methods: {
+	        onShowNormalDlg: function onShowNormalDlg(text) {
+	            var dlgMsgObj = {
+	                titleText: "&温馨提示&", //可不传，默认 “温馨提示”
+	                bodyText: text,
+	                confirmText: "确认", //可不传，默认 “确认”
+	                callBackFunc: null,
+	                isShowCloseXFlag: true //可不传，默认 true
+	            };
+	
+	            // var dlgMsgObj = text;  //如不需更改Dlg默认文案等，可只 文本内容字符串（String）
+	            this.$broadcast('show-normal-dlg', dlgMsgObj);
+	        }
+	    }
+	};
+	// </script>
+	//
+	// <style media="screen">
+	// .demo-check-area{
+	//     position: relative;
+	//     margin: 1% auto;
+	// }
+	// </style>
+
+	/* generated by vue-loader */
+	// <template lang='jade'>
+	//     h1#comp-title {{ compTitle }}
+	//     h2.hinting-title {{ hintingTitle }}
+	//     <pre-code :code-string="codeString"></pre-code>
+	//     h2.hinting-title {{ hintingTitle2 }}
+	//     div.comp-area
+	//         div.demo-check-area
+	//             <input type="radio" id="radio-one" value="1" v-model="picked">
+	//             <label for="one">lotteryType: text</label>
+	//             <br>
+	//             <input type="radio" id="radio-two" value="2" v-model="picked">
+	//             <label for="two">lotteryType: image</label>
+	//             <br>
+	//         <shave-lottery :params-list.sync='paramsList'></shave-lottery>
+	//         normal-dialog
+	// </template>
+	//
+	// <script type="text/javascript">
+
+/***/ },
+/* 104 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(105)
+	__vue_script__ = __webpack_require__(107)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] ../components/modules/shaveLottery.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(108)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "./shaveLottery.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 105 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(106);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./shaveLottery.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./shaveLottery.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n#shave-lottery{\n    margin: auto;\n}\n.fresh-btn{\n    padding: .2% 3%;\n    background-color: #999;\n    border-radius: 1em;\n    border: 1px solid #000;\n    font-size: 1em;\n    color: #f2f2f2;\n}\n#lottery-container {\n    position:relative;\n    width: 100%;\n    height:360px;\n}\n#draw-percent {\n    color:#F60;\n}\n", "", {"version":3,"sources":["/../components/modules/shaveLottery.vue?f896af32"],"names":[],"mappings":";;;;;;;;;;AAUA;IACA,aAAA;CACA;AACA;IACA,gBAAA;IACA,uBAAA;IACA,mBAAA;IACA,uBAAA;IACA,eAAA;IACA,eAAA;CACA;AACA;IACA,kBAAA;IACA,YAAA;IACA,aAAA;CACA;AACA;IACA,WAAA;CACA","file":"shaveLottery.vue","sourcesContent":["<template>\n    <div id=\"shave-lottery\">\n        <a class=\"fresh-btn\" href='javascript:;' @click='onFreshBtnClick'>刷新</a>\n        <label>已刮开<span id=\"draw-percent\">{{ drawPercent }}</span> 区域。</label>\n        <div id=\"lottery-container\"></div>\n    </div>\n</template>\n\n\n<style media=\"screen\">\n#shave-lottery{\n    margin: auto;\n}\n.fresh-btn{\n    padding: .2% 3%;\n    background-color: #999;\n    border-radius: 1em;\n    border: 1px solid #000;\n    font-size: 1em;\n    color: #f2f2f2;\n}\n#lottery-container {\n    position:relative;\n    width: 100%;\n    height:360px;\n}\n#draw-percent {\n    color:#F60;\n}\n</style>\n\n\n<script type=\"text/javascript\">\nimport {Lottery} from './../../plugin/lottery.js'\n\nexport default {\n\tdata(){\n        return {\n            lottery: \"default\",\n            drawPercent: '0%',\n            succAreaPercent: 50,\n            elementId: 'lottery-container',\n            defaultImage: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png',\n        }\n    },\n    ready(){\n        this.updateLottery()\n    },\n    props: ['paramsList'],\n   \twatch: {\n        paramsList: function (newVal, oldVal) {\n            this.updateLottery()\n        }\n    },\n    methods: {\n        getParamsList: function(){\n            let params = {\n                id: this.elementId,\n                cover: this.paramsList.cover || '#CCC',\n                coverType: this.paramsList.coverType || 'cover',\n                width: this.paramsList.width || 300,\n                height: this.paramsList.height || 100,\n                lotteryContent: this.paramsList.lotteryContent || this.defaultImage,\n                lotteryType: this.paramsList.lotteryType || 'image',\n                paintSize: this.paramsList.paintSize || 30,\n                callBackFunc: this.onDrawPercentCallback,\n            }\n            this.succAreaPercent = this.paramsList.succAreaPercent || 50;\n\n            return params\n        },\n\n        updateLottery: function(){\n            var params = this.getParamsList()\n            this.lottery = new Lottery( params );\n            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n        },\n        //------------------------------Default Function callBack--------------------------\n        onFreshBtnClick: function(){\n            this.drawPercent = '0%';\n            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );\n        },\n        onDrawPercentCallback: function( drawPercent ){\n            this.drawPercent = drawPercent + '%'\n            if( drawPercent >= this.succAreaPercent  && null != this.paramsList.callBackFunc ){\n                this.paramsList.callBackFunc(\"Okay，刮开的区域占比已超过设定: \" + this.drawPercent )\n            }\n        }\n    },\n    events: {\n    }\n}\n</script>\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 107 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _lottery = __webpack_require__(110);
+	
+	exports.default = {
+	    data: function data() {
+	        return {
+	            lottery: "default",
+	            drawPercent: '0%',
+	            succAreaPercent: 50,
+	            elementId: 'lottery-container',
+	            defaultImage: 'http://7xoosr.com1.z0.glb.clouddn.com/encourage.png'
+	        };
+	    },
+	    ready: function ready() {
+	        this.updateLottery();
+	    },
+	
+	    props: ['paramsList'],
+	    watch: {
+	        paramsList: function paramsList(newVal, oldVal) {
+	            this.updateLottery();
+	        }
+	    },
+	    methods: {
+	        getParamsList: function getParamsList() {
+	            var params = {
+	                id: this.elementId,
+	                cover: this.paramsList.cover || '#CCC',
+	                coverType: this.paramsList.coverType || 'cover',
+	                width: this.paramsList.width || 300,
+	                height: this.paramsList.height || 100,
+	                lotteryContent: this.paramsList.lotteryContent || this.defaultImage,
+	                lotteryType: this.paramsList.lotteryType || 'image',
+	                paintSize: this.paramsList.paintSize || 30,
+	                callBackFunc: this.onDrawPercentCallback
+	            };
+	            this.succAreaPercent = this.paramsList.succAreaPercent || 50;
+	
+	            return params;
+	        },
+	
+	        updateLottery: function updateLottery() {
+	            var params = this.getParamsList();
+	            this.lottery = new _lottery.Lottery(params);
+	            this.lottery.init(this.paramsList.lotteryContent, this.paramsList.lotteryType);
+	        },
+	        //------------------------------Default Function callBack--------------------------
+	        onFreshBtnClick: function onFreshBtnClick() {
+	            this.drawPercent = '0%';
+	            this.lottery.init(this.paramsList.lotteryContent, this.paramsList.lotteryType);
+	        },
+	        onDrawPercentCallback: function onDrawPercentCallback(drawPercent) {
+	            this.drawPercent = drawPercent + '%';
+	            if (drawPercent >= this.succAreaPercent && null != this.paramsList.callBackFunc) {
+	                this.paramsList.callBackFunc("Okay，刮开的区域占比已超过设定: " + this.drawPercent);
+	            }
+	        }
+	    },
+	    events: {}
+	};
+	// </script>
+
+	/* generated by vue-loader */
+	// <template>
+	//     <div id="shave-lottery">
+	//         <a class="fresh-btn" href='javascript:;' @click='onFreshBtnClick'>刷新</a>
+	//         <label>已刮开<span id="draw-percent">{{ drawPercent }}</span> 区域。</label>
+	//         <div id="lottery-container"></div>
+	//     </div>
+	// </template>
+	//
+	//
+	// <style media="screen">
+	// #shave-lottery{
+	//     margin: auto;
+	// }
+	// .fresh-btn{
+	//     padding: .2% 3%;
+	//     background-color: #999;
+	//     border-radius: 1em;
+	//     border: 1px solid #000;
+	//     font-size: 1em;
+	//     color: #f2f2f2;
+	// }
+	// #lottery-container {
+	//     position:relative;
+	//     width: 100%;
+	//     height:360px;
+	// }
+	// #draw-percent {
+	//     color:#F60;
+	// }
+	// </style>
+	//
+	//
+	// <script type="text/javascript">
+
+/***/ },
+/* 108 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div id=\"shave-lottery\">\n    <a class=\"fresh-btn\" href='javascript:;' @click='onFreshBtnClick'>刷新</a>\n    <label>已刮开<span id=\"draw-percent\">{{ drawPercent }}</span> 区域。</label>\n    <div id=\"lottery-container\"></div>\n</div>\n";
+
+/***/ },
+/* 109 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1 id=\"comp-title\">{{ compTitle }}</h1><h2 class=\"hinting-title\">{{ hintingTitle }}</h2><pre-code :code-string=\"codeString\"></pre-code><h2 class=\"hinting-title\">{{ hintingTitle2 }}</h2><div class=\"comp-area\"><div class=\"demo-check-area\"><input type=\"radio\" id=\"radio-one\" value=\"1\" v-model=\"picked\">\n<label for=\"one\">lotteryType: text</label>\n<br>\n<input type=\"radio\" id=\"radio-two\" value=\"2\" v-model=\"picked\">\n<label for=\"two\">lotteryType: image</label>\n<br></div><shave-lottery :params-list.sync='paramsList'></shave-lottery><normal-dialog></normal-dialog></div>";
+
+/***/ },
+/* 110 */
+/***/ function(module, exports) {
+
+	function Lottery( params ) {
+	    this.conId = params.id;
+	    this.conNode = document.getElementById(this.conId);
+	    this.cover = params.cover;
+	    this.coverType = params.coverType;
+	    this.width = params.width;
+	    this.height = params.height;
+	    this.drawPercentCallback = params.callBackFunc;
+	    this.paintSize = params.paintSize;
+	    this.background = null;
+	    this.backCtx = null;
+	    this.mask = null;
+	    this.maskCtx = null;
+	    this.lottery = null;
+	    this.lotteryType = 'image';
+	    this.clientRect = null;
+	}
+	
+	Lottery.prototype = {
+	    createElement: function (tagName, attributes) {
+	        var ele = document.createElement(tagName);
+	        for (var key in attributes) {
+	            ele.setAttribute(key, attributes[key]);
+	        }
+	        return ele;
+	    },
+	    getTransparentPercent: function(ctx, width, height) {
+	        var imgData = ctx.getImageData(0, 0, width, height),
+	            pixles = imgData.data,
+	            transPixs = [];
+	        for (var i = 0, j = pixles.length; i < j; i += 4) {
+	            var a = pixles[i + 3];
+	            if (a < 128) {
+	                transPixs.push(i);
+	            }
+	        }
+	        return (transPixs.length / (pixles.length / 4) * 100).toFixed(2);
+	    },
+	    resizeCanvas: function (canvas, width, height) {
+	        canvas.width = width;
+	        canvas.height = height;
+	        canvas.getContext('2d').clearRect(0, 0, width, height);
+	    },
+	    drawPoint: function (x, y) {
+	        this.maskCtx.beginPath();
+	        var radgrad = this.maskCtx.createRadialGradient(x, y, 0, x, y, 30);
+	        radgrad.addColorStop(0, 'rgba(0,0,0,0.6)');
+	        radgrad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+	        this.maskCtx.fillStyle = radgrad;
+	        this.maskCtx.arc(x, y, this.paintSize, 0, Math.PI * 2, true);
+	        this.maskCtx.fill();
+	        if (this.drawPercentCallback) {
+	            this.drawPercentCallback.call(null, this.getTransparentPercent(this.maskCtx, this.width, this.height));
+	        }
+	    },
+	    bindEvent: function () {
+	        var _this = this;
+	        var device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+	        var clickEvtName = device ? 'touchstart' : 'mousedown';
+	        var moveEvtName = device? 'touchmove': 'mousemove';
+	        if (!device) {
+	            var isMouseDown = false;
+	            document.addEventListener('mouseup', function(e) {
+	                isMouseDown = false;
+	            }, false);
+	        } else {
+	            document.addEventListener("touchmove", function(e) {
+	                if (isMouseDown) {
+	                    e.preventDefault();
+	                }
+	            }, false);
+	            document.addEventListener('touchend', function(e) {
+	                isMouseDown = false;
+	            }, false);
+	        }
+	        this.mask.addEventListener(clickEvtName, function (e) {
+	            isMouseDown = true;
+	            var docEle = document.documentElement;
+	            if (!_this.clientRect) {
+	                _this.clientRect = {
+	                    left: 0,
+	                    top:0
+	                };
+	            }
+	            var x = (device ? e.touches[0].clientX : e.clientX) - _this.clientRect.left + docEle.scrollLeft - docEle.clientLeft;
+	            var y = (device ? e.touches[0].clientY : e.clientY) - _this.clientRect.top + docEle.scrollTop - docEle.clientTop;
+	            _this.drawPoint(x, y);
+	        }, false);
+	
+	        this.mask.addEventListener(moveEvtName, function (e) {
+	            if (!device && !isMouseDown) {
+	                return false;
+	            }
+	            var docEle = document.documentElement;
+	            if (!_this.clientRect) {
+	                _this.clientRect = {
+	                    left: 0,
+	                    top:0
+	                };
+	            }
+	            var x = (device ? e.touches[0].clientX : e.clientX) - _this.clientRect.left + docEle.scrollLeft - docEle.clientLeft;
+	            var y = (device ? e.touches[0].clientY : e.clientY) - _this.clientRect.top + docEle.scrollTop - docEle.clientTop;
+	            _this.drawPoint(x, y);
+	        }, false);
+	    },
+	    drawLottery: function () {
+	        this.background = this.background || this.createElement('canvas', {
+	            style: 'position:absolute;left:0;top:0;'
+	        });
+	        this.mask = this.mask || this.createElement('canvas', {
+	            style: 'position:absolute;left:0;top:0;'
+	        });
+	
+	        if (!this.conNode.innerHTML.replace(/[\w\W]| /g, '')) {
+	            this.conNode.appendChild(this.background);
+	            this.conNode.appendChild(this.mask);
+	            this.clientRect = this.conNode ? this.conNode.getBoundingClientRect() : null;
+	            this.bindEvent();
+	        }
+	
+	        this.backCtx = this.backCtx || this.background.getContext('2d');
+	        this.maskCtx = this.maskCtx || this.mask.getContext('2d');
+	
+	        if (this.lotteryType == 'image') {
+	            var image = new Image(),
+	                _this = this;
+	            image.onload = function () {
+	                _this.width = this.width;
+	                _this.height = this.height;
+	                _this.resizeCanvas(_this.background, this.width, this.height);
+	                _this.backCtx.drawImage(this, 0, 0);
+	                _this.drawMask();
+	            }
+	            image.src = this.lottery;
+	        } else if (this.lotteryType == 'text') {
+	            this.width = this.width;
+	            this.height = this.height;
+	            this.resizeCanvas(this.background, this.width, this.height);
+	            this.backCtx.save();
+	            this.backCtx.fillStyle = '#FFF';
+	            this.backCtx.fillRect(0, 0, this.width, this.height);
+	            this.backCtx.restore();
+	            this.backCtx.save();
+	            var fontSize = 30;
+	            this.backCtx.font = 'Bold ' + fontSize + 'px Arial';
+	            this.backCtx.textAlign = 'center';
+	            this.backCtx.fillStyle = '#F60';
+	            this.backCtx.fillText(this.lottery, this.width / 2, this.height / 2 + fontSize / 2);
+	            this.backCtx.restore();
+	            this.drawMask();
+	        }
+	    },
+	    drawMask: function() {
+	        this.resizeCanvas(this.mask, this.width, this.height);
+	        if (this.coverType == 'color') {
+	            this.maskCtx.fillStyle = this.cover;
+	            this.maskCtx.fillRect(0, 0, this.width, this.height);
+	            this.maskCtx.globalCompositeOperation = 'destination-out';
+	        } else if (this.coverType == 'image'){
+	            var image = new Image(),
+	                _this = this;
+	            image.onload = function () {
+	                _this.maskCtx.drawImage(this, 0, 0);
+	                _this.maskCtx.globalCompositeOperation = 'destination-out';
+	            }
+	            image.src = this.cover;
+	        }
+	    },
+	    init: function (lottery, lotteryType) {
+	        this.lottery = lottery;
+	        this.lotteryType = lotteryType || 'image';
+	        this.drawLottery();
+	    }
+	}
+	
+	exports.Lottery = Lottery
 
 
 /***/ }

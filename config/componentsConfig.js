@@ -11,7 +11,8 @@ module.exports = function() {
         },
         "modules":{
             "0": "turnTable",
-            "1": "formDialog"
+            "1": "formDialog",
+			"2": "shaveLottery",
         }
 	}
 }

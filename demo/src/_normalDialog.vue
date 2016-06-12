@@ -1,8 +1,8 @@
 <template lang='jade'>
     h1#comp-title {{ compTitle }}
-    h2#hinting-title {{ hintingTitle }}
+    h2.hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
-    h2#hinting-title {{ hintingTitle2 }}
+    h2.hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
     div.comp-area
         normal-dialog

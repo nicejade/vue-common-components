@@ -165,7 +165,7 @@ html, body{
     -webkit-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
     -moz-box-reflect: below 1px linear-gradient(transparent,transparent 20%,rgba(216,216,216,.2));
 }
-#hinting-title{
+.hinting-title{
     margin: 2% 0;
     color: #130C0E;
 }
@@ -202,5 +202,6 @@ html, body{
 }
 .comp-area{
     position: relative;
+    margin-left: 5%;
 }
 </style>

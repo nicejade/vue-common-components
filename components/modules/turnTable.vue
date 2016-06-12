@@ -8,14 +8,6 @@
 			div(id="turntable-drawpoint" v-on:click="onDrawboxCallback")
 </template>
 
-<!-- <template>
-	<div id="turntable-root">
-		<div id="turntable-drawbox">
-			<div v-on:click="onDrawboxCallback"  id="turntable-drawpoint"></div>
-		</div>
-	</div>
-</template> -->
-
 <script>
 export default {
 	data(){

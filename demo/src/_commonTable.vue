@@ -1,8 +1,8 @@
 <template lang='jade'>
     h1#comp-title {{ compTitle }}
-    h2#hinting-title {{ hintingTitle }}
+    h2.hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
-    h2#hinting-title {{ hintingTitle2 }}
+    h2.hinting-title {{ hintingTitle2 }}
     a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
     a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
     div.comp-area

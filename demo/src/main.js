@@ -54,6 +54,10 @@ router.map({
     '/formDialog':{
         name: 'formDialog',
 		component: require('./_formDialog.vue')
+    },
+	'/shaveLottery':{
+        name: 'shaveLottery',
+		component: require('./_shaveLottery.vue')
     }
 });
 
