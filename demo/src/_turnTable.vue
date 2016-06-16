@@ -29,13 +29,13 @@ export default {
         export default {
             data () {
                 return {
-                    Tools: Tools, 
+                    Tools: Tools,
                     turnTableConfig: {
                         rewardKinds: 8,     // 奖励种类数；可不传，默认8
                         rotateNums: 2,      // 转盘旋转圈数；可不传，默认3
                         callBackFunc: ( textMsg )=>{
                             var dlgMsgObj = {
-                                titleText: "&温馨提示&", 
+                                titleText: "&温馨提示&",
                                 bodyText: textMsg,
                                 btnsObj: {
                                     0: {
@@ -73,10 +73,6 @@ export default {
     methods: {
     },
     events: {
-        'on-countdown-finish': function (countNum) {
-            // countNum 统计调用此 countDown 次数;
-            alert("countdown had down; num = " + countNum )
-        }
     }
 }
 </script>

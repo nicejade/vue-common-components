@@ -3,14 +3,17 @@
     h2.hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
     h2.hinting-title {{ hintingTitle2 }}
-    a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
-    a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
     div.comp-area
+        <annotate :blockquote-str='blockquoteStr'></annotate>
+        a(href='javascript:;' @click="onChangeHeightClick" class='common-a') {{ fixedHeight }}
+        a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addRow }}
+        a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
         <common-table :table-list.sync='tableList'></common-table>
 </template>
 
 <script type="text/javascript">
 import commonTable from 'commonTable'
+import annotate from './annotate.vue'
 import preCode from './preCode.vue'
 
 export default {
@@ -20,15 +23,23 @@ export default {
             compTitle : "Component Name",
             xLimitControl:3,
             yLimitControl:4,
-            addLine: "Add Line",
+            addRow: "Add row",
             addColumn: "Add Column",
+            fixedHeight: "fix Height(/not)",
+            isFixedHeightFlag: true,
             hintingTitle: "使用示例:",
             tableList: [],
+            tableList2: [],
             codeString: `
     import commonTable from 'commonTable'; //引入组件
 
     //在模板中如下加入组件即可(定义tabList数组/Object)：
-    <common-table :table-list.sync='tableList'></common-table>`
+    <common-table :table-list.sync='tableList'></common-table>`,
+            blockquoteStr:`
+                <strong>微注：</strong> 使用 ul li span 三者组合，来模拟 table,不仅在 Dom 层次上更为精简而高效，
+                而且也非常方便扩展之，使其完成更为复杂需求；比如：可以传递html标签譬如 <em style='color:#009ad6'>< span>String Content< /span></em>
+                替代普通String内容(那边会自动解析)，如此表格就可轻易按照你的想法扩展了，包括表格中夹杂响应事件|图标等等。
+            `
         }
     },
     ready(){
@@ -41,6 +52,7 @@ export default {
 	 },
     components: {
         commonTable,
+        annotate,
         preCode,
     },
     methods: {
@@ -49,11 +61,13 @@ export default {
             for(let i=0; i<= this.xLimitControl; i++){
                 tempArr[i] = []
                 for(let j=0; j<=this.yLimitControl; j++){
-                    tempArr[i][j] = 'iLoveU' + j;
+                    tempArr[i][j] = 'iLoveU:' + i + '*' + j;
                 }
             }
             this.tableList = tempArr
         },
+
+        // -------------------------------------------default click callBack function
         onAddLineClick: function(){
             this.xLimitControl += 1
             this.xLimitControl = (this.xLimitControl < 5) ? this.xLimitControl : 0
@@ -63,16 +77,26 @@ export default {
             this.yLimitControl += 1
             this.yLimitControl = (this.yLimitControl <= 5) ? this.yLimitControl : 0
             this.setTableList()
+        },
+        onChangeHeightClick: function(){
+            this.isFixedHeightFlag = !this.isFixedHeightFlag
+            if(this.isFixedHeightFlag){
+                $('.common-table-ul').addClass('table-height')
+            }else{
+                $('.common-table-ul').removeClass('table-height')
+            }
         }
     }
 }
 </script>
 
 <style media="screen">
-#components-wraper #common-table-ul{
-    margin-top: 3%;
+#components-wraper .common-table-ul{
+    margin-top: 2%;
     display: block;
+    background-color: rgba(22,22,22, 1);
+}
+.table-height{
     height: 15em;
-    background-color: #222222;
 }
 </style>

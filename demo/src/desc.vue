@@ -1,6 +1,8 @@
 <template lang="jade">
     h1.welcome {{ welcome }}
     a(class="desc-a" href="https://nicejade.gitbooks.io/vue-components-doc/content/index.html") {{ vueDoc }}
+    div.desc-img
+        img(src='http://nicejade.github.io/jade/black-background.jpg')
 </template>
 
 <script type="text/javascript">
@@ -8,7 +10,7 @@ export default {
     data () {
         return {
             welcome: "Welcome To Vue Component Desc And Example",
-            vueDoc: "Vue Component Doc"
+            vueDoc: "Vue Common Components Doc(gitbooks)"
         }
     }
 }
@@ -25,11 +27,18 @@ export default {
     padding: 1% 3%;
     position: absolute;
     right: 10%;
-    color: #24B3D3;
+    color: #f2f2f2;
     font-size: 1em;
     line-height: 1.2;
     background-color: #222222;
     border-radius: 1em;
     text-decoration: none;
+}
+.desc-img{
+    width: 100%;
+    height: 100%;
+}
+.desc-img>img{
+    width: 100%;
 }
 </style>

@@ -4,12 +4,16 @@
     <pre-code :code-string="codeString"></pre-code>
     h2.hinting-title {{ hintingTitle2 }}
     div.comp-area
+        <annotate :blockquote-str='blockquoteStr'></annotate>
         div.demo-check-area
             <input type="radio" id="radio-one" value="1" v-model="picked">
-            <label for="one">lotteryType: text</label>
+            <label for="one">lotteryType: text | coverType: color</label>
             <br>
             <input type="radio" id="radio-two" value="2" v-model="picked">
-            <label for="two">lotteryType: image</label>
+            <label for="two">lotteryType: image | coverType: color</label>
+            <br>
+            <input type="radio" id="radio-three" value="3" v-model="picked">
+            <label for="three">lotteryType: text | coverType: image </label>
             <br>
         <shave-lottery :params-list.sync='paramsList'></shave-lottery>
         normal-dialog
@@ -19,6 +23,7 @@
 import shaveLottery from 'shaveLottery'
 import normalDialog from 'normalDialog'
 import preCode from './preCode.vue'
+import annotate from './annotate.vue'
 
 export default {
     data () {
@@ -64,7 +69,12 @@ export default {
             }
         }
     }
-    </ script>`
+    </ script>`,
+        blockquoteStr: `
+            <strong>微注: </strong>当 coverType 以 image 类型来呈现之时，请保证该图片地址同逻辑代码在同一域下，否则会衍生如下错误：
+            <i style='color:#f00;font-style:normal'>Uncaught SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D':
+            The canvas has been tainted by cross-origin data.</i>
+        `
         }
     },
     route:{
@@ -77,10 +87,10 @@ export default {
         	if(newVal === '1'){
                 this.paramsList = {
                     width: 360,
-                    height: 356,
+                    height: 210,
                     cover: '#999',
                     coverType: 'color',
-                    paintSize: 26,
+                    paintSize: 20,
                     lotteryContent: "www.jeffjade.com",
                     lotteryType: 'text',
                     callBackFunc: this.onShowNormalDlg
@@ -96,12 +106,24 @@ export default {
                     lotteryType: 'image',
                     callBackFunc: this.onShowNormalDlg
                 }
+            }else if(newVal === '3'){
+                this.paramsList = {
+                    width: 300,
+                    height: 188,
+                    cover: 'http://nicejade.github.io/jade/cover.png',
+                    coverType: 'image',
+                    lotteryContent: "www.jeffjade.com",
+                    lotteryType: 'text',
+                    paintSize: 26,
+                    callBackFunc: this.onShowNormalDlg
+                }
             }
         }
     },
     components: {
         shaveLottery,
         normalDialog,
+        annotate,
         preCode,
     },
     methods: {
@@ -109,7 +131,7 @@ export default {
             var dlgMsgObj = {
                 titleText: "&温馨提示&",       //可不传，默认 “温馨提示”
                 bodyText: text,
-                confirmText: "确认",             //可不传，默认 “确认”
+                confirmText: "确认",          //可不传，默认 “确认”
                 callBackFunc: null,
                 isShowCloseXFlag: true       //可不传，默认 true
             }
@@ -125,5 +147,6 @@ export default {
 .demo-check-area{
     position: relative;
     margin: 1% auto;
+    font-size: 1.3em;
 }
 </style>

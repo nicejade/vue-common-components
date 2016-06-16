@@ -8,7 +8,7 @@ div#app
         p(class='sidebar-title') {{ modulesTitle }}
         ul#sidebar-modules
             li(v-for='item in modulesComp' class='sidebar-modules-li')
-                a(class='sidebar-modules-span' @click="onEntryDemoClick(item)" ) {{ item }}
+                a(class='sidebar-modules-span' id='{{ item }}' @click="onEntryDemoClick(item)" ) {{ item }}
     div#components-wraper
         div#components-cont
             <router-view></router-view>
@@ -33,7 +33,6 @@ export default {
     },
     methods: {
         onEntryDemoClick: function( param ){
-            console.log( param );
             // this.$route.router.go({name: param ,params: { actId: id }})
             this.$route.router.go({name: param})
             var activeId = '#' + param;
@@ -187,7 +186,7 @@ html, body{
     position: relative;
     color: #24B3D3;
     font-size: 1em;
-    line-height: 2;
+    line-height: 3;
     background-color: #222222;
     border-radius: 1em;
     text-decoration: none;

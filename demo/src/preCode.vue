@@ -1,6 +1,6 @@
 <template lang='jade'>
     pre#pre-wrapper(class="brush: js") {{ codeString }}
-    hr
+    hr.carve-line
 </template>
 
 <script type="text/javascript">
@@ -24,6 +24,10 @@ export default {
 <style media="screen">
 #pre-wrapper{
     background-color: #2D2D2D;
-    border-left: 2px solid #fe0;
+    border-left: 2px solid #65c294;
+    margin-left: 5%;
+}
+.carve-line{
+    margin: 2.1% 0;
 }
 </style>
