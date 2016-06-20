@@ -1,18 +1,18 @@
 module.exports = function() {
-	return {
+    return {
         "widgets":{
             "0": "popupToast",
             "1": "normalDialog",
             "2": "strongDialog",
             "3": "tabBarWithJq",
-            "4": "spanFlexTable",
+            "4": "tabBarWithRouter",
             "5": "commonTable",
-			"6": "countDown",
+            "6": "spanFlexTable",
+            "7": "countDown",
         },
         "modules":{
             "0": "turnTable",
-            "1": "formDialog",
-			"2": "shaveLottery",
+            "1": "formDialog"
         }
-	}
+    }
 }
