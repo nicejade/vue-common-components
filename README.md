@@ -1,14 +1,14 @@
 <h2 align="center"> Vue Common Components </h2>
 
-![vue-common-vomponents](http://i4.buimg.com/5d6b97d357c17c67.jpg)
+![vue-common-vomponents](http://7xoosr.com1.z0.glb.clouddn.com/vue-common-components.jpg)
 
-## Demo and document
+## Demo and instructions
 
 [Vue Component Desc And Demo](http://nicejade.github.io/jade/vue-jade-components-demo.html#/)
 
-## Document
+## Instructions
 
-[vue-components-doc](https://nicejade.gitbooks.io/vue-components-doc/content/index.html)
+[vue-components-doc@gitbook](https://nicejade.gitbooks.io/vue-components-doc/content/index.html)
 
 ## Prepare the environment
 
