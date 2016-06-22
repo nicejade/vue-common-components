@@ -7,29 +7,6 @@
 </template>
 
 
-<style media="screen">
-#shave-lottery{
-    margin: auto;
-}
-.fresh-btn{
-    padding: .2% 3%;
-    background-color: #999;
-    border-radius: 1em;
-    border: 1px solid #000;
-    font-size: 1em;
-    color: #f2f2f2;
-}
-#lottery-container {
-    position:relative;
-    width: 100%;
-    height:360px;
-}
-#draw-percent {
-    color:#F60;
-}
-</style>
-
-
 <script type="text/javascript">
 import {Lottery} from './../../plugin/lottery.js'
 
@@ -71,15 +48,24 @@ export default {
         },
 
         updateLottery: function(){
+            $('#lottery-container').empty()
+
             var params = this.getParamsList()
             this.lottery = new Lottery( params );
             this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );
+
+            let lotteryWidth = this.paramsList.width + 'px'
+            let lotteryHeight = this.paramsList.height + 'px'
+            $('#lottery-container').css({'width': lotteryWidth, 'height': lotteryHeight })
+            this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );
         },
+
         //------------------------------Default Function callBack--------------------------
         onFreshBtnClick: function(){
             this.drawPercent = '0%';
             this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );
         },
+
         onDrawPercentCallback: function( drawPercent ){
             this.drawPercent = drawPercent + '%'
             if( drawPercent >= this.succAreaPercent  && null != this.paramsList.callBackFunc ){
@@ -91,3 +77,27 @@ export default {
     }
 }
 </script>
+
+
+<style media="screen">
+#shave-lottery{
+    margin: auto;
+}
+.fresh-btn{
+    padding: .2% 3%;
+    background-color: #999;
+    border-radius: 1em;
+    border: 1px solid #000;
+    font-size: 1em;
+    color: #f2f2f2;
+}
+#lottery-container {
+    position:relative;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+}
+#draw-percent {
+    color:#F60;
+}
+</style>

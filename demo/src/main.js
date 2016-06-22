@@ -58,6 +58,10 @@ var routerMap = {
     '/formDialog':{
         name: 'formDialog',
         component: require('./_formDialog.vue')
+    },
+	'/shaveLottery':{
+        name: 'shaveLottery',
+        component: require('./_shaveLottery.vue')
     }
 }
 
@@ -110,7 +114,7 @@ for(var key in tabbarConfig){
 }
 /*-----------------------------------tabBarWithRouter---------------------------------End*/
 
-routerMap = Object.assign(routerMap, tabbarRouter) 
+routerMap = Object.assign(routerMap, tabbarRouter)
 
 router.map(routerMap);
 

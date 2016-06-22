@@ -6,10 +6,10 @@
     div.comp-area
         <tab-bar-with-jq :tab-list.sync="tabList"></tab-bar-with-jq>
         div.content
-            section {{ tabList[0] }}
-            section(style="display:none;") {{ tabList[1] }}
-            section(style="display:none;") {{ tabList[2] }}
-            section(style="display:none;") {{ tabList[3] }}
+            section {{ prefixStr + tabList[0] }}
+            section(style="display:none;") {{ prefixStr + tabList[1] }}
+            section(style="display:none;") {{ prefixStr + tabList[2] }}
+            section(style="display:none;") {{ prefixStr + tabList[3] }}
 </template>
 
 <script type="text/javascript">
@@ -22,6 +22,7 @@ export default {
             hintingTitle2: "表现示例:",
             compTitle : "Component Name",
             hintingTitle: "使用示例:",
+            prefixStr: "当前页面是: ",
             tabList: {
                 "0": "赵钱孙李",
                 "1": "周吴郑王",
@@ -67,8 +68,8 @@ export default {
     font-size: 2em;
 }
 .tab-bar-li{
-    float: right;
-    margin: 2% 0 1% 2%;
+    float: left;
+    margin: 2% 2% 1% 0%;
     padding: 1%;
     background-color: rgba(11,11,11,.6);
 }

@@ -3,7 +3,7 @@
 	Author: Nicejade
  -->
 <template>
-	<ul id="common-table-ul" v-if="isShowTableFlag">
+	<ul class="common-table-ul" v-if="isShowTableFlag">
 		<li v-for='liItem in tableList'  class="common-table-li">
 			<span v-for='spanList in liItem' class="common-table-span"> {{ spanList }} </span>
 		</li>
@@ -62,11 +62,11 @@ export default {
 </script>
 
 <style>
-#common-table-ul{
-    background-color: transparent;
+.common-table-ul{
+    background-color: #222222;
     color: #fff;
     font-size: .9em;
-    border: 2px solid #9555ec;
+    border: 2px solid #4f5555;
     border-radius: .6em;
 }
 .common-table-li{
@@ -79,7 +79,7 @@ export default {
     color: #ff9f40;
 }
 .common-table-li:not(:last-child){
-    border-bottom: 2px solid #9555ec;
+    border-bottom: 2px solid #4f5555;
 }
 .common-table-span{
     height: 100%;
@@ -88,6 +88,6 @@ export default {
     vertical-align: middle;
 }
 .common-table-span:not(:last-child){
-    border-right: 2px solid #9555ec;
+    border-right: 2px solid #4f5555;
 }
 </style>

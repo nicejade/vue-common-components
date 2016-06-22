@@ -2,13 +2,13 @@ module.exports = function() {
 	return {
         "0":{
             "index": '/main',
-            "name": "Tab Main Page",
+            "name": "Main Page Tab",
             "components": "./main.vue",
             "path": "main"
         },
         "1":{
             "index": '/rule',
-            "name": "Tab Rule Page",
+            "name": "Rule Page Tab",
             "components": "./rule.vue",
             "path": "rule"
         }

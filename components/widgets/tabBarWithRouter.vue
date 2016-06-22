@@ -6,7 +6,6 @@
                 <a v-for="(index, item) in tabList" v-link="item.path" class="tab-bar-li">
                     {{ item.name }}
                 </a>
-                <a v-link="{ path: 'main' }" class="tab-bar-li">main page tab</a>
             </ul>
         </nav>
     </header>
@@ -22,7 +21,9 @@ export default {
         }
     },
     ready(){
-        location.href = location.href + '/';
+        if( window.location.hash = '#/tabBarWithRouter' ){
+            location.hash = location.hash + '/'
+        }
     },
     methods:{
         onBackToIndexClick(){

@@ -14,7 +14,7 @@
 export default {
     data () {
         return{
-            titleText: "温馨提示",
+            titleText: null,
             bodyText:"初始数据:Null, Jeff Told U",
             confirmText: "确认",
             callBackFunc: null,
@@ -35,7 +35,7 @@ export default {
                 this.confirmText = dlgMsgObj.confirmText || this.confirmText;
                 this.callBackFunc = dlgMsgObj.callBackFunc || null;
                 this.isShowCloseXFlag = dlgMsgObj.isShowCloseXFlag;
-                this.isShowTitleFlag = dlgMsgObj.isShowTitleFlag || null;
+                this.isShowTitleFlag = (this.titleText == null) ? false : true;
             }
 
             this.isShowDlgFlag = true;
@@ -108,11 +108,36 @@ export default {
 }
 .normal-dlg-close{
     position: absolute;
-    right: -1%;
-    top: -3%;
+    right: 3%;
+    top: 3%;
     background-size: 100% 100%;
-    width: 2.38em;
-    height: 2.38em;
+    width: 1.5em;
+    height: 1.5em;
+}
+.normal-dlg-close:before,.normal-dlg-close:after{
+    position: absolute;
+    width: 141.41%;
+}
+.normal-dlg-close:before{
+    content: '';
+    top: 0;
+    display: block;
+    height: 0;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform-origin: left;
+}
+.normal-dlg-close:after{
+    content: '';
+    top: 0;
+    left: 100%;
+    display: block;
+    height: 0;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -webkit-transform-origin: left;
 }
 #normal-dlg-body > section {
     background-color: #d3d7d4;
