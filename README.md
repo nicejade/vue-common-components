@@ -1,6 +1,6 @@
 <h2 align="center"> Vue Common Components </h2>
 
-![vue-common-vomponents](http://7xoosr.com1.z0.glb.clouddn.com/vue-common-components.jpg)
+![vue-common-components](http://7xoosr.com1.z0.glb.clouddn.com/vue-common-components.jpg?v1.0)
 
 ## Demo and instructions
 
