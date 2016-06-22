@@ -5,22 +5,27 @@
  <template lang="jade">
 	#turntable-root
 		#turntable-drawbox
-			div(id="turntable-drawpoint" v-on:click="onDrawboxCallback")
+		div(id="turntable-drawpoint" v-on:click="onDrawboxCallback")
 </template>
+
 
 <script>
 export default {
 	data(){
 		return{
+			$turnTarget:null,
 			requestSuccData:{}
 		}
 	},
 
 	ready(){
-		document.getElementById('turntable-drawpoint').addEventListener('webkitTransitionEnd', ()=>{
+		let isTableRotateFlag = this.turnTableConfig.isTableRotate
+		this.$turnTarget = (isTableRotateFlag === true) ? $('#turntable-drawbox') : $('#turntable-drawpoint')
+
+		this.$turnTarget[0].addEventListener('webkitTransitionEnd', ()=>{
             setTimeout( ()=>{
             	this.excuteCallBackFunc()
-            	$('#turntable-drawpoint').removeClass('turntable-transition').css({'webkitTransform' : 'rotate(0deg)'});
+            	this.$turnTarget.removeClass('turntable-transition').css({'-webkit-transform' : 'rotate(0deg)','transform' : 'rotate(0deg)'});
             }, this.turnTableConfig.resumeDelay );
 		}, false);
 	},
@@ -38,6 +43,7 @@ export default {
         			resumeDelay: 1000,
         			rotateNums: 3,
         			imgOffset: 22.5,
+        			isTableRotate:false,
         			callBackFunc: null
         		}
         	}
@@ -53,11 +59,17 @@ export default {
 				this.requestSuccData = succData || {};
 				let rewardKinds = this.turnTableConfig.rewardKinds
 				let rotateNums = this.turnTableConfig.rotateNums
-
+				let isTableRotate = this.turnTableConfig.isTableRotate
 				if( succData.status >= 0 ){
-					let offset = (360/rewardKinds)*succData.num
-					let tragetAngel = (360*rotateNums)+offset - this.turnTableConfig.imgOffset
-					$("#turntable-drawpoint").addClass('turntable-transition').css({ 'webkitTransform':'rotate('+tragetAngel+'deg)' });
+					let offset = (360/rewardKinds)*(succData.num-1)
+					let angel = 0;
+					if( isTableRotate ){
+						angel = -(360*rotateNums)-offset - this.turnTableConfig.imgOffset
+					}else{
+						angel = (360*rotateNums)+offset + this.turnTableConfig.imgOffset
+					}
+					let cssObj = {'-webkit-transform':'rotate('+angel+'deg)','transform':'rotate('+angel+'deg)'}
+					this.$turnTarget.addClass('turntable-transition').css( cssObj );
 				}else{
 					this.excuteCallBackFunc()
 				}
@@ -65,11 +77,7 @@ export default {
 		},
 		excuteCallBackFunc: function(){
 			if(null !== this.turnTableConfig.callBackFunc){
-				var cdObj = {
-					msg: this.requestSuccData.msg,
-					name: this.requestSuccData.name || ""
-				}
-            	this.turnTableConfig.callBackFunc( cdObj );
+            	this.turnTableConfig.callBackFunc( this.requestSuccData );
             }
 		}
 	},
@@ -87,17 +95,19 @@ export default {
 <style>
 #turntable-root {
 	position: absolute;
-	width: 50%;
-	height: 78%;
+	width: 43%;
+	padding-top: 43%;
 	top: 9%;
 	right: 2.5%;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0);
 }
 #turntable-drawbox {
-    width: 83%;
-    height: 93%;
+    width: 100%;
+    height: 100%;
 	position: absolute;
 	top: 0;
-	right: 6%;
+	left: 0;
 	bottom: 13.5%;
 	background-size: 100% 100%;
 }
@@ -119,5 +129,19 @@ export default {
 .turntable-transition{
     -webkit-transition: -webkit-transform 2s ease-in-out;
     transition: transform 2s ease-in-out;
+}
+#turntable-drawbox {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; 
+}
+#turntable-drawpoint {
+  -webkit-transform-origin: 50% 60%;
+  -ms-transform-origin: 50% 60%;
+  -o-transform-origin: 50% 60%;
+  -moz-transform-origin: 50% 60%;
+  transform-origin: 50% 60%; 
 }
 </style>
