@@ -5,7 +5,7 @@
     h2.hinting-title {{ hintingTitle2 }}
     div.comp-area
         <annotate :blockquote-str='blockquoteStr'></annotate>
-        a(href='javascript:;' @click="onChangeHeightClick" class='common-a') {{ fixedHeight }}
+        a(href='javascript:;' @click="onChangeHeightClick" class='common-a') {{ fixedHeightText }}
         a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addRow }}
         a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
         <common-table :table-list.sync='tableList'></common-table>
@@ -25,7 +25,7 @@ export default {
             yLimitControl:4,
             addRow: "Add row",
             addColumn: "Add Column",
-            fixedHeight: "fix Height(/not)",
+            fixedHeightText: "not Fix Height",
             isFixedHeightFlag: true,
             hintingTitle: "使用示例:",
             tableList: [],
@@ -44,6 +44,9 @@ export default {
     },
     ready(){
         this.setTableList()
+        setTimeout( ()=>{
+            this.updateTableHeight()
+        }, 0)
     },
     route:{
   		data(transition){
@@ -66,6 +69,13 @@ export default {
             }
             this.tableList = tempArr
         },
+        updateTableHeight: function(){
+            if(this.isFixedHeightFlag){
+                $('.common-table-ul').addClass('table-height')
+            }else{
+                $('.common-table-ul').removeClass('table-height')
+            }
+        },
 
         // -------------------------------------------default click callBack function
         onAddLineClick: function(){
@@ -80,11 +90,8 @@ export default {
         },
         onChangeHeightClick: function(){
             this.isFixedHeightFlag = !this.isFixedHeightFlag
-            if(this.isFixedHeightFlag){
-                $('.common-table-ul').addClass('table-height')
-            }else{
-                $('.common-table-ul').removeClass('table-height')
-            }
+            this.fixedHeightText = this.isFixedHeightFlag ? "not Fixed Height" : "Fixed Height"
+            this.updateTableHeight()
         }
     }
 }
@@ -97,6 +104,6 @@ export default {
     background-color: rgba(22,22,22, 1);
 }
 .table-height{
-    height: 15em;
+    height: 12em;
 }
 </style>

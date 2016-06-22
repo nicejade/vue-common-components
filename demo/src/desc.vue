@@ -30,7 +30,7 @@ export default {
     color: #f2f2f2;
     font-size: 1em;
     line-height: 1.2;
-    background-color: #222222;
+    background-color: #009ad6;
     border-radius: 1em;
     text-decoration: none;
 }

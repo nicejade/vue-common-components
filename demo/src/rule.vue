@@ -1,3 +1,3 @@
 <template lang="jade">
-    div 这是rule-page@@@@
+    div 冯陈诸卫,蒋沈韩杨 @rule page;
 </template>

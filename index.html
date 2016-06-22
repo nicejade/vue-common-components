@@ -3,21 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>Vue Components Demo</title>
-	<link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css">
-
 	<link href="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/styles/shCoreFadeToGrey.min.css" rel="stylesheet">
 </head>
 
 <body>
 	<script src="http://cdn.bootcss.com/jquery/2.2.2/jquery.slim.js"></script>
 	<app id="root"></app><script type="text/javascript" src="./demo/dist/main.js"></script>
-	<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>
-	<!-- <script>hljs.initHighlightingOnLoad();</script> -->
-
 	<script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
 	<script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>
-	<!-- <script src="http://cdn.bootcss.com/SyntaxHighlighter/3.0.83/scripts/shCoreDefault.min.js"></script> -->
 </body>
 
 <script>
@@ -27,8 +21,6 @@
 	window.onhashchange = function(){
 		SyntaxHighlighter.all();
 		SyntaxHighlighter.highlight();
-		// location.reload()
-		// hljs.initHighlightingOnLoad();
 	};
 </script>
 </html>

@@ -3,15 +3,17 @@
     h2.hinting-title {{ hintingTitle }}
     <pre-code :code-string="codeString"></pre-code>
     h2.hinting-title {{ hintingTitle2 }}
-    a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
-    a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
     div.comp-area
+        <annotate :blockquote-str='blockquoteStr'></annotate>
+        a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addLine }}
+        a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
         <span-flex-table :table-list.sync='tableList'></span-flex-table>
 </template>
 
 <script type="text/javascript">
 import spanFlexTable from 'spanFlexTable'
 import preCode from './preCode.vue'
+import annotate from './annotate.vue'
 
 export default {
     data () {
@@ -28,7 +30,12 @@ export default {
     import spanFlexTable from 'spanFlexTable'; //引入组件
 
     //在模板中如下加入组件即可(定义tabList数组/Object)：
-    <span-flex-table :table-list.sync='tableList'></span-flex-table>`
+    <span-flex-table :table-list.sync='tableList'></span-flex-table>`,
+            blockquoteStr: `
+                <strong>微注: </strong>这个组件同<font color="#fe0"> commonTable </font>组件功能类似；只不过运用CSS样式有区别，
+                commonTable 此组件采取 <font color="#f00">display: table</font>来布局；而此组件借助CSS3伸缩盒模型:<font color="#f00">display: flex</font>;
+                虽然浏览器的支持越来越快，但目前尚有浏览器支持的并不是很好(包括Pc，移动，Tv等平台)，因此现在对它的使用还是有很多局限性（16-06-22 update）。
+            `
         }
     },
     ready(){
@@ -41,6 +48,7 @@ export default {
 	},
     components: {
         spanFlexTable,
+        annotate,
         preCode,
     },
     methods: {

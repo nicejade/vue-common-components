@@ -1,3 +1,3 @@
 <template lang="jade">
-    div 这是main page
+    div 赵钱孙李,周吴郑王 @main page;
 </template>
