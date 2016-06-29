@@ -6,7 +6,8 @@
     div.comp-area
         <annotate :blockquote-str='blockquoteStr'></annotate>
         a(href='javascript:;' @click="onCallDemoClick" class='demonstrate-a') {{ btnText }}
-        popup-toast
+        div.hold-comp-area
+            popup-toast
 </template>
 
 

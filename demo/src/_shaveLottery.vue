@@ -73,7 +73,7 @@ export default {
         blockquoteStr: `
             <strong>微注: </strong>当 coverType 以 image 类型来呈现之时，请保证该图片地址同逻辑代码在同一域下，否则会衍生如下错误：
             <i style='color:#f00;font-style:normal'>Uncaught SecurityError: Failed to execute 'getImageData' on 'CanvasRenderingContext2D':
-            The canvas has been tainted by cross-origin data.</i>
+            The canvas has been tainted by cross-origin data。<span style='color:#fe0'>此组件实际表现尚不合格，在完善改进中。</span></i>
         `
         }
     },

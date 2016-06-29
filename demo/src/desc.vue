@@ -2,7 +2,7 @@
     h1.welcome {{ welcome }}
     a(class="desc-a" href="https://nicejade.gitbooks.io/vue-components-doc/content/index.html") {{ vueDoc }}
     div.desc-img
-        img(src='http://nicejade.github.io/jade/black-background.jpg')
+        img(src='http://7xoosr.com1.z0.glb.clouddn.com/vue-common-components.jpg')
 </template>
 
 <script type="text/javascript">

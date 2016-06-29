@@ -1,4 +1,5 @@
 <!--Date: 16-04-18
+    LastModify: 16-06-29
 	Author: jeffjade
 	Desc: 大转盘/抽奖等功能模块组件
  -->
@@ -14,7 +15,7 @@ export default {
 	data(){
 		return{
 			$turnTarget:null,
-			requestSuccData:{}
+			requestSuccMsg: "转盘已经执行完毕啦(From Default Msg)"
 		}
 	},
 
@@ -31,10 +32,6 @@ export default {
 	},
 
 	props:{
-		Tools:{
-            type: null,
-            default: {}
-        },
         turnTableConfig:{
         	type: Object,
         	default: function(){
@@ -43,6 +40,7 @@ export default {
         			resumeDelay: 1000,
         			rotateNums: 3,
         			imgOffset: 22.5,
+                    pointNum: 3,
         			isTableRotate:false,
         			callBackFunc: null
         		}
@@ -55,31 +53,27 @@ export default {
 			this.startupDrawbox()
 		},
 		startupDrawbox: function(){
-			this.Tools.ajax({"p":"complete","extra":{"keys":"turntable"}}, (succData)=>{
-				this.requestSuccData = succData || {};
-				let rewardKinds = this.turnTableConfig.rewardKinds
-				let rotateNums = this.turnTableConfig.rotateNums
-				let isTableRotate = this.turnTableConfig.isTableRotate
-				if( succData.status >= 0 ){
-					let offset = (360/rewardKinds)*(succData.num-1)
-					let angel = 0;
-					if( isTableRotate ){
-						angel = -(360*rotateNums)-offset - this.turnTableConfig.imgOffset
-					}else{
-						angel = (360*rotateNums)+offset + this.turnTableConfig.imgOffset
-					}
-					let cssObj = {'-webkit-transform':'rotate('+angel+'deg)','transform':'rotate('+angel+'deg)'}
-					this.$turnTarget.addClass('turntable-transition').css( cssObj );
-				}else{
-					this.excuteCallBackFunc()
-				}
-			})
+            // Here: 到生产环境，建议将请求后端数据封装在此处(只需传回来获奖类型位置以及msg即可)；
+
+			let rotateNums = this.turnTableConfig.rotateNums || this.getRandom(1, this.turnTableConfig.rewardKinds)
+			let offset = (360/this.turnTableConfig.rewardKinds)*(this.turnTableConfig.pointNum-1)
+			let angel = 0;
+			if( this.turnTableConfig.isTableRotate ){
+				angel = -(360*rotateNums)-offset - this.turnTableConfig.imgOffset
+			}else{
+				angel = (360*rotateNums)+offset + this.turnTableConfig.imgOffset
+			}
+			let cssObj = {'-webkit-transform':'rotate('+angel+'deg)','transform':'rotate('+angel+'deg)'}
+			this.$turnTarget.addClass('turntable-transition').css( cssObj );
 		},
 		excuteCallBackFunc: function(){
 			if(null !== this.turnTableConfig.callBackFunc){
-            	this.turnTableConfig.callBackFunc( this.requestSuccData );
+            	this.turnTableConfig.callBackFunc( this.requestSuccMsg );
             }
-		}
+		},
+        getRandom:  function(start, end){
+            return Math.round(Math.random()* (end - start) + start)
+        }
 	},
 
 	events: {
@@ -94,36 +88,34 @@ export default {
 
 <style>
 #turntable-root {
-	position: absolute;
-	width: 43%;
-	padding-top: 43%;
-	top: 9%;
-	right: 2.5%;
+    margin: 2% auto;
+    width: 50%;
+    padding-top: 50%;
 	-webkit-transform:translateZ(0);
 	transform:translateZ(0);
 }
 #turntable-drawbox {
-    width: 100%;
-    height: 100%;
-	position: absolute;
+    position: absolute;
 	top: 0;
 	left: 0;
-	bottom: 13.5%;
+	bottom: 0%;
+    width: 100%;
+    height: 100%;
 	background-size: 100% 100%;
 }
 #turntable-drawpoint {
-    width: 16.7%;
-    top: 33.66%;
-    left: 42.4%;
-    height: 23.9%;
+    position: absolute;
+    width: 28%;
+    top: 31%;
+    left: 36.4%;
+    height: 34%;
 	background-size: 100% 100%;
-	position: absolute;
 	z-index: 2;
-	-webkit-transform-origin: 50% 65.1%;
-	-ms-transform-origin: 50% 65.1%;
-	-o-transform-origin: 50% 65.1%;
-	-moz-transform-origin: 50% 65.1%;
-	transform-origin: 50% 65.1%;
+    -webkit-transform-origin: 50% 60%;
+    -ms-transform-origin: 50% 60%;
+    -o-transform-origin: 50% 60%;
+    -moz-transform-origin: 50% 60%;
+    transform-origin: 50% 60%;
 	will-change: transform;
 }
 .turntable-transition{
@@ -135,13 +127,6 @@ export default {
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; 
-}
-#turntable-drawpoint {
-  -webkit-transform-origin: 50% 60%;
-  -ms-transform-origin: 50% 60%;
-  -o-transform-origin: 50% 60%;
-  -moz-transform-origin: 50% 60%;
-  transform-origin: 50% 60%; 
+  transform-origin: 50% 50%;
 }
 </style>

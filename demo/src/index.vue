@@ -70,7 +70,7 @@ html, body{
     text-align: center;
     color: #ffffff;
     /*background-color: #2D3143;*/
-    background: -webkit-gradient(linear,50% 0,50% 100%,from(#333),to(#999));
+    background: -webkit-gradient(linear,50% 0,50% 100%,from(#1a2933),to(#3e4145));
     z-index: 1;
 }
 #sidebar-widgets, #sidebar-modules{
@@ -181,7 +181,7 @@ html, body{
 }
 
 .common-a{
-    margin: 2% 2% 2% 0;
+    margin: 1%;
     padding: 1% 3%;
     position: relative;
     color: #24B3D3;
@@ -202,5 +202,8 @@ html, body{
 .comp-area{
     position: relative;
     margin-left: 5%;
+}
+.hold-comp-area{
+    position: relative;
 }
 </style>

@@ -10,11 +10,7 @@ module.exports = function() {
 	    commonTable: './../../components/widgets/commonTable.vue',
 
 	    turnTable: "./../../components/modules/turnTable.vue",
-<<<<<<< HEAD
-	    formDialog: "./../../components/modules/formDialog.vue"
-=======
-	    formDialog: "./../../components/modules/FormDialog.vue",
+	    formDialog: "./../../components/modules/formDialog.vue",
 		shaveLottery: "./../../components/modules/shaveLottery.vue",
->>>>>>> 3acf77d13cfb31386c247a1379971dac7baa14a3
 	}
 }

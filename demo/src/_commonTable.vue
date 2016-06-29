@@ -25,7 +25,7 @@ export default {
             yLimitControl:4,
             addRow: "Add row",
             addColumn: "Add Column",
-            fixedHeightText: "not Fix Height",
+            fixedHeightText: "Not Fix Height",
             isFixedHeightFlag: true,
             hintingTitle: "使用示例:",
             tableList: [],
@@ -90,7 +90,7 @@ export default {
         },
         onChangeHeightClick: function(){
             this.isFixedHeightFlag = !this.isFixedHeightFlag
-            this.fixedHeightText = this.isFixedHeightFlag ? "not Fixed Height" : "Fixed Height"
+            this.fixedHeightText = this.isFixedHeightFlag ? "Not Fixed Height" : "Fixed Height"
             this.updateTableHeight()
         }
     }

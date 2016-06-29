@@ -1,6 +1,6 @@
 <template>
     <div id="shave-lottery">
-        <a class="fresh-btn" href='javascript:;' @click='onFreshBtnClick'>刷新</a>
+        <a class="fresh-btn" href='javascript:;' @click='onFreshBtnClick'>请刷新</a>
         <label>已刮开<span id="draw-percent">{{ drawPercent }}</span> 区域。</label>
         <div id="lottery-container"></div>
     </div>
@@ -57,10 +57,11 @@ export default {
             let lotteryWidth = this.paramsList.width + 'px'
             let lotteryHeight = this.paramsList.height + 'px'
             $('#lottery-container').css({'width': lotteryWidth, 'height': lotteryHeight })
+
             this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );
         },
 
-        //------------------------------Default Function callBack--------------------------
+        //------------------------------Default Function callBack-----------------------------
         onFreshBtnClick: function(){
             this.drawPercent = '0%';
             this.lottery.init( this.paramsList.lotteryContent , this.paramsList.lotteryType );
@@ -89,7 +90,8 @@ export default {
     border-radius: 1em;
     border: 1px solid #000;
     font-size: 1em;
-    color: #f2f2f2;
+    color: #111;
+    box-shadow: 0px 0px 5px #222;
 }
 #lottery-container {
     position:relative;
