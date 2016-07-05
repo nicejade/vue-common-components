@@ -8,7 +8,8 @@
         a(href='javascript:;' @click="onChangeHeightClick" class='common-a') {{ fixedHeightText }}
         a(href='javascript:;' @click="onAddLineClick" class='common-a') {{ addRow }}
         a(href='javascript:;' @click="onAddColumnClick" class='common-a') {{ addColumn }}
-        <common-table :table-list.sync='tableList'></common-table>
+        div.hold-comp-area
+            <common-table :table-list.sync='tableList'></common-table>
 </template>
 
 <script type="text/javascript">
