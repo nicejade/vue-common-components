@@ -179,7 +179,6 @@ html, body{
     position: relative;
     z-index: 12;
 }
-
 .common-a{
     margin: 1%;
     padding: 1% 3%;
@@ -205,5 +204,12 @@ html, body{
 }
 .hold-comp-area{
     position: relative;
+}
+.link-color-a{
+    color: #65c294;
+    text-decoration: none;
+}
+.link-color-a:hover{
+    color: #009ad6;
 }
 </style>

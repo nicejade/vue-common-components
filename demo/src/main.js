@@ -109,7 +109,8 @@ for(var key in tabbarConfig){
     var index = tabbarConfig[key]['index']
     var components = tabbarConfig[key]['components']
     tabbarRouter['/tabBarWithRouter'].subRoutes[index] = {
-        component: require(components)
+        component: require(components + '')
+		//Webpack Warn: Module not found: Error: a dependency to an entry point is not allowed
     }
 }
 /*-----------------------------------tabBarWithRouter---------------------------------End*/
